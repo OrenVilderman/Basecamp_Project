@@ -43,4 +43,7 @@ public class ProjectMainPage {
     @FindBy(how = How.CLASS_NAME, using = "decorated decorated--matched")
     public WebElement changeToolSet_btn;
 
+    @FindBy(how = How.XPATH, using = "//button[@title='Show options…']")
+    public WebElement optionsMenu_btn;
+
 }

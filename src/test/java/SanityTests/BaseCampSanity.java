@@ -33,7 +33,14 @@ public class BaseCampSanity extends CommonOps {
         int _numberOfProjectsBeforeAdding = HelperMethods.numberOfProjectsNow();
         WebFlows.addNewProject(HelperMethods.returnRandomName()+HelperMethods.returnRandomDate(), HelperMethods.returnRandomFullName());
         Verifications.verifyNumberOfElementsProjectAdd(basecampMainPage.projects_list, _numberOfProjectsBeforeAdding);
+    }
 
+    @Test(description = "Remove a project")
+    @Description("Test description: Removing a project")
+    public void sanityTest04() throws InterruptedException {
+        int _numberOfProjectsBeforeRemoving = HelperMethods.numberOfProjectsNow();
+        WebFlows.removeAProject();
+        Verifications.verifyNumberOfElementsProjectRemove(basecampMainPage.projects_list, _numberOfProjectsBeforeRemoving);
     }
 
 }

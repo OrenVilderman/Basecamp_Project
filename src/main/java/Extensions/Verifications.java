@@ -21,4 +21,9 @@ public class Verifications extends CommonOps {
         basecampUpperMenu.home_btn.click();
         assertEquals(actual.size(), expected+1);
     }
+    public static void verifyNumberOfElementsProjectRemove(List<WebElement> actual, int expected) throws InterruptedException {
+        Thread.sleep(1500);
+        basecampUpperMenu.home_btn.click();
+        assertEquals(actual.size(), expected-1);
+    }
 }

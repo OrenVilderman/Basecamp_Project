@@ -16,6 +16,7 @@ public class ManagePages extends Base{
         basecampUpperMenuFindWindowPage = PageFactory.initElements(driver, PageObjects.Basecamp.UpperMenuFindWindow.class);
         basecampSignUpFlow = PageFactory.initElements(driver, PageObjects.Basecamp.SignUpFlow.class);
         basecampNewProjectFlow = PageFactory.initElements(driver, PageObjects.Basecamp.NewProjectFlow.class);
+        basecampRemoveAProjectFlow = PageFactory.initElements(driver, PageObjects.Basecamp.RemoveAProjectFlow.class);
 
     }
 

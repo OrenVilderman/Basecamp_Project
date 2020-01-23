@@ -2,11 +2,7 @@ package WorkFlows;  //Represents regular routine tasks and operations that the s
                     // new tasks etc. - Inherits from CommonOps
 
 import Utilities.CommonOps;
-import Utilities.HelperMethods;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import java.util.List;
 
 public class WebFlows extends CommonOps {
     public static String _userName;
@@ -53,7 +49,7 @@ public class WebFlows extends CommonOps {
         basecampSignUpFlow.allDone_btn.click();
     }
 
-    public static void addNewProject(String projectName, String description){
+    public static void addNewProject(String projectName, String description) throws InterruptedException {
         //signIn(getDataFromXML("UserEmail"), getDataFromXML("Password"));
         wait.until(ExpectedConditions.visibilityOf(basecampMainPage.addAnotherProject_btn));
         basecampMainPage.addAnotherProject_btn.click();
@@ -64,5 +60,21 @@ public class WebFlows extends CommonOps {
         basecampNewProjectFlow.addDescription_box.clear();
         basecampNewProjectFlow.addDescription_box.sendKeys(description);
         basecampNewProjectFlow.createThisProject_btn.click();
+        Thread.sleep(2000);
+        basecampUpperMenu.home_btn.click();
+        Thread.sleep(2000);
+    }
+
+    public static void removeAProject(){
+        wait.until(ExpectedConditions.visibilityOf(basecampMainPage.addAnotherProject_btn));
+        if (basecampMainPage.projects_list.size()>0){
+            basecampMainPage.projects_list.get(0).click();
+            wait.until(ExpectedConditions.visibilityOf(basecampProjectMainPage.optionsMenu_btn));
+            basecampProjectMainPage.optionsMenu_btn.click();
+            basecampRemoveAProjectFlow.menuDeleteThisProject_btn.click();
+            wait.until(ExpectedConditions.visibilityOf(basecampRemoveAProjectFlow.redDeleteThisProject_btn));
+            basecampRemoveAProjectFlow.redDeleteThisProject_btn.click();
+            wait.until(ExpectedConditions.visibilityOf(basecampMainPage.addAnotherProject_btn));
+        }
     }
 }

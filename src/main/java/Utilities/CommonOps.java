@@ -114,13 +114,14 @@ public class CommonOps extends Base{
     }
 
     @AfterMethod
-    public void afterMethod(){
-        driver.get(getDataFromXML("URL"));
+    public void afterMethod() throws InterruptedException {
+        basecampUpperMenu.home_btn.click();
+        Thread.sleep(2500);
     }
 
     @AfterClass
     public void closeSession() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         driver.quit();
     }
 

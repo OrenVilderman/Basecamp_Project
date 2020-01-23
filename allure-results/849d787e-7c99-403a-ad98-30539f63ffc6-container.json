@@ -1,1 +1,0 @@
-{"uuid":"849d787e-7c99-403a-ad98-30539f63ffc6","name":"SanityTests.BaseCampSanity","children":["e804b180-c8a7-4096-ab42-8e6f6a99ffab"],"befores":[{"name":"startSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1578822988497,"stop":1578823004188}],"afters":[],"links":[],"start":1578822988431,"stop":1578823005172}
