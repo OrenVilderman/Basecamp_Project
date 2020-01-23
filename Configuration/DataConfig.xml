@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Enviornment>
+    <TimeOut>10</TimeOut>
+    <URL>https://basecamp.com/</URL>
+    <PlatformName>web</PlatformName>
+    <BrowserName>chrome</BrowserName>
+    <ImageRepo>./imageRepository/</ImageRepo>
+    <UserName>Roni</UserName>
+    <UserEmail>ziv.automation@gmail.com</UserEmail>
+    <Password>z066409038g</Password>
+</Enviornment>
