@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/AvatarMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/EditProfilePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FunctionalityTesting/UserProfileUpdates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Helpers/VirtualTesting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/BaseCampSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SanityTests/BaseCampSanity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Verifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/GeneratorsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/GeneratorsData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/Verifications.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/WorkFlows/WebFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkFlows/WebFlows.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,17 +60,53 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BaseCampSanity.sanityTest03">
-    <configuration name="BaseCampSanity" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.UserProfileUpdates.userProfileUpdatesTest01">
+    <configuration name="HelperMethods.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SanityTests.*" />
+          <option name="PATTERN" value="Utilities.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SanityTests" />
-      <option name="MAIN_CLASS_NAME" value="SanityTests.BaseCampSanity" />
+      <option name="PACKAGE_NAME" value="Utilities" />
+      <option name="MAIN_CLASS_NAME" value="Utilities.HelperMethods" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserProfileUpdates.userProfileUpdatesTest01" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FunctionalityTesting.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="FunctionalityTesting" />
+      <option name="MAIN_CLASS_NAME" value="FunctionalityTesting.UserProfileUpdates" />
+      <option name="METHOD_NAME" value="userProfileUpdatesTest01" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VirtualTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Helpers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Helpers" />
+      <option name="MAIN_CLASS_NAME" value="Helpers.VirtualTesting" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -65,17 +114,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseCampSanity.sanityTest01" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VirtualTesting.createScreenshot" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SanityTests.*" />
+          <option name="PATTERN" value="Helpers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SanityTests" />
-      <option name="MAIN_CLASS_NAME" value="SanityTests.BaseCampSanity" />
-      <option name="METHOD_NAME" value="sanityTest01" />
+      <option name="PACKAGE_NAME" value="Helpers" />
+      <option name="MAIN_CLASS_NAME" value="Helpers.VirtualTesting" />
+      <option name="METHOD_NAME" value="createScreenshot" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -83,53 +132,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BaseCampSanity.sanityTest02" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="VirtualTesting.visualTest01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SanityTests.*" />
+          <option name="PATTERN" value="Helpers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="SanityTests" />
-      <option name="MAIN_CLASS_NAME" value="SanityTests.BaseCampSanity" />
-      <option name="METHOD_NAME" value="sanityTest02" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BaseCampSanity.sanityTest03" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SanityTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SanityTests" />
-      <option name="MAIN_CLASS_NAME" value="SanityTests.BaseCampSanity" />
-      <option name="METHOD_NAME" value="sanityTest03" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BaseCampSanity.sanityTest04" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SanityTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SanityTests" />
-      <option name="MAIN_CLASS_NAME" value="SanityTests.BaseCampSanity" />
-      <option name="METHOD_NAME" value="sanityTest04" />
+      <option name="PACKAGE_NAME" value="Helpers" />
+      <option name="MAIN_CLASS_NAME" value="Helpers.VirtualTesting" />
+      <option name="METHOD_NAME" value="visualTest01" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -139,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BaseCampSanity.sanityTest03" />
-        <item itemvalue="TestNG.BaseCampSanity.sanityTest04" />
-        <item itemvalue="TestNG.BaseCampSanity.sanityTest02" />
-        <item itemvalue="TestNG.BaseCampSanity.sanityTest01" />
-        <item itemvalue="TestNG.BaseCampSanity" />
+        <item itemvalue="TestNG.UserProfileUpdates.userProfileUpdatesTest01" />
+        <item itemvalue="TestNG.VirtualTesting" />
+        <item itemvalue="TestNG.VirtualTesting.visualTest01" />
+        <item itemvalue="TestNG.VirtualTesting.createScreenshot" />
+        <item itemvalue="TestNG.HelperMethods.test" />
       </list>
     </recent_temporary>
   </component>
@@ -170,5 +183,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Extensions/Verifications.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Extensions/Verifications.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Extensions/Verifications.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

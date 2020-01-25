@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.coordinates.WebDriverCoordsProvider;
-import java.util.Random;
 import javax.imageio.ImageIO;
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -15,6 +14,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class HelperMethods extends CommonOps{
     public static int _numberOfProjectsBeforeAdding;
+    public static String imageFilePath;
 
     public static SimpleDateFormat dateFormat;
 
@@ -24,13 +24,16 @@ public class HelperMethods extends CommonOps{
         return newDateFormat;
     }
 
-    public static void takeElementScreenshot(WebElement elem, String imgName){
+    public static String takeElementScreenshot(WebElement elem, String imgName){
+        imageFilePath = getDataFromXML("ImageRepo")+imgName+returnRandomDate() + ".png";
         imageScreenshot = new AShot().coordsProvider(new WebDriverCoordsProvider()).takeScreenshot(driver, elem);
         try{
-            ImageIO.write(imageScreenshot.getImage(), "png", new File(getDataFromXML("ImageRepo")+ imgName + returnRandomDate() + ".png"));
+            ImageIO.write(imageScreenshot.getImage(), "png", new File(imageFilePath));
+
         }catch (Exception e){
             System.out.println("Error writing image file, see details: " + e);
         }
+        return imageFilePath;
     }
 
     public static WebElement selectorTypePicker(String identifierType, String identifierValue) {
@@ -64,20 +67,17 @@ public class HelperMethods extends CommonOps{
 
     public static String returnRandomEmailProvider(){
         int randomNum = ThreadLocalRandom.current().nextInt(0, 4);
-        String[] _nemailProviders = GeneratorsData.emailProviders.split(" ");
-        return _nemailProviders[randomNum];
+        return GeneratorsData.numbersAndSymbols[randomNum];
     }
 
     public static String returnRandomPassword(){
-        String fullPassword;
-        String[] _fullPassword = new String[10];
-        String[] _numbersAndSymbols = GeneratorsData.numbersAndSymbols.split(" ");
-
+        //String[] _fullPassword = new String[10];
+        StringBuffer sb = new StringBuffer();
         for (int i = 0; i < 10; i++) {
             int randomNum = ThreadLocalRandom.current().nextInt(0, 17);
-            _fullPassword[i]=_numbersAndSymbols[randomNum];
+            sb.append(GeneratorsData.numbersAndSymbols[randomNum]);
         }
-        fullPassword = _fullPassword.toString();
+        String fullPassword=sb.toString();
         return fullPassword;
     }
 
@@ -96,6 +96,24 @@ public class HelperMethods extends CommonOps{
         basecampUpperMenu.home_btn.click();
         _numberOfProjectsBeforeAdding = basecampMainPage.projects_list.size();
         return _numberOfProjectsBeforeAdding;
+    }
+
+    public static String returnRandomThreeDigitNumber(){
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < 3; i++) {
+            int randomNum = ThreadLocalRandom.current().nextInt(0, 9);
+            sb.append(GeneratorsData.numbersAndSymbols[randomNum]);
+        }
+        String threeDigitNumber = sb.toString();
+        return threeDigitNumber;
+    }
+
+    public static boolean assertForHomePage(){
+        boolean isHomePage = true;
+        if (driver.getCurrentUrl().equals("https://basecamp.com/")){
+            isHomePage = false;
+        }
+        return isHomePage;
     }
 
 }

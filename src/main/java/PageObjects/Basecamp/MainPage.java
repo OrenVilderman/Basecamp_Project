@@ -16,8 +16,8 @@ public class MainPage {
     @FindBy(how = How.CLASS_NAME, using = "card__add-project")
     public WebElement addAnotherProject_btn;
 
-    @FindBy(how = How.CLASS_NAME, using = "card__title flush")
-    public WebElement existingProject_btn;
+    @FindBy(how = How.XPATH, using = "//a/img[@class='avatar']")
+    public WebElement avatarIcon_btn;
 
     @FindBy(how = How.XPATH, using = "//a[@title='Edit project name or description…']")
     public WebElement projectEditDetails_btn;
@@ -33,6 +33,5 @@ public class MainPage {
 
     @FindBy(how = How.XPATH, using = "//div/article[@id]")
     public List<WebElement> projects_list;
-
 
 }

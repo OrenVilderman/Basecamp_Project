@@ -77,4 +77,12 @@ public class WebFlows extends CommonOps {
             wait.until(ExpectedConditions.visibilityOf(basecampMainPage.addAnotherProject_btn));
         }
     }
+
+    public static void changeProfileImage(String imagePath){
+        wait.until(ExpectedConditions.visibilityOf(basecampMainPage.avatarIcon_btn));
+        basecampMainPage.avatarIcon_btn.click();
+        basecampAvatarMenu.myProfile_btn.click();
+        basecampEditProfilePage.uploadAPhoto_btn.click();
+        basecampEditProfilePage.sendImageElement.sendKeys(imagePath);
+    }                   //impossible due to DOM definitions
 }

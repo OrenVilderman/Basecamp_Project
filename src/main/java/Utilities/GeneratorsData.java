@@ -28,9 +28,9 @@ public class GeneratorsData {
                                  "Chapman Vicki Nava Benas Gibbs Wasim Herrera Glenda Williams Arnold Mora Leyton Briggs Lilly-Mai Huff Samad Simmonds " +
                                  "Caitlyn Tate Dani Todd Jazmin Vega Elana Easton";
 
-    public static String emailProviders = "gmail hotmail yahoo walla aol";
+    public static String[] emailProviders = {"gmail", "hotmail", "yahoo", "walla", "aol"};
 
-    public static String numbersAndSymbols = "1 2 3 4 5 6 7 8 9 0 ! @ # $ % ^ & *";
+    public static String[] numbersAndSymbols = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "!", "@", "#", "$", "%", "^", "&", "*"};
 
 
 }

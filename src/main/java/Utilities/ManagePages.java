@@ -17,6 +17,8 @@ public class ManagePages extends Base{
         basecampSignUpFlow = PageFactory.initElements(driver, PageObjects.Basecamp.SignUpFlow.class);
         basecampNewProjectFlow = PageFactory.initElements(driver, PageObjects.Basecamp.NewProjectFlow.class);
         basecampRemoveAProjectFlow = PageFactory.initElements(driver, PageObjects.Basecamp.RemoveAProjectFlow.class);
+        basecampAvatarMenu = PageFactory.initElements(driver, PageObjects.Basecamp.AvatarMenu.class);
+        basecampEditProfilePage = PageFactory.initElements(driver, PageObjects.Basecamp.EditProfilePage.class);
 
     }
 

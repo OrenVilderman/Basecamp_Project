@@ -28,6 +28,8 @@ public class Base {
     public static PageObjects.Basecamp.SignUpFlow basecampSignUpFlow;
     public static PageObjects.Basecamp.NewProjectFlow basecampNewProjectFlow;
     public static PageObjects.Basecamp.RemoveAProjectFlow basecampRemoveAProjectFlow;
+    public static PageObjects.Basecamp.AvatarMenu basecampAvatarMenu;
+    public static PageObjects.Basecamp.EditProfilePage basecampEditProfilePage;
 
 
 }
