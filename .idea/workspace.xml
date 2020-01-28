@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/AvatarMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/EditProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FunctionalityTesting/UserProfileUpdates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Helpers/VirtualTesting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Verifications.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/GeneratorsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/GeneratorsData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/Verifications.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WorkFlows/WebFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkFlows/WebFlows.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
