@@ -1,6 +1,9 @@
 package Utilities;      //A class to provide with all the routine operations and methods being used with every test run, such as browser initializing method,
                         // before/after class/method, getData method to extract data from external files and more. Inherits from Base class
 
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,6 +13,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -19,10 +24,12 @@ import org.testng.annotations.BeforeClass;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 public class CommonOps extends Base{
     JavascriptExecutor js = (JavascriptExecutor)driver;
+
 
     public static String getDataFromXML(String nodeName){
         File fXmlFile;
@@ -101,15 +108,30 @@ public class CommonOps extends Base{
         return driver;
     }
 
+    public static void initMobile(){
+        dc = new DesiredCapabilities();
+        dc.setCapability("reportDirectory", reportDirectory);
+        dc.setCapability("reportFormat", reportFormat);
+        dc.setCapability("Mobile App Test", testName);
+        dc.setCapability(MobileCapabilityType.UDID, "1e9ac294");
+        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.basecamp.bc3");
+        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".activities.HomeActivity");
+        try{
+        driver = new RemoteWebDriver(new URL("http://localhost:4724/wd/hub"), dc);
+        } catch (Exception e){
+            System.out.println("Can not Connect to Appium Server, See Details: " + e);
+        }
 
+    }
 
     @BeforeClass
     public void startSession(){
         if (getDataFromXML("PlatformName").equalsIgnoreCase("web")){
             initBrowser(getDataFromXML("BrowserName"));
-        }/*else if (getDataFromXML("PlatformName").equalsIgnoreCase("mobile"){
-            initBrowser();*/
-        else {throw new RuntimeException("Given Platform Is Invalid.");}
+        }else if (getDataFromXML("PlatformName").equalsIgnoreCase("mobile"))
+            initMobile();
+        else
+            throw new RuntimeException("Given Platform Is Invalid.");
         ManagePages.init();
     }
 

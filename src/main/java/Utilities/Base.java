@@ -3,6 +3,7 @@ package Utilities;      //A class meant for declaring objects being used commonl
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
@@ -31,5 +32,10 @@ public class Base {
     public static PageObjects.Basecamp.AvatarMenu basecampAvatarMenu;
     public static PageObjects.Basecamp.EditProfilePage basecampEditProfilePage;
 
+    //Mobile
+    public static DesiredCapabilities dc;
+    public static String reportDirectory = "reports";
+    public static String reportFormat = "xml";
+    public static String testName = "Mobile App Test";
 
 }
