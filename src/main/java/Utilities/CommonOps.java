@@ -2,6 +2,7 @@ package Utilities;      //A class to provide with all the routine operations and
                         // before/after class/method, getData method to extract data from external files and more. Inherits from Base class
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidKeyCode;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -14,43 +15,19 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.w3c.dom.Document;
 import org.testng.annotations.BeforeClass;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import java.io.File;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import static Utilities.HelperMethods.getDataFromXML;
 
 public class CommonOps extends Base{
     JavascriptExecutor js = (JavascriptExecutor)driver;
 
 
-    public static String getDataFromXML(String nodeName){
-        File fXmlFile;
-        DocumentBuilderFactory dbFactory;
-        DocumentBuilder dBuilder;
-        Document doc = null;
 
-        try {
-            fXmlFile = new File("./Configuration/DataConfig.xml");
-            dbFactory = DocumentBuilderFactory.newInstance();
-            dBuilder = dbFactory.newDocumentBuilder();
-            doc = dBuilder.parse(fXmlFile);
-            doc.getDocumentElement().normalize();
-        }
-        catch(Exception e) {
-            System.out.println("Exception in reading XML file: " + e);
-        }
-        finally {
-            return doc.getElementsByTagName(nodeName).item(0).getTextContent();
-        }
-        }
 
     public static void initBrowser(String browserType){
         if(browserType.equalsIgnoreCase("chrome")){
@@ -113,11 +90,11 @@ public class CommonOps extends Base{
         dc.setCapability("reportDirectory", reportDirectory);
         dc.setCapability("reportFormat", reportFormat);
         dc.setCapability("Mobile App Test", testName);
-        dc.setCapability(MobileCapabilityType.UDID, "1e9ac294");
-        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.basecamp.bc3");
-        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".activities.HomeActivity");
+        dc.setCapability(MobileCapabilityType.UDID, getDataFromXML("UDID"));
+        dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, getDataFromXML("APP_PACKAGE"));
+        dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, getDataFromXML("APP_ACTIVITY"));
         try{
-        driver = new RemoteWebDriver(new URL("http://localhost:4724/wd/hub"), dc);
+        driver = new AndroidDriver(new URL("http://localhost:4724/wd/hub"), dc);
         } catch (Exception e){
             System.out.println("Can not Connect to Appium Server, See Details: " + e);
         }
@@ -128,17 +105,20 @@ public class CommonOps extends Base{
     public void startSession(){
         if (getDataFromXML("PlatformName").equalsIgnoreCase("web")){
             initBrowser(getDataFromXML("BrowserName"));
-        }else if (getDataFromXML("PlatformName").equalsIgnoreCase("mobile"))
+            ManagePages.initWeb();
+        }else if (getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
             initMobile();
-        else
+            ManagePages.initMobile();
+        }else
             throw new RuntimeException("Given Platform Is Invalid.");
-        ManagePages.init();
     }
 
     @AfterMethod
     public void afterMethod() throws InterruptedException {
+        if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")){
         basecampUpperMenu.home_btn.click();
-        Thread.sleep(2500);
+        Thread.sleep(2500);}
+        else AndroidDriver.launchApp();   //AndroidDriver.pressKeyCode(3);
     }
 
     @AfterClass

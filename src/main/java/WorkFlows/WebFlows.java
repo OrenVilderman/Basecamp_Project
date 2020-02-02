@@ -1,12 +1,14 @@
 package WorkFlows;  //Represents regular routine tasks and operations that the system does: Creating / removing users,
                     // new tasks etc. - Inherits from CommonOps
 
-import Extensions.UiActions;
+import Extensions.Web.UiActions;
 import Utilities.CommonOps;
 import io.qameta.allure.Step;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import javax.swing.*;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class WebFlows extends CommonOps {
     public static String _userName;
@@ -16,14 +18,13 @@ public class WebFlows extends CommonOps {
     @Step("Sign in to Basecamp")
     public static void signIn(String userEmail, String userPassword){
         UiActions.click(basecampIntroPage.signIn_btn);
-        UiActions.insertKeys(basecampSignInPage.userIdentifierInput_Field, userEmail);
-        UiActions.click(basecampSignInPage.next_btn);
-        UiActions.insertKeys(basecampSignInPage.userPasswordInput_Field, userPassword);
-        UiActions.click(basecampSignInPage.login_btn);
+        UiActions.insertKeysAndClick(basecampSignInPage.userIdentifierInput_Field, userEmail, basecampSignInPage.next_btn);
+        UiActions.insertKeysAndClick(basecampSignInPage.userPasswordInput_Field, userPassword, basecampSignInPage.login_btn);
     }
 
     @Step("Sign up to Basecamp")
     public static void signUp(String name, String email, String password, String companyName) {
+        /*UiActions.clickMultiple(new ArrayList(basecampIntroPage.tryItFree_btn, basecampSignUpFlow.startFreeTrial_btn);*/
         UiActions.click(basecampIntroPage.tryItFree_btn);
         UiActions.click(basecampSignUpFlow.startFreeTrial_btn);
         UiActions.insertKeys(basecampSignUpFlow.name_Field, name);
@@ -43,8 +44,7 @@ public class WebFlows extends CommonOps {
         UiActions.click(basecampMainPage.addAnotherProject_btn);
         UiActions.insertKeys(basecampNewProjectFlow.nameThisProject_field, projectName);
         _projectName = projectName;
-        UiActions.insertKeys(basecampNewProjectFlow.addDescription_box, description);
-        UiActions.click(basecampNewProjectFlow.createThisProject_btn);
+        UiActions.insertKeysAndClick(basecampNewProjectFlow.addDescription_box, description, basecampNewProjectFlow.createThisProject_btn);
         Thread.sleep(2000);
         UiActions.click(basecampUpperMenu.home_btn);
         Thread.sleep(2000);

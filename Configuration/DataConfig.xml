@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Enviornment>
+    <!--GENERAL-->
     <TimeOut>10</TimeOut>
-    <URL>https://basecamp.com/</URL>
     <PlatformName>web</PlatformName>
+    <!--WEB-->
+    <URL>https://basecamp.com/</URL>
     <BrowserName>chrome</BrowserName>
+    <!--MOBILE-->
+    <APP_PACKAGE>com.basecamp.bc3</APP_PACKAGE>             //Tested App
+    <UDID>1e9ac294</UDID>                                   //Mobile Identifier
+    <APP_ACTIVITY>.activities.HomeActivity</APP_ACTIVITY>   //
     <ImageRepo>./imageRepository/</ImageRepo>
     <UserName>Roni</UserName>
     <UserEmail>ziv.automation@gmail.com</UserEmail>

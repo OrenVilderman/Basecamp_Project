@@ -1,6 +1,6 @@
 package Helpers;
 
-import Extensions.Verifications;
+import Extensions.Web.Verifications;
 import Utilities.CommonOps;
 import Utilities.HelperMethods;
 import WorkFlows.WebFlows;

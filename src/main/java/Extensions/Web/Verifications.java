@@ -1,4 +1,4 @@
-package Extensions;     //Methods that are meant to verify our tests will be written here and get called from the tests.
+package Extensions.Web;     //Methods that are meant to verify our tests will be written here and get called from the tests.
                         //The class inherits from CommonOps class
 
 import Utilities.CommonOps;
@@ -13,13 +13,14 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.List;
-
+import static Utilities.HelperMethods.getDataFromXML;
 import static org.testng.Assert.assertEquals;
 
 public class Verifications extends CommonOps {
 
     public static void verifyTextInElement(WebElement elem, String actual, String expected){
-        wait.until(ExpectedConditions.visibilityOf(elem));
+        if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile"))
+            wait.until(ExpectedConditions.visibilityOf(elem));
         assertEquals(actual, expected);
     }
 
@@ -34,11 +35,11 @@ public class Verifications extends CommonOps {
         assertEquals(actual.size(), expected-1);
     }
 
-    public static boolean verifyImageElement(WebElement elem, String expected){
+    public static boolean verifyImageElement(WebElement elem, String expectedImageFilePath){
         boolean ImagesEqual;
         BufferedImage exp = null;
         try {
-            exp = ImageIO.read((new File(expected)));
+            exp = ImageIO.read((new File(expectedImageFilePath)));
         } catch (Exception e) {
             System.out.println("Error reading the file: "+e);
         }

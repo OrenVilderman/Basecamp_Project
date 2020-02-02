@@ -5,21 +5,25 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ManagePages extends Base{
 
-    public static void init(){
-        basecampIntroPage = PageFactory.initElements(driver, PageObjects.Basecamp.IntroPage.class);
-        basecampMainPage = PageFactory.initElements(driver, PageObjects.Basecamp.MainPage.class);
-        basecampSignInPage = PageFactory.initElements(driver, PageObjects.Basecamp.SignInPage.class);
-        basecampProjectMainPage = PageFactory.initElements(driver, PageObjects.Basecamp.ProjectMainPage.class);
-        basecampUpperMenu = PageFactory.initElements(driver, PageObjects.Basecamp.UpperMenuBar.class);
-        basecampEditProjectDetailsPage = PageFactory.initElements(driver, PageObjects.Basecamp.EditProjectDetails.class);
-        basecampGetHelpIframe = PageFactory.initElements(driver, PageObjects.Basecamp.GetHelpIframe.class);
-        basecampUpperMenuFindWindowPage = PageFactory.initElements(driver, PageObjects.Basecamp.UpperMenuFindWindow.class);
-        basecampSignUpFlow = PageFactory.initElements(driver, PageObjects.Basecamp.SignUpFlow.class);
-        basecampNewProjectFlow = PageFactory.initElements(driver, PageObjects.Basecamp.NewProjectFlow.class);
-        basecampRemoveAProjectFlow = PageFactory.initElements(driver, PageObjects.Basecamp.RemoveAProjectFlow.class);
-        basecampAvatarMenu = PageFactory.initElements(driver, PageObjects.Basecamp.AvatarMenu.class);
-        basecampEditProfilePage = PageFactory.initElements(driver, PageObjects.Basecamp.EditProfilePage.class);
+    public static void initWeb(){
+        basecampIntroPage = PageFactory.initElements(driver, PageObjects.BasecampWeb.IntroPage.class);
+        basecampMainPage = PageFactory.initElements(driver, PageObjects.BasecampWeb.MainPage.class);
+        basecampSignInPage = PageFactory.initElements(driver, PageObjects.BasecampWeb.SignInPage.class);
+        basecampProjectMainPage = PageFactory.initElements(driver, PageObjects.BasecampWeb.ProjectMainPage.class);
+        basecampUpperMenu = PageFactory.initElements(driver, PageObjects.BasecampWeb.UpperMenuBar.class);
+        basecampEditProjectDetailsPage = PageFactory.initElements(driver, PageObjects.BasecampWeb.EditProjectDetails.class);
+        basecampGetHelpIframe = PageFactory.initElements(driver, PageObjects.BasecampWeb.GetHelpIframe.class);
+        basecampUpperMenuFindWindowPage = PageFactory.initElements(driver, PageObjects.BasecampWeb.UpperMenuFindWindow.class);
+        basecampSignUpFlow = PageFactory.initElements(driver, PageObjects.BasecampWeb.SignUpFlow.class);
+        basecampNewProjectFlow = PageFactory.initElements(driver, PageObjects.BasecampWeb.NewProjectFlow.class);
+        basecampRemoveAProjectFlow = PageFactory.initElements(driver, PageObjects.BasecampWeb.RemoveAProjectFlow.class);
+        basecampAvatarMenu = PageFactory.initElements(driver, PageObjects.BasecampWeb.AvatarMenu.class);
+        basecampEditProfilePage = PageFactory.initElements(driver, PageObjects.BasecampWeb.EditProfilePage.class);
 
+    }
+
+    public static void initMobile(){
+        basecampLoginPage = PageFactory.initElements(driver, PageObjects.BasecampMobile.LoginPage.class);
     }
 
 

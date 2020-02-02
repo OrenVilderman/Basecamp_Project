@@ -1,16 +1,14 @@
 package FunctionalityTesting;
 
 
-import Extensions.Verifications;
 import Utilities.CommonOps;
 import Utilities.HelperMethods;
+import Utilities.Listeners;
 import WorkFlows.WebFlows;
 import io.qameta.allure.Description;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(Utilities.Listeners.class)
+@org.testng.annotations.Listeners(Listeners.class)
 public class UserProfileUpdates extends CommonOps {
 
     @Test(description = "Updating user avatar")

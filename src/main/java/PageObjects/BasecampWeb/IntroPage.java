@@ -1,4 +1,4 @@
-package PageObjects.Basecamp;
+package PageObjects.BasecampWeb;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

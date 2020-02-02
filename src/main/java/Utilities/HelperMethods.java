@@ -4,9 +4,12 @@ package Utilities;      //A class that meant to provide additional methods to us
 import WorkFlows.WebFlows;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.w3c.dom.Document;
 import ru.yandex.qatools.ashot.AShot;
 import ru.yandex.qatools.ashot.coordinates.WebDriverCoordsProvider;
 import javax.imageio.ImageIO;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -15,8 +18,28 @@ import java.util.concurrent.ThreadLocalRandom;
 public class HelperMethods extends CommonOps{
     public static int _numberOfProjectsBeforeAdding;
     public static String imageFilePath;
-
     public static SimpleDateFormat dateFormat;
+
+    public static String getDataFromXML(String nodeName){
+        File fXmlFile;
+        DocumentBuilderFactory dbFactory;
+        DocumentBuilder dBuilder;
+        Document doc = null;
+
+        try {
+            fXmlFile = new File("./Configuration/DataConfig.xml");
+            dbFactory = DocumentBuilderFactory.newInstance();
+            dBuilder = dbFactory.newDocumentBuilder();
+            doc = dBuilder.parse(fXmlFile);
+            doc.getDocumentElement().normalize();
+        }
+        catch(Exception e) {
+            System.out.println("Exception in reading XML file: " + e);
+        }
+        finally {
+            return doc.getElementsByTagName(nodeName).item(0).getTextContent();
+        }
+    }
 
     public static String returnRandomDate(){
         dateFormat = new SimpleDateFormat("dd-MM-yyyy");
@@ -67,7 +90,7 @@ public class HelperMethods extends CommonOps{
 
     public static String returnRandomEmailProvider(){
         int randomNum = ThreadLocalRandom.current().nextInt(0, 4);
-        return GeneratorsData.numbersAndSymbols[randomNum];
+        return GeneratorsData.emailProviders[randomNum];
     }
 
     public static String returnRandomPassword(){

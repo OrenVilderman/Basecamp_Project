@@ -2,11 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/SanityTests/BasecampMobileSanity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Extensions/Mobile/UiActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/MobileFlows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/UiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Web/UiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Web/Verifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/AvatarMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/AvatarMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/EditProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/EditProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/EditProjectDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/EditProjectDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/GetHelpIframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/GetHelpIframe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/IntroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/IntroPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/NewProjectFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/NewProjectFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/ProjectMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/ProjectMainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/RemoveAProjectFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/RemoveAProjectFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/SignUpFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/SignUpFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/UpperMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/UpperMenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/Basecamp/UpperMenuFindWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/UpperMenuFindWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/GeneratorsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/GeneratorsData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FunctionalityTesting/UserProfileUpdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FunctionalityTesting/UserProfileUpdates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/VirtualTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/VirtualTesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/BaseCampSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SanityTests/BaseCampSanity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/BasecampMobileSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SanityTests/BasecampMobileSanity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +58,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1Veb2pZ8CH7Z6xB3iFIMQohNhvI" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutomationInfrastructurePageObjectPattern" />
@@ -174,26 +203,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Extensions/Verifications.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Extensions/Verifications.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Extensions/Verifications.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
