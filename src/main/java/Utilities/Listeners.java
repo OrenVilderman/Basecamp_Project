@@ -8,6 +8,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import static Utilities.HelperMethods.getDataFromXML;
+
 
 public class Listeners extends CommonOps implements ITestListener
 {

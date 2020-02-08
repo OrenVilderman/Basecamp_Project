@@ -42,6 +42,8 @@ public class Base {
     public static String reportFormat = "xml";
     public static String testName = "Mobile App Test";
 
-    public static PageObjects.BasecampMobile.LoginPage basecampLoginPage;
+    public static PageObjects.BasecampMobile.LoginPage mobileBasecampLoginPage;
+    public static PageObjects.BasecampMobile.BottomMenu mobileBottomMenu;
+    public static PageObjects.BasecampMobile.MyStuffPage mobileMyStuffPage;
 
 }

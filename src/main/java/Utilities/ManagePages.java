@@ -23,7 +23,9 @@ public class ManagePages extends Base{
     }
 
     public static void initMobile(){
-        basecampLoginPage = PageFactory.initElements(driver, PageObjects.BasecampMobile.LoginPage.class);
+        mobileBasecampLoginPage = PageFactory.initElements(driver, PageObjects.BasecampMobile.LoginPage.class);
+        mobileBottomMenu = PageFactory.initElements(driver, PageObjects.BasecampMobile.BottomMenu.class);
+        mobileMyStuffPage = PageFactory.initElements(driver, PageObjects.BasecampMobile.MyStuffPage.class);
     }
 
 

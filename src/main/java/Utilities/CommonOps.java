@@ -15,6 +15,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -118,7 +119,7 @@ public class CommonOps extends Base{
         if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")){
         basecampUpperMenu.home_btn.click();
         Thread.sleep(2500);}
-        else AndroidDriver.launchApp();   //AndroidDriver.pressKeyCode(3);
+        else AndroidDriver.resetApp();
     }
 
     @AfterClass

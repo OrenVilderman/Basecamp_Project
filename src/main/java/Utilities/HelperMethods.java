@@ -2,7 +2,10 @@ package Utilities;      //A class that meant to provide additional methods to us
                         // Inherits from CommonOps class
 
 import WorkFlows.WebFlows;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.w3c.dom.Document;
 import ru.yandex.qatools.ashot.AShot;
@@ -11,6 +14,7 @@ import javax.imageio.ImageIO;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.ThreadLocalRandom;
@@ -137,6 +141,15 @@ public class HelperMethods extends CommonOps{
             isHomePage = false;
         }
         return isHomePage;
+    }
+
+    public static void captureScreenshotMobile() throws IOException {
+        String folderName = "Reports/Screenshots";
+        File f = ((TakesScreenshot)AndroidDriver).getScreenshotAs(OutputType.FILE);
+        dateFormat = new SimpleDateFormat("dd-MM-yyy__hh_mm_ssaa");
+        new File(folderName).mkdir();
+        String fileName = dateFormat.format(new Date()) + ".png";
+        FileUtils.copyFile(f, new File(folderName + "/" + fileName));
     }
 
 }

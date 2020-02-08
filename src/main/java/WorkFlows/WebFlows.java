@@ -9,6 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 
 public class WebFlows extends CommonOps {
     public static String _userName;
@@ -33,6 +34,8 @@ public class WebFlows extends CommonOps {
         UiActions.insertKeys(basecampSignUpFlow.password_Field, password);
         UiActions.click(basecampSignUpFlow.createMyAccount_btn);
         UiActions.insertKeys(basecampSignUpFlow.companyName_Field, companyName);
+        /*ArrayList<WebElement> arr = new ArrayList();*/
+        /*UiActions.clickMultiple(new ArrayList(basecampSignUpFlow.nextButtonSecond_btn, basecampSignUpFlow.nextButtonThird_btn));*/
         UiActions.click(basecampSignUpFlow.nextButtonSecond_btn);
         UiActions.click(basecampSignUpFlow.nextButtonThird_btn);
         UiActions.click(basecampSignUpFlow.nextButtonForth_btn);

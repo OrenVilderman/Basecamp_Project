@@ -7,6 +7,7 @@ import WorkFlows.WebFlows;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
 import static org.testng.Assert.*;
+import static Utilities.HelperMethods.getDataFromXML;
 
 public class VirtualTesting extends CommonOps{
     String avatarCurrentImageFilePath;

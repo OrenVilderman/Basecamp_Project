@@ -13,14 +13,14 @@ import static Utilities.HelperMethods.getDataFromXML;
 public class BaseCampSanity extends CommonOps {
     @Test(description = "Login Sanity Test")
     @Description("Test description: Logging in with a user")
-    public void sanityTest01(){
+    public void testLogin(){
         WebFlows.signIn(getDataFromXML("UserEmail"),getDataFromXML("Password"));
         Verifications.verifyTextInElement(basecampMainPage.pageTitle_txt, basecampMainPage.pageTitle_txt.getText(), "Your Projects");
     }
 
     @Test(description = "SignUp Sanity Test", enabled = false)
     @Description("Test description: Signing up a new user")
-    public void sanityTest02() throws InterruptedException {
+    public void testSignup() throws InterruptedException {
         WebFlows.signUp(HelperMethods.returnRandomFullName(),HelperMethods.randomEmailGenerator(),HelperMethods.returnRandomPassword(),HelperMethods.returnRandomName());
         Verifications.verifyTextInElement(basecampSignUpFlow.finishAccountCreationWindowTitle_txt, basecampSignUpFlow.finishAccountCreationWindowTitle_txt.getText(), "Your account’s ready to go! 👍" );
         basecampSignUpFlow.noThanks_btn.click();
@@ -29,7 +29,7 @@ public class BaseCampSanity extends CommonOps {
 
     @Test(description = "Add new project")
     @Description("Test description: Adding a new project")
-    public void sanityTest03() throws InterruptedException {
+    public void testAddNewProject() throws InterruptedException {
         int _numberOfProjectsBeforeAdding = HelperMethods.numberOfProjectsNow();
         if (_numberOfProjectsBeforeAdding == 3){
             System.out.println("Cannot Add Anymore Projects Under This App Package");
@@ -41,7 +41,7 @@ public class BaseCampSanity extends CommonOps {
 
     @Test(description = "Remove a project")
     @Description("Test description: Removing a project")
-    public void sanityTest04() throws InterruptedException {
+    public void testRemoveAProject() throws InterruptedException {
         int _numberOfProjectsBeforeRemoving = HelperMethods.numberOfProjectsNow();
         if(_numberOfProjectsBeforeRemoving == 0){
             System.out.println("No Projects To Delete");

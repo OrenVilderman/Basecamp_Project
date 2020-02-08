@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Enviornment>
     <!--GENERAL-->
+    <PlatformName>mobile</PlatformName>
+    <ImageRepo>./imageRepository/</ImageRepo>
+    <UserName>Roni</UserName>
+    <UserEmail>ziv.automation@gmail.com</UserEmail>
+    <Password>zivg1234</Password>
     <TimeOut>10</TimeOut>
-    <PlatformName>web</PlatformName>
     <!--WEB-->
     <URL>https://basecamp.com/</URL>
     <BrowserName>chrome</BrowserName>
@@ -10,8 +14,4 @@
     <APP_PACKAGE>com.basecamp.bc3</APP_PACKAGE>             //Tested App
     <UDID>1e9ac294</UDID>                                   //Mobile Identifier
     <APP_ACTIVITY>.activities.HomeActivity</APP_ACTIVITY>   //
-    <ImageRepo>./imageRepository/</ImageRepo>
-    <UserName>Roni</UserName>
-    <UserEmail>ziv.automation@gmail.com</UserEmail>
-    <Password>z066409038g</Password>
 </Enviornment>
