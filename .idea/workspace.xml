@@ -2,34 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GrafanaApi/Temp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/BottomMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/BottomMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/MyStuffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/MyStuffPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/MobileFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/MobileFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FunctionalityTesting/UserProfileUpdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/FunctionalityTests/UserProfileUpdates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/VirtualTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/Helpers/VirtualTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/BaseCampSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/BasecampMobileSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampMobile/SanityTests/BasecampMobileSanity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/BottomMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/BottomMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/MyStuffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/MyStuffPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/HelperMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/HelperMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WorkFlows/MobileFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkFlows/MobileFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FunctionalityTesting/UserProfileUpdates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Helpers/VirtualTesting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SanityTests/BaseCampSanity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SanityTests/BasecampMobileSanity.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

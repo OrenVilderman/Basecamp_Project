@@ -1,10 +1,10 @@
 package Utilities;      //A class meant for declaring objects being used commonly across the project, such as WebDriver, WebDriverWait, Actions, Screenshot,
                         // PageObjects, primitives and more
 
-import PageObjects.BasecampMobile.LoginPage;
 import io.appium.java_client.android.AndroidDriver;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -20,6 +20,7 @@ public class Base {
     public static WebDriver driver = null;
     public static AndroidDriver androidDriver = null;
     public static RemoteWebDriver remoteWebDriver = null;
+    public static JavascriptExecutor js = (JavascriptExecutor) driver;
 
     public static WebDriverWait wait;
     public static Actions action;
@@ -40,7 +41,7 @@ public class Base {
     public static PageObjects.BasecampWeb.RemoveAProjectFlow basecampRemoveAProjectFlow;
     public static PageObjects.BasecampWeb.AvatarMenu basecampAvatarMenu;
     public static PageObjects.BasecampWeb.EditProfilePage basecampEditProfilePage;
-
+   
     //Mobile
     public static DesiredCapabilities dc;
     public static String reportDirectory = "reports";
@@ -52,7 +53,6 @@ public class Base {
     public static PageObjects.BasecampMobile.MyStuffPage mobileMyStuffPage;
 
     //API
-
     public static RequestSpecification httpRequest;
     public static Response response;
 

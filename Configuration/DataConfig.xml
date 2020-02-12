@@ -15,7 +15,8 @@
     <UDID>1e9ac294</UDID>                                   //Mobile Identifier
     <APP_ACTIVITY>.activities.HomeActivity</APP_ACTIVITY>
     <!--API-->
-    <grafanaServer>C:\Automation\grafana-6.5.2\bin\grafana-server.exe</grafanaServer>
+    <grafanaServerExe>C:\Automation\grafana-6.5.2\bin\grafana-server.exe</grafanaServerExe>
+    <grafanaServerDir>C:\Automation\grafana-6.5.2\bin\</grafanaServerDir>
     <APIurl>http://localhost:3000/</APIurl>
     <grafanaUserName>admin</grafanaUserName>
     <grafanaPassword>admin</grafanaPassword>

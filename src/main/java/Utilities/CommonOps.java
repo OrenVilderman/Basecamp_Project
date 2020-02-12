@@ -20,6 +20,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -27,8 +28,6 @@ import java.util.concurrent.TimeUnit;
 import static Utilities.HelperMethods.getDataFromXML;
 
 public class CommonOps extends Base {
-    JavascriptExecutor js = (JavascriptExecutor) driver;
-
 
     public static void initBrowser(String browserType) {
         if (browserType.equalsIgnoreCase("chrome")) {
@@ -108,15 +107,16 @@ public class CommonOps extends Base {
                 System.out.println("Can not Connect to Appium Server, See Details: " + e);
             }
         } else System.out.println("Driver type is not recognized.");
-    }
+    }   // More work needed on driver selector
 
-    public static void initGrafanaServer(String exePath) throws IOException {
-        Process process = Runtime.getRuntime().exec(exePath);
-    }
-
-    public AndroidDriver getDriver() {
+    public AndroidDriver getDriver() {  // More work needed on driver selector for android driver
         return androidDriver;
     }
+
+    public static void initGrafanaServer() throws IOException {
+        Runtime.getRuntime().exec(getDataFromXML("grafanaServerExe"), null, new File(getDataFromXML("grafanaServerDir")));
+    }
+
 
     @BeforeClass
     public void startSession() throws IOException {
@@ -127,7 +127,7 @@ public class CommonOps extends Base {
             initMobile();
             ManagePages.initMobile();
         } else if (getDataFromXML("PlatformName").equalsIgnoreCase("api")) {
-            initGrafanaServer(getDataFromXML("grafanaServer"));
+            initGrafanaServer();
         } else
             throw new RuntimeException("Given Platform Is Invalid.");
     }
@@ -135,15 +135,15 @@ public class CommonOps extends Base {
 
     @AfterMethod
     public void afterMethod() throws InterruptedException {
-        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")){}
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")){
+        }
         else if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
             basecampUpperMenu.home_btn.click();
             Thread.sleep(2500);
         } else {
             driverSelector("AndroidDriver");
             androidDriver.resetApp();
-        }
-        driverSelector("RemoteWebDriver");
+        }// More work needed on driver selector
     }
 
     @AfterClass
