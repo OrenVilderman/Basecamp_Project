@@ -145,7 +145,7 @@ public class HelperMethods extends CommonOps{
 
     public static void captureScreenshotMobile() throws IOException {
         String folderName = "Reports/Screenshots";
-        File f = ((TakesScreenshot)AndroidDriver).getScreenshotAs(OutputType.FILE);
+        File f = ((TakesScreenshot) androidDriver).getScreenshotAs(OutputType.FILE);
         dateFormat = new SimpleDateFormat("dd-MM-yyy__hh_mm_ssaa");
         new File(folderName).mkdir();
         String fileName = dateFormat.format(new Date()) + ".png";

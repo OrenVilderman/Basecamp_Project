@@ -3,6 +3,8 @@ package Utilities;      //A class meant for declaring objects being used commonl
 
 import PageObjects.BasecampMobile.LoginPage;
 import io.appium.java_client.android.AndroidDriver;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -12,10 +14,13 @@ import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
+
 public class Base {
 
-    public static WebDriver driver;
-    public static AndroidDriver AndroidDriver;
+    public static WebDriver driver = null;
+    public static AndroidDriver androidDriver = null;
+    public static RemoteWebDriver remoteWebDriver = null;
+
     public static WebDriverWait wait;
     public static Actions action;
     public static Screenshot imageScreenshot;
@@ -45,5 +50,11 @@ public class Base {
     public static PageObjects.BasecampMobile.LoginPage mobileBasecampLoginPage;
     public static PageObjects.BasecampMobile.BottomMenu mobileBottomMenu;
     public static PageObjects.BasecampMobile.MyStuffPage mobileMyStuffPage;
+
+    //API
+
+    public static RequestSpecification httpRequest;
+    public static Response response;
+
 
 }

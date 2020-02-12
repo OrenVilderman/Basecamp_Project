@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Enviornment>
     <!--GENERAL-->
-    <PlatformName>mobile</PlatformName>
+    <PlatformName>api</PlatformName>
     <ImageRepo>./imageRepository/</ImageRepo>
     <UserName>Roni</UserName>
     <UserEmail>ziv.automation@gmail.com</UserEmail>
@@ -13,5 +13,10 @@
     <!--MOBILE-->
     <APP_PACKAGE>com.basecamp.bc3</APP_PACKAGE>             //Tested App
     <UDID>1e9ac294</UDID>                                   //Mobile Identifier
-    <APP_ACTIVITY>.activities.HomeActivity</APP_ACTIVITY>   //
+    <APP_ACTIVITY>.activities.HomeActivity</APP_ACTIVITY>
+    <!--API-->
+    <grafanaServer>C:\Automation\grafana-6.5.2\bin\grafana-server.exe</grafanaServer>
+    <APIurl>http://localhost:3000/</APIurl>
+    <grafanaUserName>admin</grafanaUserName>
+    <grafanaPassword>admin</grafanaPassword>
 </Enviornment>

@@ -2,166 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/BottomMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/MyStuffPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GrafanaApi/Temp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/005a7fc3-f77c-4b6c-9e96-7eb943d36057-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/00e51e6b-a7aa-4dd1-b6e4-b6d916d50e55-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/0238ca0f-d64f-4c7b-a9d9-815831a525c0-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/030c30ed-268f-4454-9b91-ed384d94f8ef-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/078f58b9-e9cf-4291-8a21-02493e03990c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/07c6745c-5988-45ba-acee-6063d4e17b96-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/07ca0c8a-1804-4a2d-b4ed-a4d85ee40149-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/0c4f4c8a-af20-4b65-8bf2-030fa09e3248-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/100b3e89-521b-4b64-b6a2-26523ced3b7c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/145b469a-abfe-4006-9109-5e37497875a8-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/16b2a23d-c077-40f9-a313-9658940eacd0-attachment" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1983c2f2-7fdd-4377-acc2-a8f34ccb3187-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1a70f445-c35f-4a99-a75f-a3eab85c18b5-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1af23a82-4d9c-4acf-b5e7-af43d3ca4698-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1b4b0362-6980-44d1-8594-163c7741e4a3-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1b71f6c7-bb95-4928-8c1d-2698b5187df6-attachment" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1cee2cf2-cf4b-4355-bca6-0951ec2f8080-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1da4da56-3b77-4d97-a380-8c0fe63f591d-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1e07af32-aead-4f89-9a96-c3f435042f9e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1ea6bbca-6f3c-4b66-8580-b51b397a047b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/1f961427-f926-4d69-b460-afee73b481f4-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/209f535f-bc68-4fdc-a32a-8f1b576c86a8-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/253d0cf3-e9b2-46ee-97bb-d69c4995d31e-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/29de5236-8aef-47e1-b65e-6ddba779e9b3-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/33983518-119f-498c-9b0c-9f1c2405ecef-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/370a6c38-1764-4eb3-9fa4-7fdfed1b60fc-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3732ec03-65f5-4910-8e30-fc187d4739c0-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/383e5af2-5ec5-45a4-b696-0d521598c733-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/3d76bbaf-f17f-4ce3-b5d4-d94044ca80e6-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/47b51fd6-1b3a-4cee-a852-f3840e380a33-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4a468e54-a72e-4f80-b594-04c0a16b87da-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4a59a78d-75fb-4f68-8470-865f13ff23fa-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4ad27ad0-75d1-4ec9-9e9e-e5e91be50189-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/4baa6b09-8262-4c92-a712-48b928695a94-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/51a37d9f-29dd-45ad-b86a-876a0c53762c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/54016e88-6cb5-4c33-af1f-0a088c03b407-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/57332a0b-c987-474a-8b76-1e9aff5b6d9f-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5a45079a-29d1-4bbe-b651-bd85c5575028-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5ad02f87-fff1-4aa2-9c70-04654dfefc6b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5b0a7d6b-6ad8-4677-a8a8-ac19c8e964b4-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5b500c46-795d-41d8-a782-d1e636836b96-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5ba619f6-a1ad-45b7-ad60-fe5b67ff756b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5c7a7d1b-f52d-4b99-bcbe-658a12e7900a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5d026715-3cd9-49f1-8abc-1ac76e78cc1b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/5e71959b-3af3-453d-978b-5aa7545c5803-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/65437636-c8db-4214-a99a-52e471caa39e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/65d50f45-8d5d-4bdc-9109-a2727878062a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/67c730ba-7f8d-4c13-8759-5d7724d83acb-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6e969a76-e4d4-4590-9c56-9ad84ef07bc2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/6ee5f45f-7628-45fd-a7c3-5c268d084471-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/709fea0d-8886-4891-bc56-feee48ae1bb4-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/760d6528-c45b-468c-8e75-a09a650fe789-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7c39b905-b799-4b9c-96b0-5ada905d85b9-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7dd48209-595e-4f3d-8630-a69ac9021f8b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/7ded33ff-e4cc-4386-85d3-004f0f4aed95-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8255f115-0171-4e0e-83b5-70df1f9f515b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/842c6bcd-4faa-4334-8084-4b91d7781b1e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/84582312-4d96-43e6-b1ac-31765d47d09a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8504337a-3758-4139-ad55-618e876ae385-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8558a1b0-af6f-4b39-a72f-23a8585f2bca-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8799b312-e97a-42d4-b09d-195505b5083a-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8c2756d2-f897-4f4b-a3a2-c2e242ffbcb0-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8cefd909-c96e-45f2-b44c-3c006f3e569a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8e11975d-e66d-4726-aa58-95fdfc4abf31-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/8fdc8742-c6a9-4c4b-8079-cb5be29375b7-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/95d3b9b2-6880-44a9-a997-77b2377e9bc5-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/96dba066-71be-435d-b053-4b2f06f9f231-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9a11f295-563e-4d4f-b3ea-2f0834e22544-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9a6b291a-d1cf-4939-af76-10a5701156b6-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9b51d1da-6f1c-4b11-b104-35f029e6298a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9b8a5681-54d1-4562-a1e1-8479535b8242-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9bc6d8d4-2fa5-4f90-9791-b2024b67b61e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9d13917a-6286-446a-9786-aade143f4167-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/9e8c4004-fe6b-4ffa-88f1-9c800d7b44d1-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a14c1d63-1df8-4c65-9854-e39195df9465-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a34dd248-c9f9-4992-adea-46bd771dc0ea-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/a591d938-23c4-4453-9b2e-38e4261ea830-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/aea7966a-54ef-41ef-af63-a1fdab1e3a17-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/af8f2b07-71db-4d8d-b02c-d0e3ae7eddff-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/afb1161b-32e6-4bcb-afc7-0ee14c845b24-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b05c41c7-2be5-45f9-84d9-9e2a42ff9ddf-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b0efcbf5-e3f5-4eb7-9f6d-0e99ef99ff1c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b128d09f-6fcc-4931-8100-3d3184c728c6-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b2e21ea6-700e-4918-9a86-505edb81e5b2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b3a41151-fba8-451d-b627-fd1e126268dd-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b3f61d72-3bf0-4326-973a-dea4e66e2fd7-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b8cd8d77-d74e-417d-9660-12565368c220-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b92783e2-c049-4ccd-9d1e-e05e84292178-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/b94d3491-53be-46df-a05d-8ed0767eb418-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/bb0229cd-d4ce-4809-8b53-413cebe4e0d7-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/bcddba41-1087-4b19-9386-7322e1b84710-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/be7ca6ad-81c8-4953-bafd-a2358c54f66f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c0f15a8d-b46e-4ff8-85db-4236ca414912-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c18f0097-4301-4f62-8cd3-a9fa33775ef3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/c8bc1522-5dce-469d-a02c-66b87e0ef883-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ccb63634-9e95-479c-a053-d3fad62b9f0a-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/cd19da96-33d7-48bd-87d6-cb3492f12700-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d38728c2-fe3e-4648-9dba-e227383fdd23-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d3cd666d-a5fd-4a9b-b331-79cc444beb32-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d526da07-9b2d-464b-a2dc-945f4f471d06-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/d7383e2a-3758-4a76-b4d3-17ca0af4ed6c-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/dc248a14-e004-484f-b335-c0c3812d7699-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e6c5e409-288a-4e22-8fba-70b98b26171f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/e7720a2c-760f-4b50-acc6-d0e41e6bd8f9-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/eb11e3a3-4c84-4eea-9593-ac61be8083e1-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/eb7ebeb5-0ae6-45cc-9446-cf5c3c73decd-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ec1786f4-368a-47aa-aeb5-83f395c9464b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ec1afe08-d32c-43c1-8354-007780094573-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ee63297f-6584-4a25-af74-409293aacd64-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/ee845d4f-966a-47b0-83e3-6aecaf2536c2-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f396b87d-2854-43fa-8b9f-791813e36071-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f3f9285f-c2de-45e2-9c2e-132fe652719e-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f4750a08-3588-4c3c-8bf1-0c8cb1ee71ef-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f5c37b4d-0066-41af-9aaa-5f55236dfd2b-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/f9e363b6-309a-4b16-bdf4-1b26959c27a3-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/fa30a66f-dca5-471f-a6c5-8274fc3b50ce-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/fbc7438d-0e5f-400e-97a9-6bcf79897792-container.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/allure-results/fded98af-b853-4c8b-bcb3-1e065184b0ee-container.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Mobile/UiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Mobile/UiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/BottomMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/BottomMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/MyStuffPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampMobile/MyStuffPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Listeners.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/MobileFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/MobileFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FunctionalityTesting/UserProfileUpdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FunctionalityTesting/UserProfileUpdates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/VirtualTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Helpers/VirtualTesting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/BaseCampSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SanityTests/BaseCampSanity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/BasecampMobileSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SanityTests/BasecampMobileSanity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/UiActions.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/Verifications.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/AvatarMenu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/EditProfilePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/EditProjectDetails.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/GetHelpIframe.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/IntroPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/MainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/NewProjectFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/ProjectMainPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/RemoveAProjectFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/SignInPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/SignUpFlow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/UpperMenuBar.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/Basecamp/UpperMenuFindWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FunctionalityTesting/UserProfileUpdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/FunctionalityTests/UserProfileUpdates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Helpers/VirtualTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/Helpers/VirtualTesting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/BaseCampSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SanityTests/BasecampMobileSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampMobile/SanityTests/BasecampMobileSanity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/BottomMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/BottomMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/MyStuffPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PageObjects/BasecampMobile/MyStuffPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/HelperMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/HelperMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Listeners.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Listeners.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WorkFlows/WebFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkFlows/WebFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/FunctionalityTesting/UserProfileUpdates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/FunctionalityTesting/UserProfileUpdates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Helpers/VirtualTesting.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Helpers/VirtualTesting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SanityTests/BaseCampSanity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SanityTests/BaseCampSanity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WorkFlows/MobileFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkFlows/MobileFlows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/FunctionalityTesting/UserProfileUpdates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Helpers/VirtualTesting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SanityTests/BaseCampSanity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SanityTests/BasecampMobileSanity.class" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -207,18 +75,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BasecampMobileSanity.testLoginMobile">
-    <configuration name="BaseCampSanity.testAddNewProject" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.Temp.test01">
+    <configuration name="BaseCampSanity.testLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SanityTests.*" />
+          <option name="PATTERN" value="BasecampWeb.SanityTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SanityTests" />
-      <option name="MAIN_CLASS_NAME" value="SanityTests.BaseCampSanity" />
-      <option name="METHOD_NAME" value="testAddNewProject" />
+      <option name="MAIN_CLASS_NAME" value="BasecampWeb.SanityTests.BaseCampSanity" />
+      <option name="METHOD_NAME" value="testLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -226,17 +94,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasecampMobileSanity" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BasecampMobileSanity.test4test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SanityTests.*" />
+          <option name="PATTERN" value="BasecampWeb.SanityTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SanityTests" />
-      <option name="MAIN_CLASS_NAME" value="SanityTests.BasecampMobileSanity" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="MAIN_CLASS_NAME" value="BasecampMobile.SanityTests.BasecampMobileSanity" />
+      <option name="METHOD_NAME" value="test4test" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -247,12 +116,12 @@
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SanityTests.*" />
+          <option name="PATTERN" value="BasecampWeb.SanityTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="SanityTests" />
-      <option name="MAIN_CLASS_NAME" value="SanityTests.BasecampMobileSanity" />
+      <option name="MAIN_CLASS_NAME" value="BasecampMobile.SanityTests.BasecampMobileSanity" />
       <option name="METHOD_NAME" value="testLoginMobile" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -261,17 +130,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserProfileUpdates.userProfileUpdatesTest01" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="BasecampMobileSanity.testLoguotMobile" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FunctionalityTesting.*" />
+          <option name="PATTERN" value="BasecampWeb.SanityTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="FunctionalityTesting" />
-      <option name="MAIN_CLASS_NAME" value="FunctionalityTesting.UserProfileUpdates" />
-      <option name="METHOD_NAME" value="userProfileUpdatesTest01" />
+      <option name="PACKAGE_NAME" value="SanityTests" />
+      <option name="MAIN_CLASS_NAME" value="BasecampMobile.SanityTests.BasecampMobileSanity" />
+      <option name="METHOD_NAME" value="testLoguotMobile" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -279,17 +148,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VirtualTesting" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Temp.test01" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Helpers.*" />
+          <option name="PATTERN" value="GrafanaApi.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Helpers" />
-      <option name="MAIN_CLASS_NAME" value="Helpers.VirtualTesting" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="GrafanaApi" />
+      <option name="MAIN_CLASS_NAME" value="GrafanaApi.Temp" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -298,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Temp.test01" />
+        <item itemvalue="TestNG.BaseCampSanity.testLogin" />
+        <item itemvalue="TestNG.BasecampMobileSanity.testLoguotMobile" />
         <item itemvalue="TestNG.BasecampMobileSanity.testLoginMobile" />
-        <item itemvalue="TestNG.BasecampMobileSanity" />
-        <item itemvalue="TestNG.BaseCampSanity.testAddNewProject" />
-        <item itemvalue="TestNG.UserProfileUpdates.userProfileUpdatesTest01" />
-        <item itemvalue="TestNG.VirtualTesting" />
+        <item itemvalue="TestNG.BasecampMobileSanity.test4test" />
       </list>
     </recent_temporary>
   </component>
@@ -335,10 +205,23 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Utilities/Listeners.java</url>
+          <line>52</line>
+          <properties class="Utilities.Listeners" method="saveScreenshot">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Extensions/Mobile/UiActions.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/main/java/Utilities/Listeners.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/GrafanaApi/Temp.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
