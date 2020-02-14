@@ -41,7 +41,7 @@ public class Base {
     public static PageObjects.BasecampWeb.RemoveAProjectFlow basecampRemoveAProjectFlow;
     public static PageObjects.BasecampWeb.AvatarMenu basecampAvatarMenu;
     public static PageObjects.BasecampWeb.EditProfilePage basecampEditProfilePage;
-   
+
     //Mobile
     public static DesiredCapabilities dc;
     public static String reportDirectory = "reports";

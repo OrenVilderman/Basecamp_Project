@@ -5,7 +5,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.JavascriptExecutor;
+import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -113,10 +113,16 @@ public class CommonOps extends Base {
         return androidDriver;
     }
 
-    public static void initGrafanaServer() throws IOException {
+    public static void awakeGrafanaServer() throws IOException {
         Runtime.getRuntime().exec(getDataFromXML("grafanaServerExe"), null, new File(getDataFromXML("grafanaServerDir")));
-    }
+        }
 
+    public static void initGrafanaApi() {
+        RestAssured.baseURI = getDataFromXML("APIurl");
+        httpRequest = RestAssured.given().auth().preemptive().
+                basic(getDataFromXML("grafanaUserName"),
+                        getDataFromXML("grafanaPassword"));
+    }
 
     @BeforeClass
     public void startSession() throws IOException {
@@ -127,7 +133,7 @@ public class CommonOps extends Base {
             initMobile();
             ManagePages.initMobile();
         } else if (getDataFromXML("PlatformName").equalsIgnoreCase("api")) {
-            initGrafanaServer();
+            awakeGrafanaServer();
         } else
             throw new RuntimeException("Given Platform Is Invalid.");
     }
