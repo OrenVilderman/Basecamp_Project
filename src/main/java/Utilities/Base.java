@@ -1,9 +1,12 @@
 package Utilities;      //A class meant for declaring objects being used commonly across the project, such as WebDriver, WebDriverWait, Actions, Screenshot,
                         // PageObjects, primitives and more
 
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import io.appium.java_client.android.AndroidDriver;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import org.json.simple.JSONObject;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -55,6 +58,9 @@ public class Base {
     //API
     public static RequestSpecification httpRequest;
     public static Response response;
-
+    public static JSONObject requestParams = new JSONObject();
+    public static JsonPath jp;
+    public static String teamName;
+    public static String teamEmail;
 
 }

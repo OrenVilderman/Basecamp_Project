@@ -115,14 +115,18 @@ public class CommonOps extends Base {
 
     public static void awakeGrafanaServer() throws IOException {
         Runtime.getRuntime().exec(getDataFromXML("grafanaServerExe"), null, new File(getDataFromXML("grafanaServerDir")));
-        }
-
-    public static void initGrafanaApi() {
         RestAssured.baseURI = getDataFromXML("APIurl");
         httpRequest = RestAssured.given().auth().preemptive().
                 basic(getDataFromXML("grafanaUserName"),
                         getDataFromXML("grafanaPassword"));
-    }
+        }
+
+    /*public static void initGrafanaApi() {                                 //All instances are applied on awakeGrafanaServer for test
+        RestAssured.baseURI = getDataFromXML("APIurl");
+        httpRequest = RestAssured.given().auth().preemptive().
+                basic(getDataFromXML("grafanaUserName"),
+                        getDataFromXML("grafanaPassword"));
+    }*/
 
     @BeforeClass
     public void startSession() throws IOException {
@@ -137,7 +141,6 @@ public class CommonOps extends Base {
         } else
             throw new RuntimeException("Given Platform Is Invalid.");
     }
-
 
     @AfterMethod
     public void afterMethod() throws InterruptedException {

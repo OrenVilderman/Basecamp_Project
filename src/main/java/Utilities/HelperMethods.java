@@ -159,21 +159,4 @@ public class HelperMethods extends CommonOps {
         FileUtils.copyFile(f, new File(folderName + "/" + fileName));
     }
 
-    //API
-    public static Team returnTeamDetails() {
-        String _teamName = HelperMethods.returnRandomName();
-        String _teamEmail = _teamName + returnRandomThreeDigitNumber() + "@" + returnRandomEmailProvider() + ".com";
-        Team team = new Team(_teamName, _teamEmail);
-        teamNameList.add(team);
-        return teamNameList.get(teamNameList.size() - 1);
-    }
-
-    public static String getLastCreatedTeamId() {
-        initGrafanaApi();
-        response = httpRequest.get("api/teams/search");
-        List<Integer> allGroupsId = response.jsonPath()
-                .getList("teams.id");
-        Integer maxId = Collections.max(allGroupsId);
-        return maxId.toString();
-    }
 }

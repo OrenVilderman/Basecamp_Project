@@ -1,9 +1,29 @@
 package Extensions.API;
 
 import Utilities.CommonOps;
+import static org.testng.Assert.*;
+import static WorkFlows.ApiFlows.*;
+
+import Utilities.HelperMethods;
+import Utilities.Team;
+import io.qameta.allure.Step;
 
 public class Verifications extends CommonOps {
-    public static void verifyGetResponse(String expected, String actual) {
 
+    @Step("Verify Text From Response")
+    public static void verifyTextGetResponse(String actual, String expected) {
+        assertEquals(actual, expected);
+    }
+
+    @Step("Verify New Team Created Successfully")
+    public static void verifyNewTeamCreated() {
+        jp = ApiActions.get("/api/teams/" + ApiActions.getLastCreatedTeamId()).jsonPath();
+        assertEquals(jp.get("name").toString(), HelperMethods.teamNameList.get(HelperMethods.teamNameList.size()-1).teamName);
+    }
+
+    @Step("Verify Details Update For Last Created Team")
+    public static void verifyLastCreatedTeamDetailsUpdate() {
+        jp = ApiActions.get("/api/teams/" + ApiActions.getLastCreatedTeamId()).jsonPath();
+        assertTrue(jp.get("name").toString().equalsIgnoreCase(teamName + "-AFTER_CHANGE") && jp.get("email").toString().equalsIgnoreCase(teamEmail + "-AFTER_CHANGE"));
     }
 }
