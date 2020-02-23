@@ -145,6 +145,13 @@ public class HelperMethods extends CommonOps {
         return String.valueOf(randomIndexNum);
     }
 
+    public static int returnRandomNumberFromInt(int maxNum) {
+        int randomNum = ThreadLocalRandom.current().nextInt(1, maxNum);
+        return randomNum;
+    }
+
+
+
     public static boolean assertForHomePage() {
         boolean isHomePage = true;
         if (driver.getCurrentUrl().equals("https://basecamp.com/")) {

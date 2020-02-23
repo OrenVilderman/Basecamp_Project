@@ -63,5 +63,5 @@ public class Base {
     public static String teamName;
     public static String teamEmail;
     public static String teamIdForDelete;
-
+    public static int teamIndexForUiVerification;
 }

@@ -1,6 +1,5 @@
 package GrafanaApi;
 
-import Extensions.API.ApiActions;
 import Extensions.API.Verifications;
 import Utilities.CommonOps;
 import WorkFlows.ApiFlows;
@@ -8,10 +7,10 @@ import jdk.jfr.Description;
 import org.testng.annotations.Test;
 
 public class ApiTests extends CommonOps {
-    @Test(description = "Test Get All Teams From Server")
-    @Description("Test Description: Get Full List Of Teams From The Server")
+    @Test(description = "Test Get Team's Name and Email From Server")
+    @Description("Test Description: Gets a Name and email of a Team From Server and assert from UI")
     public void getTeamName(){
-        Extensions.API.Verifications.verifyTextGetResponse(ApiFlows.getTeamProperty("teams[1].name"), "Goodman");
+        Verifications.verifyNameAndEmailFromUI();
     }
 
     @Test(description = "Create New Team In Server")

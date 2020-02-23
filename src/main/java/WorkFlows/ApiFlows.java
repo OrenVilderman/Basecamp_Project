@@ -6,6 +6,7 @@ import Utilities.HelperMethods;
 import Utilities.Team;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
+import org.openqa.selenium.By;
 
 import static Extensions.API.ApiActions.get;
 import static Extensions.API.ApiActions.returnNewTeamDetails;
@@ -56,6 +57,25 @@ public class ApiFlows extends CommonOps {
         }
     }
 
+    @Step("Get team name from UI")
+    public static Team getTeamDetailFromUI(int teamIndex){
+        CommonOps.initBrowser("chrome");
+        driver.get("http://localhost:3000/");
+        driver.findElement(By.xpath("//input[@type=\"text\"]")).sendKeys("admin");
+        driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("admin");
+        driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
+        driver.findElement(By.xpath("//form/div/a")).click();
+        driver.get("http://localhost:3000/org/teams");
+        Team team = new Team(driver.findElement(By.xpath("//tr[" + String.valueOf(teamIndex) + "]/td[2]/a")).getText(),
+                             driver.findElement(By.xpath("//tr[" + String.valueOf(teamIndex) + "]/td[3]/a")).getText());
+        driver.quit();
+        return team;
+    }
 
+    @Step("Get Random Existing Team Name and Email")
+    public static Team getRandomTeamDetails(){
+        teamIndexForUiVerification = HelperMethods.returnRandomNumberFromInt(ApiActions.getTeamTotalCount());
+        return getTeamDetailFromUI(teamIndexForUiVerification);
+    }
 
 }

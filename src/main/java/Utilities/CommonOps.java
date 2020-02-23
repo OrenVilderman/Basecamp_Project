@@ -1,5 +1,5 @@
 package Utilities;      //A class to provide with all the routine operations and methods being used with every test run, such as browser initializing method,
-// before/after class/method, getData method to extract data from external files and more. Inherits from Base class
+                        // before/after class/method, getData method to extract data from external files and more. Inherits from Base class
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
@@ -120,13 +120,6 @@ public class CommonOps extends Base {
                 basic(getDataFromXML("grafanaUserName"),
                         getDataFromXML("grafanaPassword"));
         }
-
-    /*public static void initGrafanaApi() {                                 //All instances are applied on awakeGrafanaServer for test
-        RestAssured.baseURI = getDataFromXML("APIurl");
-        httpRequest = RestAssured.given().auth().preemptive().
-                basic(getDataFromXML("grafanaUserName"),
-                        getDataFromXML("grafanaPassword"));
-    }*/
 
     @BeforeClass
     public void startSession() throws IOException {

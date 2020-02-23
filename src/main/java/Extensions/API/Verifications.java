@@ -6,6 +6,7 @@ import static WorkFlows.ApiFlows.*;
 
 import Utilities.HelperMethods;
 import Utilities.Team;
+import WorkFlows.ApiFlows;
 import io.qameta.allure.Step;
 import io.restassured.response.Response;
 
@@ -14,8 +15,10 @@ import java.util.List;
 public class Verifications extends CommonOps {
 
     @Step("Verify Text From Response")
-    public static void verifyTextGetResponse(String actual, String expected) {
-        assertEquals(actual, expected);
+    public static void verifyNameAndEmailFromUI() {
+        Team team = ApiFlows.getRandomTeamDetails();
+        assertEquals(ApiFlows.getTeamProperty("teams[" + String.valueOf(teamIndexForUiVerification-1) + "].name"), team.teamName);
+        assertEquals(ApiFlows.getTeamProperty("teams[" + String.valueOf(teamIndexForUiVerification-1) + "].email"), team.teamEmail);
     }
 
     @Step("Verify New Team Created Successfully")
