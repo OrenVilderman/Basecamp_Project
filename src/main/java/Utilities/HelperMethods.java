@@ -140,6 +140,11 @@ public class HelperMethods extends CommonOps {
         return threeDigitNumber;
     }
 
+    public static String returnRandomNumberForIndex(int maxIndex) {
+        int randomIndexNum = ThreadLocalRandom.current().nextInt(0, maxIndex-1);
+        return String.valueOf(randomIndexNum);
+    }
+
     public static boolean assertForHomePage() {
         boolean isHomePage = true;
         if (driver.getCurrentUrl().equals("https://basecamp.com/")) {

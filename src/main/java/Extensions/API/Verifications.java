@@ -7,6 +7,9 @@ import static WorkFlows.ApiFlows.*;
 import Utilities.HelperMethods;
 import Utilities.Team;
 import io.qameta.allure.Step;
+import io.restassured.response.Response;
+
+import java.util.List;
 
 public class Verifications extends CommonOps {
 
@@ -26,4 +29,20 @@ public class Verifications extends CommonOps {
         jp = ApiActions.get("/api/teams/" + ApiActions.getLastCreatedTeamId()).jsonPath();
         assertTrue(jp.get("name").toString().equalsIgnoreCase(teamName + "-AFTER_CHANGE") && jp.get("email").toString().equalsIgnoreCase(teamEmail + "-AFTER_CHANGE"));
     }
+
+    @Step("Verify Selected Team Deleted Successfully")
+    public static void verifyRandomTeamDeleted() {
+        boolean isTeamDeleted = true;
+        response = httpRequest.get("/api/teams/search");
+        jp = response.jsonPath();
+        List<Integer> teamsList = jp.getList("teams.id");
+            for (int id : teamsList) {
+            if (id == Integer.valueOf(teamIdForDelete)) {
+                isTeamDeleted = false;
+                break;
+            }
+        }
+        assertTrue(isTeamDeleted);
+    }
+
 }

@@ -40,10 +40,9 @@ public class ApiActions extends CommonOps {
     }
 
     @Step("Delete Data From Server")
-    public static String delete(String resource){
+    public static void delete(String resource){
         response = httpRequest.delete(resource);
         System.out.println(response.prettyPrint());
-        return response.getStatusLine();
     }
 
     @Step("Extract Value From JSON Format")
@@ -63,12 +62,17 @@ public class ApiActions extends CommonOps {
 
     @Step("Get The ID Of Last Created Team")
     public static String getLastCreatedTeamId() {
-        //initGrafanaApi();
         response = httpRequest.get("api/teams/search");
         List<Integer> allGroupsId = response.jsonPath()
                 .getList("teams.id");
         Integer maxId = Collections.max(allGroupsId);
         return maxId.toString();
+    }
+
+    @Step("Get The Teams List Size From Grafana")
+    public static Integer getTeamTotalCount(){
+        response = httpRequest.get("api/teams/search");
+        return response.jsonPath().get("totalCount");
     }
 
 

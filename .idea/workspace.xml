@@ -2,22 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Extensions/API/ApiActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GrafanaApi/ApiTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/API/ApiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/API/ApiActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/API/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/API/Verifications.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Listeners.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Listeners.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/ApiFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/ApiFlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/GrafanaApi/Temp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GrafanaApi/Temp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GrafanaApi/ApiTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GrafanaApi/ApiTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Extensions/API/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/API/Verifications.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/HelperMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/HelperMethods.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/WorkFlows/ApiFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkFlows/ApiFlows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/GrafanaApi/Temp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GrafanaApi/Temp.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,8 +58,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ApiTests.updateTeamDetails">
-    <configuration name="ApiTests.getTeamName" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ApiTests.postNewTeam">
+    <configuration name="ApiActions.getTeamTotalCount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Extensions.API.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Extensions.API" />
+      <option name="MAIN_CLASS_NAME" value="Extensions.API.ApiActions" />
+      <option name="METHOD_NAME" value="getTeamTotalCount" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTests.TestforTeamList" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
         <pattern>
@@ -74,7 +87,43 @@
       </extension>
       <option name="PACKAGE_NAME" value="GrafanaApi" />
       <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
-      <option name="METHOD_NAME" value="getTeamName" />
+      <option name="METHOD_NAME" value="TestforTeamList" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTests.deleteTeam" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GrafanaApi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GrafanaApi" />
+      <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
+      <option name="METHOD_NAME" value="deleteTeam" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTests.getTeamTotalCount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GrafanaApi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GrafanaApi" />
+      <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
+      <option name="METHOD_NAME" value="getTeamTotalCount" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -100,66 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTests.updateTeamDetails" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaApi" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
-      <option name="METHOD_NAME" value="updateTeamDetails" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Temp" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaApi" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaApi.Temp" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Temp.test03Delete" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaApi" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaApi.Temp" />
-      <option name="METHOD_NAME" value="test03Delete" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ApiTests.updateTeamDetails" />
         <item itemvalue="TestNG.ApiTests.postNewTeam" />
-        <item itemvalue="TestNG.ApiTests.getTeamName" />
-        <item itemvalue="TestNG.Temp" />
-        <item itemvalue="TestNG.Temp.test03Delete" />
+        <item itemvalue="TestNG.ApiTests.deleteTeam" />
+        <item itemvalue="TestNG.ApiTests.getTeamTotalCount" />
+        <item itemvalue="TestNG.ApiActions.getTeamTotalCount" />
+        <item itemvalue="TestNG.ApiTests.TestforTeamList" />
       </list>
     </recent_temporary>
   </component>
@@ -205,48 +201,17 @@
           <line>52</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/WorkFlows/ApiFlows.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/WorkFlows/ApiFlows.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/WorkFlows/ApiFlows.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/WorkFlows/ApiFlows.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Extensions/API/Verifications.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/GrafanaApi/ApiTests.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
-        <watch expression="response.jsonPath()" language="JAVA" />
-        <watch expression="teamName" language="JAVA" />
-        <watch expression="teamEmail" language="JAVA" />
+        <watch expression="ApiActions.getTeamTotalCount()" language="JAVA" />
+        <watch expression="HelperMethods.returnRandomNumberForIndex(12)" language="JAVA" />
+        <watch expression="teamIdForDelete" language="JAVA" />
+        <watch expression="isTeamDeleted" language="JAVA" />
+        <watch expression="teamsList" language="JAVA" />
         <watch expression="jp" language="JAVA" />
-        <watch expression="requestParams" language="JAVA" />
-        <watch expression="jp.get(&quot;name&quot;).toString()" language="JAVA" />
-        <watch expression="jp.get(&quot;email&quot;).toString()" language="JAVA" />
-        <watch expression="teamName + &quot;-AFTER_CHANGE&quot;" language="JAVA" />
+        <watch expression="String id" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

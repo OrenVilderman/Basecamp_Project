@@ -1,5 +1,6 @@
 package GrafanaApi;
 
+import Extensions.API.ApiActions;
 import Extensions.API.Verifications;
 import Utilities.CommonOps;
 import WorkFlows.ApiFlows;
@@ -30,6 +31,8 @@ public class ApiTests extends CommonOps {
     @Test(description = "Update Last Created Team Name And Email")
     @Description("Test Description: Update Last Created Team Name And Email - Adding \"AFTER_CHANGE\" In The End And Verify Both Changes")
     public void deleteTeam(){
-
+        ApiFlows.deleteRandomTeam();
+        Verifications.verifyRandomTeamDeleted();
     }
+
 }

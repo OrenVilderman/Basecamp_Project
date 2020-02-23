@@ -62,5 +62,6 @@ public class Base {
     public static JsonPath jp;
     public static String teamName;
     public static String teamEmail;
+    public static String teamIdForDelete;
 
 }

@@ -42,6 +42,20 @@ public class ApiFlows extends CommonOps {
         System.out.println(response.prettyPrint());
     }
 
+    @Step("Delete Random Team From Grafana")
+    public static void deleteRandomTeam(){
+        int totalCount = ApiActions.getTeamTotalCount();
+        if (totalCount > 0) {
+            String teamIndexForDelete = HelperMethods.returnRandomNumberForIndex(totalCount);
+            teamIdForDelete = getTeamProperty("teams[" + teamIndexForDelete + "].id");
+            System.out.println("Team id for delete is: " + teamIdForDelete);
+            ApiActions.delete("api/teams/" + teamIdForDelete);
+        }
+        else {
+            System.out.println("No Teams Available for Delete");
+        }
+    }
+
 
 
 }
