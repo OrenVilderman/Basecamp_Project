@@ -19,7 +19,6 @@ public class ManagePages extends Base{
         basecampRemoveAProjectFlow = PageFactory.initElements(driver, PageObjects.BasecampWeb.RemoveAProjectFlow.class);
         basecampAvatarMenu = PageFactory.initElements(driver, PageObjects.BasecampWeb.AvatarMenu.class);
         basecampEditProfilePage = PageFactory.initElements(driver, PageObjects.BasecampWeb.EditProfilePage.class);
-
     }
 
     public static void initMobile(){
@@ -28,6 +27,7 @@ public class ManagePages extends Base{
         mobileMyStuffPage = PageFactory.initElements(driver, PageObjects.BasecampMobile.MyStuffPage.class);
     }
 
-
-
+    public static void initElectron(){
+        electronMainPage = PageFactory.initElements(driver, PageObjects.ElectronAPIDemos.MainPage.class);
+    }
 }

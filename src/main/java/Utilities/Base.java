@@ -64,4 +64,7 @@ public class Base {
     public static String teamEmail;
     public static String teamIdForDelete;
     public static int teamIndexForUiVerification;
+
+    //Electron
+    public static PageObjects.ElectronAPIDemos.MainPage electronMainPage;
 }

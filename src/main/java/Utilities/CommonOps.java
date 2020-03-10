@@ -144,6 +144,7 @@ public class CommonOps extends Base {
             awakeGrafanaServer();
         } else if (getDataFromXML("PlatformName").equalsIgnoreCase("electron")) {
             initElectron();
+            ManagePages.initElectron();
         } else
             throw new RuntimeException("Given Platform Is Invalid.");
     }
