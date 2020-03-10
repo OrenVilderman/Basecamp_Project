@@ -1,5 +1,5 @@
 package Utilities;      //A class to provide with all the routine operations and methods being used with every test run, such as browser initializing method,
-                        // before/after class/method, getData method to extract data from external files and more. Inherits from Base class
+// before/after class/method, getData method to extract data from external files and more. Inherits from Base class
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
@@ -8,6 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
@@ -109,17 +110,27 @@ public class CommonOps extends Base {
         } else System.out.println("Driver type is not recognized.");
     }   // More work needed on driver selector
 
-    public AndroidDriver getDriver() {  // More work needed on driver selector for android driver
-        return androidDriver;
-    }
-
     public static void awakeGrafanaServer() throws IOException {
         Runtime.getRuntime().exec(getDataFromXML("grafanaServerExe"), null, new File(getDataFromXML("grafanaServerDir")));
         RestAssured.baseURI = getDataFromXML("APIurl");
         httpRequest = RestAssured.given().auth().preemptive().
                 basic(getDataFromXML("grafanaUserName"),
                         getDataFromXML("grafanaPassword"));
-        }
+    }
+
+    public AndroidDriver getDriver() {  // More work needed on driver selector for android driver
+        return androidDriver;
+    }
+
+    public static void initElectron() {
+        System.setProperty("webdriver.chrome.driver", getDataFromXML("ElectronDriverPath"));
+        ChromeOptions opt = new ChromeOptions();
+        opt.setBinary(getDataFromXML("EletronAppPath"));
+        dc.setCapability("chromeOptions", opt);
+        dc.setBrowserName("chrome");
+        driver = new ChromeDriver(dc);
+        driver.manage().timeouts().implicitlyWait(Long.parseLong(getDataFromXML("TimeOut")), TimeUnit.SECONDS);
+    }
 
     @BeforeClass
     public void startSession() throws IOException {
@@ -131,15 +142,16 @@ public class CommonOps extends Base {
             ManagePages.initMobile();
         } else if (getDataFromXML("PlatformName").equalsIgnoreCase("api")) {
             awakeGrafanaServer();
+        } else if (getDataFromXML("PlatformName").equalsIgnoreCase("electron")) {
+            initElectron();
         } else
             throw new RuntimeException("Given Platform Is Invalid.");
     }
 
     @AfterMethod
     public void afterMethod() throws InterruptedException {
-        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")){
-        }
-        else if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")) {
+        } else if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
             basecampUpperMenu.home_btn.click();
             Thread.sleep(2500);
         } else {
@@ -150,8 +162,8 @@ public class CommonOps extends Base {
 
     @AfterClass
     public void closeSession() throws InterruptedException {
-        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")){}
-        else if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")) {
+        } else if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
             Thread.sleep(2000);
             driver.quit();
         } else {

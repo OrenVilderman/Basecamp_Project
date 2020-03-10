@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Enviornment>
     <!--GENERAL-->
-    <PlatformName>api</PlatformName>
+    <PlatformName>electron</PlatformName>
     <ImageRepo>./imageRepository/</ImageRepo>
     <UserName>Roni</UserName>
     <UserEmail>ziv.automation@gmail.com</UserEmail>
@@ -20,4 +20,7 @@
     <APIurl>http://localhost:3000/</APIurl>
     <grafanaUserName>admin</grafanaUserName>
     <grafanaPassword>admin</grafanaPassword>
+    <!--Electron-->
+    <ElectronDriverPath>./Drivers/electron.exe</ElectronDriverPath>
+    <EletronAppPath>C:/Automation/ElectronAPIDemos-win32-ia32/ElectronAPIDemos.exe</EletronAppPath>
 </Enviornment>
