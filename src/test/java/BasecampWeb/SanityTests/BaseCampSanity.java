@@ -3,13 +3,14 @@ package BasecampWeb.SanityTests;
 import Extensions.Web.Verifications;
 import Utilities.CommonOps;
 import Utilities.HelperMethods;
-import Utilities.Listeners;
+import org.testng.annotations.Listeners;
 import WorkFlows.WebFlows;
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
+
 import static Utilities.HelperMethods.getDataFromXML;
 
-@org.testng.annotations.Listeners(Listeners.class)
+@Listeners(Utilities.Listeners.class)
 public class BaseCampSanity extends CommonOps {
     @Test(description = "Login Sanity Test")
     @Description("Test description: Logging in with a user")

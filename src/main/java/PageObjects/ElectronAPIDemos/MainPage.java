@@ -20,4 +20,7 @@ public class MainPage extends CommonOps {
 
     @FindBy(how = How.ID, using = "screen-info")
     public WebElement viewDemo_btn;
+
+    @FindBy(how = How.ID, using = "got-screen-info")
+    public WebElement screenInfo_txt;
 }

@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/API/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/API/Verifications.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/ElectronFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Electron/ElectronTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Web/UiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Web/UiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Web/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Web/Verifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/ElectronAPIDemos/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/ElectronAPIDemos/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +42,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AutomationInfrastructurePageObjectPattern" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Drivers" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\git\Basecamp_Project\Drivers" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -48,24 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ApiTests.deleteTeam">
-    <configuration name="ApiTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaApi" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.ElectronTests">
     <configuration name="ApiTests.deleteTeam" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
@@ -77,24 +74,6 @@
       <option name="PACKAGE_NAME" value="GrafanaApi" />
       <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
       <option name="METHOD_NAME" value="deleteTeam" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTests.getTeamName" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaApi" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
-      <option name="METHOD_NAME" value="getTeamName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,13 +117,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ElectronTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Electron.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Electron" />
+      <option name="MAIN_CLASS_NAME" value="Electron.ElectronTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElectronTests.checkScreenInfo" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Electron.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Electron" />
+      <option name="MAIN_CLASS_NAME" value="Electron.ElectronTests" />
+      <option name="METHOD_NAME" value="checkScreenInfo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ElectronTests" />
+        <item itemvalue="TestNG.ElectronTests.checkScreenInfo" />
         <item itemvalue="TestNG.ApiTests.deleteTeam" />
         <item itemvalue="TestNG.ApiTests.updateTeamDetails" />
         <item itemvalue="TestNG.ApiTests.postNewTeam" />
-        <item itemvalue="TestNG.ApiTests.getTeamName" />
-        <item itemvalue="TestNG.ApiTests" />
       </list>
     </recent_temporary>
   </component>
@@ -194,9 +208,9 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
-        <watch expression="String.valueOf(teamIndex)" language="JAVA" />
-        <watch expression="team.teamName" language="JAVA" custom="sun.nio.fs.WindowsUserPrincipals" />
-        <watch expression="team.teamEmail" language="JAVA" />
+        <watch expression="value" language="JAVA" />
+        <watch expression="opt" language="JAVA" />
+        <watch expression="dc" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

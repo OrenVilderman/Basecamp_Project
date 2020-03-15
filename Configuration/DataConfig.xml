@@ -21,6 +21,6 @@
     <grafanaUserName>admin</grafanaUserName>
     <grafanaPassword>admin</grafanaPassword>
     <!--Electron-->
-    <ElectronDriverPath>./Drivers/electron.exe</ElectronDriverPath>
+    <ElectronDriverPath>./Drivers/electrondriver.exe</ElectronDriverPath>
     <EletronAppPath>C:/Automation/ElectronAPIDemos-win32-ia32/ElectronAPIDemos.exe</EletronAppPath>
 </Enviornment>

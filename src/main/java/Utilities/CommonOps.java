@@ -123,6 +123,7 @@ public class CommonOps extends Base {
     }
 
     public static void initElectron() {
+        dc = new DesiredCapabilities();
         System.setProperty("webdriver.chrome.driver", getDataFromXML("ElectronDriverPath"));
         ChromeOptions opt = new ChromeOptions();
         opt.setBinary(getDataFromXML("EletronAppPath"));
@@ -151,7 +152,7 @@ public class CommonOps extends Base {
 
     @AfterMethod
     public void afterMethod() throws InterruptedException {
-        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")) {
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")||getDataFromXML("PlatformName").equalsIgnoreCase("electron")) {
         } else if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
             basecampUpperMenu.home_btn.click();
             Thread.sleep(2500);

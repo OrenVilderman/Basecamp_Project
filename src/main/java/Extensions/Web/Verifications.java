@@ -19,7 +19,7 @@ import static org.testng.Assert.assertEquals;
 public class Verifications extends CommonOps {
 
     public static void verifyTextInElement(WebElement elem, String actual, String expected){
-        if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile"))
+        if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile") && !getDataFromXML("PlatformName").equalsIgnoreCase("electron"))
             wait.until(ExpectedConditions.visibilityOf(elem));
         assertEquals(actual, expected);
     }
