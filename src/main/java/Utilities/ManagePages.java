@@ -30,4 +30,8 @@ public class ManagePages extends Base{
     public static void initElectron(){
         electronMainPage = PageFactory.initElements(driver, PageObjects.ElectronAPIDemos.MainPage.class);
     }
+
+    public static void initDesktop(){
+        calculatorMainPage = PageFactory.initElements(driver, PageObjects.Calculator.MainPage.class);
+    }
 }

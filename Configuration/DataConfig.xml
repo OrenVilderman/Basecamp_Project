@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Enviornment>
     <!--GENERAL-->
-    <PlatformName>electron</PlatformName>
+    <PlatformName>desktop</PlatformName>
     <ImageRepo>./imageRepository/</ImageRepo>
     <UserName>Roni</UserName>
     <UserEmail>ziv.automation@gmail.com</UserEmail>
@@ -23,4 +23,7 @@
     <!--Electron-->
     <ElectronDriverPath>./Drivers/electrondriver.exe</ElectronDriverPath>
     <EletronAppPath>C:/Automation/ElectronAPIDemos-win32-ia32/ElectronAPIDemos.exe</EletronAppPath>
+    <!--Desktop-->
+    <appID>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</appID> <!--Windows Calculator-->
+    <WindowsDriverURL>http://127.0.0.1:4723</WindowsDriverURL>
 </Enviornment>

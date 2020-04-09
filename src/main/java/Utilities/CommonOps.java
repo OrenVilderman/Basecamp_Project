@@ -4,6 +4,7 @@ package Utilities;      //A class to provide with all the routine operations and
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.windows.WindowsDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.restassured.RestAssured;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +24,7 @@ import org.testng.annotations.BeforeClass;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
@@ -133,6 +135,17 @@ public class CommonOps extends Base {
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getDataFromXML("TimeOut")), TimeUnit.SECONDS);
     }
 
+    public static void initDesktop() {
+        dc = new DesiredCapabilities();
+        dc.setCapability("app", getDataFromXML("appID"));
+        try {
+            driver = new WindowsDriver(new URL(getDataFromXML("WindowsDriverURL")), dc);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        driver.manage().timeouts().implicitlyWait(Long.parseLong(getDataFromXML("TimeOut")), TimeUnit.SECONDS);
+    }
+
     @BeforeClass
     public void startSession() throws IOException {
         if (getDataFromXML("PlatformName").equalsIgnoreCase("web")) {
@@ -146,7 +159,10 @@ public class CommonOps extends Base {
         } else if (getDataFromXML("PlatformName").equalsIgnoreCase("electron")) {
             initElectron();
             ManagePages.initElectron();
-        } else
+        } else if (getDataFromXML("PlatformName").equalsIgnoreCase("desktop")) {
+            initDesktop();
+            ManagePages.initDesktop();
+        }else
             throw new RuntimeException("Given Platform Is Invalid.");
     }
 

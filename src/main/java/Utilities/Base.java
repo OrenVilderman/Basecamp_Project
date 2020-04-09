@@ -67,4 +67,7 @@ public class Base {
 
     //Electron
     public static PageObjects.ElectronAPIDemos.MainPage electronMainPage;
+
+    //Desktop
+    public static PageObjects.Calculator.MainPage calculatorMainPage;
 }
