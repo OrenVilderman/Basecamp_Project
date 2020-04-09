@@ -26,4 +26,7 @@
     <!--Desktop-->
     <appID>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</appID> <!--Windows Calculator-->
     <WindowsDriverURL>http://127.0.0.1:4723</WindowsDriverURL>
+    <WinAppDriverExe>C:\\Program Files (x86)\\Windows Application Driver\\WinAppDriver.exe</WinAppDriverExe>
+    <WinAppServerDir>C:\Program Files (x86)\Windows Application Driver\</WinAppServerDir>
+    <APIurl>http://localhost:3000/</APIurl>
 </Enviornment>

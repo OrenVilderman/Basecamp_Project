@@ -135,7 +135,10 @@ public class CommonOps extends Base {
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getDataFromXML("TimeOut")), TimeUnit.SECONDS);
     }
 
-    public static void initDesktop() {
+    public static void initDesktop() throws IOException {
+        String command = getDataFromXML("WinAppDriverExe");
+        ProcessBuilder builder = new ProcessBuilder(command).inheritIO();
+        Process p = builder.start();
         dc = new DesiredCapabilities();
         dc.setCapability("app", getDataFromXML("appID"));
         try {
@@ -167,15 +170,7 @@ public class CommonOps extends Base {
     }
 
     @AfterMethod
-    public void afterMethod() throws InterruptedException {
-        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")||getDataFromXML("PlatformName").equalsIgnoreCase("electron")) {
-        } else if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
-            basecampUpperMenu.home_btn.click();
-            Thread.sleep(2500);
-        } else {
-            driverSelector("AndroidDriver");
-            androidDriver.resetApp();
-        }// More work needed on driver selector
+    public void afterMethod() {
     }
 
     @AfterClass

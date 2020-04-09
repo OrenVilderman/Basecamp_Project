@@ -18,10 +18,13 @@ import static org.testng.Assert.assertEquals;
 
 public class Verifications extends CommonOps {
 
-    public static void verifyTextInElement(WebElement elem, String actual, String expected){
-        if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile") && !getDataFromXML("PlatformName").equalsIgnoreCase("electron"))
+    public static void verifyTextInElement(WebElement elem, String expected){
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("web"))
             wait.until(ExpectedConditions.visibilityOf(elem));
-        assertEquals(actual, expected);
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("desktop"))
+            assertEquals(elem.getText().replaceAll("Display is","").trim(), expected);
+        else
+        assertEquals(elem.getText(), expected);
     }
 
     public static void verifyNumberOfElementsProjectAdd(List<WebElement> actual, int expected) throws InterruptedException {

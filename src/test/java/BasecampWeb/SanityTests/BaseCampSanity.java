@@ -16,16 +16,16 @@ public class BaseCampSanity extends CommonOps {
     @Description("Test description: Logging in with a user")
     public void testLogin(){
         WebFlows.signIn(getDataFromXML("UserEmail"),getDataFromXML("Password"));
-        Verifications.verifyTextInElement(basecampMainPage.pageTitle_txt, basecampMainPage.pageTitle_txt.getText(), "Your Projects");
+        Verifications.verifyTextInElement(basecampMainPage.pageTitle_txt, "Your Projects");
     }
 
     @Test(description = "SignUp Sanity Test", enabled = false)
     @Description("Test description: Signing up a new user")
     public void testSignup() throws InterruptedException {
         WebFlows.signUp(HelperMethods.returnRandomFullName(),HelperMethods.randomEmailGenerator(),HelperMethods.returnRandomPassword(),HelperMethods.returnRandomName());
-        Verifications.verifyTextInElement(basecampSignUpFlow.finishAccountCreationWindowTitle_txt, basecampSignUpFlow.finishAccountCreationWindowTitle_txt.getText(), "Your account’s ready to go! 👍" );
+        Verifications.verifyTextInElement(basecampSignUpFlow.finishAccountCreationWindowTitle_txt, "Your account’s ready to go! 👍" );
         basecampSignUpFlow.noThanks_btn.click();
-        Verifications.verifyTextInElement(basecampSignUpFlow.userNameTitle_txt, basecampSignUpFlow.userNameTitle_txt.getText(), WebFlows._userName);
+        Verifications.verifyTextInElement(basecampSignUpFlow.userNameTitle_txt, WebFlows._userName);
     }
 
     @Test(description = "Add new project")

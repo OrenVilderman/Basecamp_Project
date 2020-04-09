@@ -1,16 +1,15 @@
 package BasecampWeb.FunctionalityTests;
 
-
 import Utilities.CommonOps;
 import Utilities.HelperMethods;
-import Utilities.Listeners;
 import WorkFlows.WebFlows;
 import io.qameta.allure.Description;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import static Utilities.HelperMethods.getDataFromXML;
 
-@org.testng.annotations.Listeners(Listeners.class)
+@Listeners(Utilities.Listeners.class)
 public class UserProfileUpdates extends CommonOps {
 
     @Test(description = "Updating user avatar")

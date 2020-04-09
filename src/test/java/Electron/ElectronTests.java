@@ -14,6 +14,6 @@ public class ElectronTests extends CommonOps {
     @Description("Check Electron Screen Info Correct for 1920px X 1200px")
     public void checkScreenInfo() {
         ElectronFlow.checkScreenInfo();
-        Verifications.verifyTextInElement(electronMainPage.screenInfo_txt, electronMainPage.screenInfo_txt.getText(), "Your screen is: 1920px x 1200px");
+        Verifications.verifyTextInElement(electronMainPage.screenInfo_txt, "Your screen is: 1920px x 1200px");
     }
 }

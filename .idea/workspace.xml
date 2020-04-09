@@ -2,15 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/Calculator/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/CalculatorFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Desktop/CalculatorSanity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Mobile/UiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Mobile/UiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Web/UiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Web/UiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Web/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Web/Verifications.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/CalculatorFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/CalculatorFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BasecampWeb/FunctionalityTests/UserProfileUpdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/FunctionalityTests/UserProfileUpdates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Electron/ElectronTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Electron/ElectronTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/Web/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/Web/Verifications.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BasecampWeb/FunctionalityTests/UserProfileUpdates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BasecampWeb/FunctionalityTests/UserProfileUpdates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BasecampWeb/SanityTests/BaseCampSanity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BasecampWeb/SanityTests/BaseCampSanity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Electron/ElectronTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Electron/ElectronTests.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +55,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\git\Basecamp_Project\src\test\java" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\git\Basecamp_Project\Drivers" />
     </key>
@@ -61,7 +74,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ElectronTests.checkScreenInfo">
+  <component name="RunManager" selected="TestNG.CalculatorSanity.calculatorSanity">
     <configuration name="ApiTests.deleteTeam" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
@@ -80,24 +93,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ApiTests.postNewTeam" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaApi" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
-      <option name="METHOD_NAME" value="postNewTeam" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ApiTests.updateTeamDetails" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
@@ -109,6 +104,24 @@
       <option name="PACKAGE_NAME" value="GrafanaApi" />
       <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
       <option name="METHOD_NAME" value="updateTeamDetails" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CalculatorSanity.calculatorSanity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Desktop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Desktop" />
+      <option name="MAIN_CLASS_NAME" value="Desktop.CalculatorSanity" />
+      <option name="METHOD_NAME" value="calculatorSanity" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -153,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CalculatorSanity.calculatorSanity" />
         <item itemvalue="TestNG.ElectronTests.checkScreenInfo" />
         <item itemvalue="TestNG.ElectronTests" />
         <item itemvalue="TestNG.ApiTests.deleteTeam" />
         <item itemvalue="TestNG.ApiTests.updateTeamDetails" />
-        <item itemvalue="TestNG.ApiTests.postNewTeam" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +215,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/Utilities/Listeners.java</url>
           <line>52</line>
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/WorkFlows/CalculatorFlow.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

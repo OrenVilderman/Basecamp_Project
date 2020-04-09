@@ -16,20 +16,20 @@ import static Utilities.HelperMethods.getDataFromXML;
 public class UiActions extends CommonOps {
 
     public static void click (WebElement elem){
-        if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile") && !getDataFromXML("PlatformName").equalsIgnoreCase("electron"))
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("web"))
             wait.until(ExpectedConditions.visibilityOf(elem));
         elem.click();
     }
 
     public static void insertKeys (WebElement elem, String info){
-        if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile") && !getDataFromXML("PlatformName").equalsIgnoreCase("electron"))
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("web"))
             wait.until(ExpectedConditions.visibilityOf(elem));
         elem.clear();
         elem.sendKeys(info);
     }
 
     public static void insertKeysAndClick (WebElement elem1, String info, WebElement elem2){
-        if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile") && !getDataFromXML("PlatformName").equalsIgnoreCase("electron"))
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("web"))
             wait.until(ExpectedConditions.visibilityOf(elem1));
         insertKeys(elem1, info);
         elem2.click();
@@ -43,7 +43,7 @@ public class UiActions extends CommonOps {
     }
 
     public static void mouseHover (WebElement elem1, WebElement elem2){
-        if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile") && !getDataFromXML("PlatformName").equalsIgnoreCase("electron"))
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("web"))
             wait.until(ExpectedConditions.visibilityOf(elem1));
         action.moveToElement(elem1).moveToElement(elem2).click().build().perform();
     }
@@ -60,6 +60,5 @@ public class UiActions extends CommonOps {
     public static void changeToIframe(String identifierType, String identifierValue){
         driver.switchTo().frame(HelperMethods.selectorTypePicker(identifierType, identifierValue));
     }
-    //public static void
 
 }

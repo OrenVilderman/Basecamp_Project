@@ -15,7 +15,4 @@ public class UiActions extends CommonOps {
         elem2.click();
     }
 
-    /*public static void scrollToBottom()*/
-
-
 }
