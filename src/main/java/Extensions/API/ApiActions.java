@@ -76,6 +76,12 @@ public class ApiActions extends CommonOps {
         return response.jsonPath().get("totalCount");
     }
 
+    @Step("Get The Users List Size From Grafana")
+    public static Integer getUsersTotalCount(){
+        response = httpRequest.get("api/users/search");
+        return response.jsonPath().get("totalCount");
+    }
+
 
 
 

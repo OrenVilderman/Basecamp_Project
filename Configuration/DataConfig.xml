@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Enviornment>
     <!--GENERAL-->
-    <PlatformName>desktop</PlatformName>
+    <PlatformName>web</PlatformName>
+    <SiteTested>Grafana</SiteTested>
     <ImageRepo>./imageRepository/</ImageRepo>
     <UserName>Roni</UserName>
     <UserEmail>ziv.automation@gmail.com</UserEmail>
@@ -29,4 +30,8 @@
     <WinAppDriverExe>C:\\Program Files (x86)\\Windows Application Driver\\WinAppDriver.exe</WinAppDriverExe>
     <WinAppServerDir>C:\Program Files (x86)\Windows Application Driver\</WinAppServerDir>
     <APIurl>http://localhost:3000/</APIurl>
+    <!--Database-->
+    <DBURL>jdbc:mysql://remotemysql.com:3306/vBlBbpvG7d</DBURL>
+    <DBuser>vBlBbpvG7d</DBuser>
+    <DBpassword>Wekd1yyXnt</DBpassword>
 </Enviornment>

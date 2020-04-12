@@ -2,25 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Desktop/CalculatorSanity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Extensions/DB/DbActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/GrafanaForDB/LoginFlow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObjects/GrafanaForDB/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManageDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/DbFlows.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/GrafanaDB/SanityDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Mobile/UiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Mobile/UiActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Web/UiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Web/UiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/API/ApiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/API/ApiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/API/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/API/Verifications.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Web/Verifications.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Web/Verifications.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/CalculatorFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/CalculatorFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BasecampWeb/FunctionalityTests/UserProfileUpdates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/FunctionalityTests/UserProfileUpdates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Electron/ElectronTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Electron/ElectronTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/ManagePages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/ApiFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/ApiFlows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/API/ApiActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/API/ApiActions.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/API/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/API/Verifications.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Extensions/Web/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/Web/Verifications.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ManagePages.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BasecampWeb/FunctionalityTests/UserProfileUpdates.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BasecampWeb/FunctionalityTests/UserProfileUpdates.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BasecampWeb/SanityTests/BaseCampSanity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BasecampWeb/SanityTests/BaseCampSanity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Electron/ElectronTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Electron/ElectronTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WorkFlows/ApiFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkFlows/ApiFlows.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,43 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.CalculatorSanity.calculatorSanity">
-    <configuration name="ApiTests.deleteTeam" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaApi" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
-      <option name="METHOD_NAME" value="deleteTeam" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTests.updateTeamDetails" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaApi" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaApi.ApiTests" />
-      <option name="METHOD_NAME" value="updateTeamDetails" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SanityDB.tesSignInFromDB">
     <configuration name="CalculatorSanity.calculatorSanity" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
@@ -123,23 +91,6 @@
       <option name="MAIN_CLASS_NAME" value="Desktop.CalculatorSanity" />
       <option name="METHOD_NAME" value="calculatorSanity" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElectronTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Electron.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Electron" />
-      <option name="MAIN_CLASS_NAME" value="Electron.ElectronTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -164,13 +115,67 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SanityDB.tesSignInFromDB" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GrafanaDB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GrafanaDB" />
+      <option name="MAIN_CLASS_NAME" value="GrafanaDB.SanityDB" />
+      <option name="METHOD_NAME" value="tesSignInFromDB" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SanityDB.test4test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GrafanaDB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GrafanaDB" />
+      <option name="MAIN_CLASS_NAME" value="GrafanaDB.SanityDB" />
+      <option name="METHOD_NAME" value="test4test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SanityDB.testAddNewProject" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GrafanaDB.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="GrafanaDB" />
+      <option name="MAIN_CLASS_NAME" value="GrafanaDB.SanityDB" />
+      <option name="METHOD_NAME" value="testAddNewProject" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SanityDB.tesSignInFromDB" />
+        <item itemvalue="TestNG.SanityDB.test4test" />
+        <item itemvalue="TestNG.SanityDB.testAddNewProject" />
         <item itemvalue="TestNG.CalculatorSanity.calculatorSanity" />
         <item itemvalue="TestNG.ElectronTests.checkScreenInfo" />
-        <item itemvalue="TestNG.ElectronTests" />
-        <item itemvalue="TestNG.ApiTests.deleteTeam" />
-        <item itemvalue="TestNG.ApiTests.updateTeamDetails" />
       </list>
     </recent_temporary>
   </component>
@@ -225,9 +230,9 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
-        <watch expression="value" language="JAVA" />
-        <watch expression="opt" language="JAVA" />
-        <watch expression="dc" language="JAVA" />
+        <watch expression="testCred" language="JAVA" />
+        <watch expression="userNameFromDB" language="JAVA" />
+        <watch expression="userNameFromDB" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -42,12 +42,13 @@
             <artifactId>allure-testng</artifactId>
             <version>2.13.0</version>
         </dependency>
-        <!--<dependency>
+        <!-- Can not work with WinAppDriver! -->
+        <dependency>
             <groupId>com.experitest</groupId>
             <artifactId>appium</artifactId>
             <version>4.1.2</version>
-            <scope>compile</scope>
-        </dependency>-->
+        </dependency>
+        <!-- Can not work with WinAppDriver! -->
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
         <groupId>io.rest-assured</groupId>
@@ -84,9 +85,13 @@
             <artifactId>java-client</artifactId>
             <version>7.0.0</version>
         </dependency>
-
-
-    </dependencies>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.18</version>
+        </dependency>
+   </dependencies>
     <build>
         <plugins>
             <plugin>

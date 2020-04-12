@@ -17,6 +17,10 @@ import ru.yandex.qatools.ashot.Screenshot;
 import ru.yandex.qatools.ashot.comparison.ImageDiff;
 import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 
 public class Base {
 
@@ -70,4 +74,11 @@ public class Base {
 
     //Desktop
     public static PageObjects.Calculator.MainPage calculatorMainPage;
+
+    //DB Connection
+    public static Connection connection;
+    public static Statement statement;
+    public static ResultSet resultSet;
+    public static PageObjects.GrafanaForDB.LoginFlow grafanaForDbLoginPage;
+    public static PageObjects.GrafanaForDB.MainPage grafanaForDbMainPage;
 }

@@ -15,8 +15,8 @@ public class Verifications extends CommonOps {
     @Step("Verify Text From Response")
     public static void verifyNameAndEmailFromUI() {
         Team team = ApiFlows.getRandomTeamDetails();
-        assertEquals(ApiFlows.getTeamProperty("teams[" + String.valueOf(teamIndexForUiVerification-1) + "].name"), team.teamName);
-        assertEquals(ApiFlows.getTeamProperty("teams[" + String.valueOf(teamIndexForUiVerification-1) + "].email"), team.teamEmail);
+        assertEquals(ApiFlows.getTeamProperty("teams[" + (teamIndexForUiVerification-1) + "].name"), team.teamName);
+        assertEquals(ApiFlows.getTeamProperty("teams[" + (teamIndexForUiVerification-1) + "].email"), team.teamEmail);
     }
 
     @Step("Verify New Team Created Successfully")

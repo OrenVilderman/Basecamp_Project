@@ -14,13 +14,13 @@ import static Extensions.API.ApiActions.returnNewTeamDetails;
 public class ApiFlows extends CommonOps {
     @Step("Get Team From Grafana")
     public static String getTeamProperty(String jPath) {
-        Response response = ApiActions.get("/api/teams/search");
+        response = ApiActions.get("/api/teams/search");
         return ApiActions.extractFromJSON(response, jPath);                 //jPath will describe the specific team requested for test
     }
 
     @Step("Get Team From Grafana")
     public static String getTeamsList(String jPath) {
-        Response response = ApiActions.get("/api/teams/search");
+        response = ApiActions.get("/api/teams/search");
         return response.toString();
     }
 
@@ -66,8 +66,8 @@ public class ApiFlows extends CommonOps {
         driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
         driver.findElement(By.xpath("//form/div/a")).click();
         driver.get("http://localhost:3000/org/teams");
-        Team team = new Team(driver.findElement(By.xpath("//tr[" + String.valueOf(teamIndex) + "]/td[2]/a")).getText(),
-                             driver.findElement(By.xpath("//tr[" + String.valueOf(teamIndex) + "]/td[3]/a")).getText());
+        Team team = new Team(driver.findElement(By.xpath("//tr[" + teamIndex + "]/td[2]/a")).getText(),
+                             driver.findElement(By.xpath("//tr[" + teamIndex + "]/td[3]/a")).getText());
         driver.quit();
         return team;
     }

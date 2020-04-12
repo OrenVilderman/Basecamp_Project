@@ -34,4 +34,9 @@ public class ManagePages extends Base{
     public static void initDesktop(){
         calculatorMainPage = PageFactory.initElements(driver, PageObjects.Calculator.MainPage.class);
     }
+
+    public static void initGrafanaForDB(){
+        grafanaForDbLoginPage = PageFactory.initElements(driver, PageObjects.GrafanaForDB.LoginFlow.class);
+        grafanaForDbMainPage = PageFactory.initElements(driver, PageObjects.GrafanaForDB.MainPage.class);
+    }
 }

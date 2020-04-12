@@ -2,6 +2,7 @@ package Extensions.Web;     //Methods that are meant to verify our tests will be
                         //The class inherits from CommonOps class
 
 import Utilities.CommonOps;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import ru.yandex.qatools.ashot.AShot;
@@ -10,6 +11,7 @@ import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 import ru.yandex.qatools.ashot.coordinates.WebDriverCoordsProvider;
 
 import javax.imageio.ImageIO;
+import javax.xml.xpath.XPath;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.List;
@@ -21,10 +23,11 @@ public class Verifications extends CommonOps {
     public static void verifyTextInElement(WebElement elem, String expected){
         if (getDataFromXML("PlatformName").equalsIgnoreCase("web"))
             wait.until(ExpectedConditions.visibilityOf(elem));
-        if (getDataFromXML("PlatformName").equalsIgnoreCase("desktop"))
+        else if (getDataFromXML("PlatformName").equalsIgnoreCase("desktop"))
             assertEquals(elem.getText().replaceAll("Display is","").trim(), expected);
         else
         assertEquals(elem.getText(), expected);
+        System.out.println("Expected result is: " + expected + ".\nActual result is: " + elem.getText());
     }
 
     public static void verifyNumberOfElementsProjectAdd(List<WebElement> actual, int expected) throws InterruptedException {
