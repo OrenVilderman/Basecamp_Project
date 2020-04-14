@@ -2,7 +2,7 @@
 <Enviornment>
     <!--GENERAL-->
     <PlatformName>web</PlatformName>
-    <SiteTested>Grafana</SiteTested>
+    <SiteTested>Basecamp</SiteTested>
     <ImageRepo>./imageRepository/</ImageRepo>
     <UserName>Roni</UserName>
     <UserEmail>ziv.automation@gmail.com</UserEmail>

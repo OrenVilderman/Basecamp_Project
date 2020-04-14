@@ -3,7 +3,6 @@ package WorkFlows;
 import Extensions.Mobile.UiActions;
 import Utilities.CommonOps;
 import io.qameta.allure.Step;
-import sun.awt.windows.ThemeReader;
 
 import static Utilities.HelperMethods.getDataFromXML;
 

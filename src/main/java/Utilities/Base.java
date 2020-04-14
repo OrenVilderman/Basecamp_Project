@@ -35,6 +35,7 @@ public class Base {
     public static ImageDiffer imgDiff;
     public static ImageDiff diff;
 
+    //Web
     public static PageObjects.BasecampWeb.IntroPage basecampIntroPage;
     public static PageObjects.BasecampWeb.MainPage basecampMainPage;
     public static PageObjects.BasecampWeb.SignInPage basecampSignInPage;
@@ -48,6 +49,8 @@ public class Base {
     public static PageObjects.BasecampWeb.RemoveAProjectFlow basecampRemoveAProjectFlow;
     public static PageObjects.BasecampWeb.AvatarMenu basecampAvatarMenu;
     public static PageObjects.BasecampWeb.EditProfilePage basecampEditProfilePage;
+
+    public static int _numberOfProjectsBeforeAddingOrRemoving;
 
     //Mobile
     public static DesiredCapabilities dc;

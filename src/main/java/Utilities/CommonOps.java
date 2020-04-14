@@ -1,6 +1,7 @@
 package Utilities;      //A class to provide with all the routine operations and methods being used with every test run, such as browser initializing method,
-                        // before/after class/method, getData method to extract data from external files and more. Inherits from Base class
+// before/after class/method, getData method to extract data from external files and more. Inherits from Base class
 
+import Extensions.Web.UiActions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -47,7 +48,7 @@ public class CommonOps extends Base {
             throw new RuntimeException("Invalid Browser Name Selected.");
         }
         driver.manage().window().maximize();
-        if (getDataFromXML("SiteTested").equalsIgnoreCase("grafana")){
+        if (getDataFromXML("SiteTested").equalsIgnoreCase("grafana")) {
             try {
                 awakeGrafanaServer();
                 ManagePages.initGrafanaForDB();
@@ -55,8 +56,7 @@ public class CommonOps extends Base {
             } catch (Exception e) {
                 System.out.println("Could not initiate Grafana server");
             }
-        }
-        else {
+        } else {
             driver.get(getDataFromXML("URL"));
         }
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getDataFromXML("TimeOut")), TimeUnit.SECONDS);
@@ -127,12 +127,8 @@ public class CommonOps extends Base {
         Runtime.getRuntime().exec(getDataFromXML("grafanaServerExe"), null, new File(getDataFromXML("grafanaServerDir")));
         RestAssured.baseURI = getDataFromXML("APIurl");
         httpRequest = RestAssured.given().auth().preemptive().
-                      basic(getDataFromXML("grafanaUserName"),
-                      getDataFromXML("grafanaPassword"));
-    }
-
-    public AndroidDriver getDriver() {  // More work needed on driver selector for android driver
-        return androidDriver;
+                basic(getDataFromXML("grafanaUserName"),
+                        getDataFromXML("grafanaPassword"));
     }
 
     public static void initElectron() {
@@ -160,6 +156,10 @@ public class CommonOps extends Base {
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getDataFromXML("TimeOut")), TimeUnit.SECONDS);
     }
 
+    public AndroidDriver getDriver() {  // More work needed on driver selector for android driver
+        return androidDriver;
+    }
+
     @BeforeClass
     public void startSession() throws IOException {
         if (getDataFromXML("PlatformName").equalsIgnoreCase("web")) {
@@ -176,13 +176,17 @@ public class CommonOps extends Base {
         } else if (getDataFromXML("PlatformName").equalsIgnoreCase("desktop")) {
             initDesktop();
             ManagePages.initDesktop();
-        }else
+        } else
             throw new RuntimeException("Given Platform Is Invalid.");
-        ManageDB.initConnection(getDataFromXML("DBURL"),getDataFromXML("DBuser"),getDataFromXML("DBpassword"));
+        ManageDB.initConnection(getDataFromXML("DBURL"), getDataFromXML("DBuser"), getDataFromXML("DBpassword"));
     }
 
     @AfterMethod
     public void afterMethod() {
+        if (getDataFromXML("PlatformName").equalsIgnoreCase("web") &&
+                getDataFromXML("SiteTested").equalsIgnoreCase("basecamp")) {
+            UiActions.click(basecampMainPage.homePage_btn);
+        }
     }
 
     @AfterClass
@@ -193,10 +197,7 @@ public class CommonOps extends Base {
             Thread.sleep(2000);
             driver.quit();
         } else {
-            driverSelector("AndroidDriver");
-            androidDriver.quit();
         }
-
     }
 
 

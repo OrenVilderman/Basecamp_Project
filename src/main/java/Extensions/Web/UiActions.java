@@ -35,13 +35,6 @@ public class UiActions extends CommonOps {
         elem2.click();
     }
 
-    public static void clickMultiple(ArrayList<WebElement> clicks){
-        Iterator<WebElement> iter = clicks.iterator();
-        while (iter.hasNext()) {
-            click(iter.next());
-        }
-    }
-
     public static void mouseHover (WebElement elem1, WebElement elem2){
         if (getDataFromXML("PlatformName").equalsIgnoreCase("web"))
             wait.until(ExpectedConditions.visibilityOf(elem1));

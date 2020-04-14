@@ -48,4 +48,13 @@ public class SignUpFlow {
     @FindBy(how = How.XPATH, using = "//section[1]/header/h3/span")
     public WebElement userNameTitle_txt;                                            //For assertion
 
+    @FindBy(how = How.XPATH, using = "//section[3]/header/aside[1]/span/button")
+    public WebElement newInitialProject_btn;
+
+    @FindBy(how = How.ID, using = "project_name")
+    public WebElement nameThisInitialNewProject_field;
+
+    @FindBy(how = How.XPATH, using = "//*[@value = 'Save']")
+    public WebElement SaveInitialNewProject_btn;
+
 }

@@ -124,8 +124,6 @@ public class HelperMethods extends CommonOps {
     }
 
     public static int numberOfProjectsNow() {
-        WebFlows.signIn(getDataFromXML("UserEmail"), getDataFromXML("Password"));
-        basecampUpperMenu.home_btn.click();
         _numberOfProjectsBeforeAdding = basecampMainPage.projects_list.size();
         return _numberOfProjectsBeforeAdding;
     }

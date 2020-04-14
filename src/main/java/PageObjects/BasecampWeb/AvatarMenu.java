@@ -9,7 +9,7 @@ public class AvatarMenu {
     @FindBy(how = How.LINK_TEXT, using = "My profile (avatar, title, password, etc)")
     public WebElement myProfile_btn;
 
-    @FindBy(how = How.LINK_TEXT, using = "Log out")
+    @FindBy(how = How.XPATH, using = "//li[3]/a")
     public WebElement logOut_btn;
 
 }

@@ -13,6 +13,6 @@ public class MainPage {
 
     @FindBy(how = How.XPATH, using = "//li[3]/span")
     public WebElement userName;
-    
+
 
 }
