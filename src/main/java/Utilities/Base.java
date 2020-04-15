@@ -1,7 +1,6 @@
 package Utilities;      //A class meant for declaring objects being used commonly across the project, such as WebDriver, WebDriverWait, Actions, Screenshot,
                         // PageObjects, primitives and more
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import io.appium.java_client.android.AndroidDriver;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -20,6 +19,9 @@ import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
 
 
 public class Base {
@@ -51,6 +53,17 @@ public class Base {
     public static PageObjects.BasecampWeb.EditProfilePage basecampEditProfilePage;
 
     public static int _numberOfProjectsBeforeAddingOrRemoving;
+    public static String _projectName;
+
+    //Data info that is fed to the DB while signing up a new user - Basecamp sanity - signup test
+    public static String _userName;
+    public static String _userEmail;
+    public static String _password;
+    public static String _companyName;
+
+    public static String imageFilePath;
+    public static SimpleDateFormat dateFormat;
+    public static List<Team> teamNameList = new ArrayList<Team>();
 
     //Mobile
     public static DesiredCapabilities dc;

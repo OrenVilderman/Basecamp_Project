@@ -3,30 +3,39 @@
   <component name="ChangeListManager">
     <list default="true" id="d839eb24-546b-48cd-9861-5163c9ff0443" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration/DataConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/DataConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/Web/UiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/Web/UiActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/AvatarMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/AvatarMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/IntroPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/IntroPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/SignUpFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/SignUpFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/GrafanaForDB/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/GrafanaForDB/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/API/ApiActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/API/ApiActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Extensions/DB/DbActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Extensions/DB/DbActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/UpperMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObjects/BasecampWeb/UpperMenuBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Base.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/CommonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/GeneratorsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/GeneratorsData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/HelperMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/MobileFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/MobileFlows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WorkFlows/WebFlows.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BasecampWeb/SanityTests/BaseCampSanity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/API/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/API/Verifications.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/API/ApiActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/API/ApiActions.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Extensions/DB/DbActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/DB/DbActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/Web/UiActions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/Web/UiActions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Extensions/Web/Verifications.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Extensions/Web/Verifications.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/Base.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/Base.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/CommonOps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/GeneratorsData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/GeneratorsData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Utilities/HelperMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/HelperMethods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/ManageDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/ManageDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WorkFlows/MobileFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkFlows/MobileFlows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WorkFlows/WebFlows.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WorkFlows/WebFlows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/BasecampWeb.SanityTests.BaseCampSanity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/BasecampWeb.SanityTests.BaseCampSanity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-BasecampWeb.SanityTests.BaseCampSanity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-BasecampWeb.SanityTests.BaseCampSanity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-BasecampWeb.SanityTests.BaseCampSanity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-BasecampWeb.SanityTests.BaseCampSanity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/BasecampWeb/SanityTests/BaseCampSanity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BasecampWeb/SanityTests/BaseCampSanity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/GrafanaDB/SanityDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/GrafanaDB/SanityDB.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +89,60 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.BaseCampSanity.testSignup">
+  <component name="RunManager" selected="TestNG.BaseCampSanity">
+    <configuration name="BaseCampSanity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BasecampWeb.SanityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BasecampWeb.SanityTests" />
+      <option name="MAIN_CLASS_NAME" value="BasecampWeb.SanityTests.BaseCampSanity" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseCampSanity.T4T" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BasecampWeb.SanityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BasecampWeb.SanityTests" />
+      <option name="MAIN_CLASS_NAME" value="BasecampWeb.SanityTests.BaseCampSanity" />
+      <option name="METHOD_NAME" value="T4T" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BaseCampSanity.testAddNewProject" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BasecampAutomationTestingProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BasecampWeb.SanityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="BasecampWeb.SanityTests" />
+      <option name="MAIN_CLASS_NAME" value="BasecampWeb.SanityTests.BaseCampSanity" />
+      <option name="METHOD_NAME" value="testAddNewProject" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BaseCampSanity.testLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BasecampAutomationTestingProject" />
       <extension name="coverage">
@@ -92,24 +154,6 @@
       <option name="PACKAGE_NAME" value="BasecampWeb.SanityTests" />
       <option name="MAIN_CLASS_NAME" value="BasecampWeb.SanityTests.BaseCampSanity" />
       <option name="METHOD_NAME" value="testLogin" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BaseCampSanity.testRemoveAProject" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BasecampWeb.SanityTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="BasecampWeb.SanityTests" />
-      <option name="MAIN_CLASS_NAME" value="BasecampWeb.SanityTests.BaseCampSanity" />
-      <option name="METHOD_NAME" value="testRemoveAProject" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -135,49 +179,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SanityDB.tesSignInFromDB" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaDB.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaDB" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaDB.SanityDB" />
-      <option name="METHOD_NAME" value="tesSignInFromDB" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SanityDB.test4test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="BasecampAutomationTestingProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="GrafanaDB.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="GrafanaDB" />
-      <option name="MAIN_CLASS_NAME" value="GrafanaDB.SanityDB" />
-      <option name="METHOD_NAME" value="test4test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BaseCampSanity.testSignup" />
-        <item itemvalue="TestNG.BaseCampSanity.testRemoveAProject" />
+        <item itemvalue="TestNG.BaseCampSanity" />
+        <item itemvalue="TestNG.BaseCampSanity.testAddNewProject" />
         <item itemvalue="TestNG.BaseCampSanity.testLogin" />
-        <item itemvalue="TestNG.SanityDB.tesSignInFromDB" />
-        <item itemvalue="TestNG.SanityDB.test4test" />
+        <item itemvalue="TestNG.BaseCampSanity.testSignup" />
+        <item itemvalue="TestNG.BaseCampSanity.T4T" />
       </list>
     </recent_temporary>
   </component>
@@ -210,19 +218,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/Utilities/Listeners.java</url>
-          <line>53</line>
-          <properties class="Utilities.Listeners" method="saveScreenshot">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Utilities/Listeners.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/WorkFlows/CalculatorFlow.java</url>
           <line>12</line>
@@ -230,12 +225,5 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="TestNG">
-        <watch expression="testCred" language="JAVA" />
-        <watch expression="userNameFromDB" language="JAVA" />
-        <watch expression="userNameFromDB" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

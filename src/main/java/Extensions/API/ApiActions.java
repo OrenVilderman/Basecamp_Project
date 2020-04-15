@@ -1,6 +1,7 @@
 package Extensions.API;
 
 import Utilities.CommonOps;
+import Utilities.GeneratorsData;
 import Utilities.HelperMethods;
 import Utilities.Team;
 import WorkFlows.ApiFlows;
@@ -12,6 +13,7 @@ import static Utilities.HelperMethods.*;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class ApiActions extends CommonOps {
 
@@ -55,7 +57,8 @@ public class ApiActions extends CommonOps {
     @Step("Return New Random Team Details")
     public static Team returnNewTeamDetails() {
         String _teamName = HelperMethods.returnRandomName();
-        String _teamEmail = _teamName + returnRandomThreeDigitNumber() + "@" + returnRandomEmailProvider() + ".com";
+        String _teamEmail = _teamName + returnRandomThreeDigitNumber() + "@" + GeneratorsData.emailProviders[ThreadLocalRandom.current().nextInt
+                (0, GeneratorsData.emailProviders.length-1)] + ".com";
         Team team = new Team(_teamName, _teamEmail);
         teamNameList.add(team);
         return teamNameList.get(teamNameList.size() - 1);

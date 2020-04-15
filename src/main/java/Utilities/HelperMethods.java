@@ -1,8 +1,6 @@
 package Utilities;      //A class that meant to provide additional methods to use for supporting tests, such as taking a screenshot.
 // Inherits from CommonOps class
 
-import WorkFlows.WebFlows;
-import io.restassured.path.json.JsonPath;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -18,18 +16,11 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Date;
-import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.stream.Collectors;
+
 
 public class HelperMethods extends CommonOps {
-    public static int _numberOfProjectsBeforeAdding;
-    public static String imageFilePath;
-    public static SimpleDateFormat dateFormat;
-    public static List<Team> teamNameList = new ArrayList<Team>();
 
     //GENERAL METHODS
     public static String getDataFromXML(String nodeName) {
@@ -97,35 +88,41 @@ public class HelperMethods extends CommonOps {
         return _names[randomNum];
     }
 
-    public static String returnRandomEmailProvider() {
-        int randomNum = ThreadLocalRandom.current().nextInt(0, 4);
-        return GeneratorsData.emailProviders[randomNum];
+    public static String returnRandomFullName() {
+        String randomFullName = returnRandomName() + " " + returnRandomName();
+        _userName = randomFullName;
+        return randomFullName;
+    }
+
+    public static String randomEmailGenerator() {
+        String randomEmail = returnRandomName() + returnRandomDate() + "@" +
+                GeneratorsData.emailProviders[ThreadLocalRandom.current().nextInt
+                        (0, GeneratorsData.emailProviders.length - 1)] + ".com";
+        _userEmail = randomEmail;
+        return randomEmail;
     }
 
     public static String returnRandomPassword() {
-        //String[] _fullPassword = new String[10];
         StringBuffer sb = new StringBuffer();
         for (int i = 0; i < 10; i++) {
             int randomNum = ThreadLocalRandom.current().nextInt(0, 17);
             sb.append(GeneratorsData.numbersAndSymbols[randomNum]);
         }
         String fullPassword = sb.toString();
+        _password = fullPassword;
         return fullPassword;
     }
 
-    public static String randomEmailGenerator() {
-        String email = returnRandomName() + returnRandomDate() + "@" + returnRandomEmailProvider() + ".com";
-        return email;
-    }
-
-    public static String returnRandomFullName() {
-        String randomFullName = returnRandomName() + " " + returnRandomName();
-        return randomFullName;
+    public static String returnRandomCompanyName() {
+        String[] _companyNames = GeneratorsData.companyNames.split(",");
+        int randomNum = ThreadLocalRandom.current().nextInt(0, _companyNames.length - 1);
+        _companyName = _companyNames[randomNum];
+        return _companyNames[randomNum];
     }
 
     public static int numberOfProjectsNow() {
-        _numberOfProjectsBeforeAdding = basecampMainPage.projects_list.size();
-        return _numberOfProjectsBeforeAdding;
+        _numberOfProjectsBeforeAddingOrRemoving = basecampMainPage.projects_list.size();
+        return _numberOfProjectsBeforeAddingOrRemoving;
     }
 
     public static String returnRandomThreeDigitNumber() {
@@ -139,7 +136,7 @@ public class HelperMethods extends CommonOps {
     }
 
     public static String returnRandomNumberForIndex(int maxIndex) {
-        int randomIndexNum = ThreadLocalRandom.current().nextInt(0, maxIndex-1);
+        int randomIndexNum = ThreadLocalRandom.current().nextInt(0, maxIndex - 1);
         return String.valueOf(randomIndexNum);
     }
 
@@ -147,8 +144,6 @@ public class HelperMethods extends CommonOps {
         int randomNum = ThreadLocalRandom.current().nextInt(1, maxNum);
         return randomNum;
     }
-
-
 
     public static boolean assertForHomePage() {
         boolean isHomePage = true;

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DbActions extends CommonOps {
-    @Step("get user and password from credentials")
+    @Step("Get Grafana user and password from credentials")
     public static List<String> getCredentials(String UserID) {
         List<String> credentials = new ArrayList<String>();
         try {
@@ -21,4 +21,14 @@ public class DbActions extends CommonOps {
         }
         return credentials;
     }
+
+    @Step("Post Basecamp new user info to Basecamp Credentials Table")
+    public static void postCredentials() {
+        try {
+            resultSet = statement.executeQuery("INSERT INTO `Basecamp_Users`(`Name`, `Email`, `Password`, `Company`) VALUES (" + "'" + _userName + "'" + ","
+                    + "'" + _userEmail + "'" + "," + "'" + _password + "'" + "," + "'" + _companyName + "'" + ");");
+        } catch (Exception e) {
+            System.out.println("Error while posting data");
+        }
+            }
 }

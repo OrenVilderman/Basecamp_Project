@@ -1,28 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: BasecampWeb.SanityTests.BaseCampSanity
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 91.59 s <<< FAILURE! - in BasecampWeb.SanityTests.BaseCampSanity
-testSignup(BasecampWeb.SanityTests.BaseCampSanity)  Time elapsed: 11.257 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <button name="button" type="submit" class="btn btn--primary" data-behavior="submit_step">...</button> is not clickable at point (790, 560). Other element would receive the click: <article class="recordable welcome-step welcome-step--activating welcome-step--active" data-role="step ">...</article>
-  (Session info: chrome=80.0.3987.163)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-L78C875', ip: '192.168.71.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ZIVGAD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49318}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 648cde296bafefb7292dd12170342935
-	at BasecampWeb.SanityTests.BaseCampSanity.testSignup(BaseCampSanity.java:26)
-
-afterMethod(BasecampWeb.SanityTests.BaseCampSanity)  Time elapsed: 31.341 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: *//a[@href='/4392455/']' (tried for 10 second(s) with 500 milliseconds interval)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-no such element: Unable to locate element: {"method":"xpath","selector":"*//a[@href='/4392455/']"}
-  (Session info: chrome=80.0.3987.163)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-L78C875', ip: '192.168.71.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ZIVGAD~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49318}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 648cde296bafefb7292dd12170342935
-*** Element info: {Using=xpath, value=*//a[@href='/4392455/']}
-
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 135.546 s - in BasecampWeb.SanityTests.BaseCampSanity

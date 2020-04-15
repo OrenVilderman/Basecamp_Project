@@ -2,6 +2,7 @@ package Utilities;      //A class to provide with all the routine operations and
 // before/after class/method, getData method to extract data from external files and more. Inherits from Base class
 
 import Extensions.Web.UiActions;
+import WorkFlows.WebFlows;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -185,7 +186,9 @@ public class CommonOps extends Base {
     public void afterMethod() {
         if (getDataFromXML("PlatformName").equalsIgnoreCase("web") &&
                 getDataFromXML("SiteTested").equalsIgnoreCase("basecamp")) {
-            UiActions.click(basecampMainPage.homePage_btn);
+            if (basecampUpperMenu.listOfUpperMenuItems.size() == 6) {
+                WebFlows.signOut();
+            }
         }
     }
 
