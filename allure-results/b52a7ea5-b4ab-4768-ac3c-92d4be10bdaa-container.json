@@ -1,1 +1,0 @@
-{"uuid":"b52a7ea5-b4ab-4768-ac3c-92d4be10bdaa","name":"Desktop.CalculatorSanity","children":["4be734e7-7344-4438-a487-534c94417e58"],"befores":[{"name":"startSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1586421228555,"stop":1586421231493}],"afters":[],"links":[],"start":1586421228501,"stop":1586421232114}

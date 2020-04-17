@@ -1,0 +1,51 @@
+[ {
+  "uid" : "95e3526c21a084c8",
+  "name" : "Remove a project",
+  "time" : {
+    "start" : 1587148889487,
+    "stop" : 1587148927161,
+    "duration" : 37674
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe903dddaaa752b8",
+  "name" : "afterMethod",
+  "time" : {
+    "start" : 1587112998248,
+    "stop" : 1587112998249,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "16413d9fddbcfbc8",
+  "name" : "SignUp Sanity Test",
+  "time" : {
+    "start" : 1587148805739,
+    "stop" : 1587148805742,
+    "duration" : 3
+  },
+  "status" : "unknown",
+  "severity" : "normal"
+}, {
+  "uid" : "d300bae8aa9254e6",
+  "name" : "Login Sanity Test",
+  "time" : {
+    "start" : 1587148821378,
+    "stop" : 1587148849748,
+    "duration" : 28370
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7f1942251679c43",
+  "name" : "Add new project",
+  "time" : {
+    "start" : 1587148851624,
+    "stop" : 1587148887745,
+    "duration" : 36121
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

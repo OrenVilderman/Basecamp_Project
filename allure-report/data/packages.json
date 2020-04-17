@@ -1,0 +1,74 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "BasecampWeb.SanityTests.BaseCampSanity",
+    "children" : [ {
+      "name" : "afterMethod",
+      "uid" : "fe903dddaaa752b8",
+      "parentUid" : "e0daf02d4b20ab9b0ee1ff4c3a5d3827",
+      "status" : "broken",
+      "time" : {
+        "start" : 1587112998248,
+        "stop" : 1587112998249,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testSignup",
+      "uid" : "16413d9fddbcfbc8",
+      "parentUid" : "e0daf02d4b20ab9b0ee1ff4c3a5d3827",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1587148805739,
+        "stop" : 1587148805742,
+        "duration" : 3
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testLogin",
+      "uid" : "d300bae8aa9254e6",
+      "parentUid" : "e0daf02d4b20ab9b0ee1ff4c3a5d3827",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148821378,
+        "stop" : 1587148849748,
+        "duration" : 28370
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testAddNewProject",
+      "uid" : "e7f1942251679c43",
+      "parentUid" : "e0daf02d4b20ab9b0ee1ff4c3a5d3827",
+      "status" : "failed",
+      "time" : {
+        "start" : 1587148851624,
+        "stop" : 1587148887745,
+        "duration" : 36121
+      },
+      "flaky" : true,
+      "newFailed" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "testRemoveAProject",
+      "uid" : "95e3526c21a084c8",
+      "parentUid" : "e0daf02d4b20ab9b0ee1ff4c3a5d3827",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148889487,
+        "stop" : 1587148927161,
+        "duration" : 37674
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "BasecampWeb.SanityTests.BaseCampSanity"
+  } ]
+}

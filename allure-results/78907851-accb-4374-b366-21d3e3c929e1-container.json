@@ -1,1 +1,0 @@
-{"uuid":"78907851-accb-4374-b366-21d3e3c929e1","name":"Electron.ElectronTests","children":["16e1653b-df01-436d-865c-122b918833cd"],"befores":[{"name":"startSession","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1584300564654,"stop":1584300569483}],"afters":[],"links":[],"start":1584300564563,"stop":1584300570170}

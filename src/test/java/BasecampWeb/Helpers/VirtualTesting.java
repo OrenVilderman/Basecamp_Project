@@ -10,7 +10,6 @@ import static org.testng.Assert.*;
 import static Utilities.HelperMethods.getDataFromXML;
 
 public class VirtualTesting extends CommonOps{
-    String avatarCurrentImageFilePath;
 
     @Test
     public void createScreenshot(){

@@ -7,9 +7,6 @@
         <methods>
           <include name="startSession"/>
           <include name="testAddNewProject"/>
-          <include name="testLogin"/>
-          <include name="testSignup"/>
-          <include name="testRemoveAProject"/>
           <include name="afterMethod"/>
           <include name="closeSession"/>
         </methods>

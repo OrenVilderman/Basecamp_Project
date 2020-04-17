@@ -1,0 +1,487 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-L78C875",
+    "children" : [ {
+      "name" : "8804@DESKTOP-L78C875.main(1)",
+      "children" : [ {
+        "name" : "Add new project",
+        "uid" : "f4a1b9bc8ff4ccec",
+        "parentUid" : "03dfa3533ba1fd890403c8578c2cfd60",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1587111326482,
+          "stop" : 1587111326483,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login Sanity Test",
+        "uid" : "6e8ccbd30301ec76",
+        "parentUid" : "03dfa3533ba1fd890403c8578c2cfd60",
+        "status" : "broken",
+        "time" : {
+          "start" : 1587111278040,
+          "stop" : 1587111315912,
+          "duration" : 37872
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Remove a project",
+        "uid" : "aaec5d18e44a5a1",
+        "parentUid" : "03dfa3533ba1fd890403c8578c2cfd60",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1587111326487,
+          "stop" : 1587111326487,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SignUp Sanity Test",
+        "uid" : "e62b9575127fb64a",
+        "parentUid" : "03dfa3533ba1fd890403c8578c2cfd60",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1587111250285,
+          "stop" : 1587111250288,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "afterMethod",
+        "uid" : "b3e273206f1d0174",
+        "parentUid" : "03dfa3533ba1fd890403c8578c2cfd60",
+        "status" : "broken",
+        "time" : {
+          "start" : 1587111326473,
+          "stop" : 1587111326473,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "03dfa3533ba1fd890403c8578c2cfd60"
+    }, {
+      "name" : "17732@DESKTOP-L78C875.main(1)",
+      "children" : [ {
+        "name" : "afterMethod",
+        "uid" : "14579dd10ee456ef",
+        "parentUid" : "ab5f3b24f4b08fbf4776ad7dadfc0dba",
+        "status" : "broken",
+        "time" : {
+          "start" : 1587111443860,
+          "stop" : 1587111443860,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login Sanity Test",
+        "uid" : "d2c26551cb982779",
+        "parentUid" : "ab5f3b24f4b08fbf4776ad7dadfc0dba",
+        "status" : "broken",
+        "time" : {
+          "start" : 1587111395521,
+          "stop" : 1587111433219,
+          "duration" : 37698
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SignUp Sanity Test",
+        "uid" : "36ddea23c734e600",
+        "parentUid" : "ab5f3b24f4b08fbf4776ad7dadfc0dba",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1587111379349,
+          "stop" : 1587111379354,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "ab5f3b24f4b08fbf4776ad7dadfc0dba"
+    }, {
+      "name" : "3424@DESKTOP-L78C875.main(1)",
+      "children" : [ {
+        "name" : "Remove a project",
+        "uid" : "99147e51684a64d7",
+        "parentUid" : "9e8749c3a6dbf82134435a0a1632f371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1587111653193,
+          "stop" : 1587111690606,
+          "duration" : 37413
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login Sanity Test",
+        "uid" : "a6fed0ab11f1173",
+        "parentUid" : "9e8749c3a6dbf82134435a0a1632f371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1587111579036,
+          "stop" : 1587111606757,
+          "duration" : 27721
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Add new project",
+        "uid" : "45902ac5d6909f15",
+        "parentUid" : "9e8749c3a6dbf82134435a0a1632f371",
+        "status" : "passed",
+        "time" : {
+          "start" : 1587111610023,
+          "stop" : 1587111651200,
+          "duration" : 41177
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SignUp Sanity Test",
+        "uid" : "464e34a7c8c92971",
+        "parentUid" : "9e8749c3a6dbf82134435a0a1632f371",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1587111564466,
+          "stop" : 1587111564468,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9e8749c3a6dbf82134435a0a1632f371"
+    }, {
+      "name" : "7636@DESKTOP-L78C875.main(1)",
+      "children" : [ {
+        "name" : "SignUp Sanity Test",
+        "uid" : "d8836ea80eba0fdf",
+        "parentUid" : "5eb98b3dc0fd4e284e5848838f4ae7d5",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1587112887833,
+          "stop" : 1587112887835,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Remove a project",
+        "uid" : "9b37d4ece81c453b",
+        "parentUid" : "5eb98b3dc0fd4e284e5848838f4ae7d5",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1587112998254,
+          "stop" : 1587112998254,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Add new project",
+        "uid" : "5696a132ff8738c4",
+        "parentUid" : "5eb98b3dc0fd4e284e5848838f4ae7d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1587112934085,
+          "stop" : 1587112977893,
+          "duration" : 43808
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "afterMethod",
+        "uid" : "fe903dddaaa752b8",
+        "parentUid" : "5eb98b3dc0fd4e284e5848838f4ae7d5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1587112998248,
+          "stop" : 1587112998249,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login Sanity Test",
+        "uid" : "6133aaf40c098f73",
+        "parentUid" : "5eb98b3dc0fd4e284e5848838f4ae7d5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1587112903516,
+          "stop" : 1587112932140,
+          "duration" : 28624
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5eb98b3dc0fd4e284e5848838f4ae7d5"
+    }, {
+      "name" : "28668@DESKTOP-L78C875.main(1)",
+      "children" : [ {
+        "name" : "Add new project",
+        "uid" : "9d6cf1de381bb2ee",
+        "parentUid" : "af467c0452bc997a86e32f29b9c36d52",
+        "status" : "failed",
+        "time" : {
+          "start" : 1586944359068,
+          "stop" : 1586944396317,
+          "duration" : 37249
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Remove a project",
+        "uid" : "63af8c8f1ca85160",
+        "parentUid" : "af467c0452bc997a86e32f29b9c36d52",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586944398174,
+          "stop" : 1586944435866,
+          "duration" : 37692
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SignUp Sanity Test",
+        "uid" : "bdd963c40f74ea19",
+        "parentUid" : "af467c0452bc997a86e32f29b9c36d52",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1586944311857,
+          "stop" : 1586944311859,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login Sanity Test",
+        "uid" : "533d21f4b7e6b29",
+        "parentUid" : "af467c0452bc997a86e32f29b9c36d52",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586944327730,
+          "stop" : 1586944355612,
+          "duration" : 27882
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "af467c0452bc997a86e32f29b9c36d52"
+    }, {
+      "name" : "19624@DESKTOP-L78C875.main(1)",
+      "children" : [ {
+        "name" : "afterMethod",
+        "uid" : "76bd732437669c3c",
+        "parentUid" : "cbf73adf12803d8de1dd72d33fe0a4ff",
+        "status" : "broken",
+        "time" : {
+          "start" : 1586944034823,
+          "stop" : 1586944034824,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Add new project",
+        "uid" : "d44ed0f7bd5e02fe",
+        "parentUid" : "cbf73adf12803d8de1dd72d33fe0a4ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586943973724,
+          "stop" : 1586944014510,
+          "duration" : 40786
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login Sanity Test",
+        "uid" : "5680f22b79d11e90",
+        "parentUid" : "cbf73adf12803d8de1dd72d33fe0a4ff",
+        "status" : "passed",
+        "time" : {
+          "start" : 1586943937146,
+          "stop" : 1586943964731,
+          "duration" : 27585
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Remove a project",
+        "uid" : "8c9ae07770a0443a",
+        "parentUid" : "cbf73adf12803d8de1dd72d33fe0a4ff",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1586944034835,
+          "stop" : 1586944034836,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SignUp Sanity Test",
+        "uid" : "92632a60dd0e3174",
+        "parentUid" : "cbf73adf12803d8de1dd72d33fe0a4ff",
+        "status" : "broken",
+        "time" : {
+          "start" : 1586943888200,
+          "stop" : 1586943926935,
+          "duration" : 38735
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cbf73adf12803d8de1dd72d33fe0a4ff"
+    }, {
+      "name" : "10696@DESKTOP-L78C875.main(1)",
+      "children" : [ {
+        "name" : "SignUp Sanity Test",
+        "uid" : "baf261394b828d34",
+        "parentUid" : "3ecd0a20d94d093cbcff5f09c156f90c",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1587112250492,
+          "stop" : 1587112250495,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login Sanity Test",
+        "uid" : "d0e6b08a34c3961",
+        "parentUid" : "3ecd0a20d94d093cbcff5f09c156f90c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1587112265913,
+          "stop" : 1587112293729,
+          "duration" : 27816
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3ecd0a20d94d093cbcff5f09c156f90c"
+    }, {
+      "name" : "17424@DESKTOP-L78C875.main(1)",
+      "children" : [ {
+        "name" : "Login Sanity Test",
+        "uid" : "ad012d4d519cf0dc",
+        "parentUid" : "9bfca1d34a33f7413fda88d61a512a06",
+        "status" : "passed",
+        "time" : {
+          "start" : 1587111514760,
+          "stop" : 1587111543534,
+          "duration" : 28774
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "SignUp Sanity Test",
+        "uid" : "62e169bd67bfd194",
+        "parentUid" : "9bfca1d34a33f7413fda88d61a512a06",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1587111499694,
+          "stop" : 1587111499697,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9bfca1d34a33f7413fda88d61a512a06"
+    }, {
+      "name" : "17468@DESKTOP-L78C875.main(1)",
+      "children" : [ {
+        "name" : "Add new project",
+        "uid" : "e7f1942251679c43",
+        "parentUid" : "667b7ea696c05204d1e2347d3231dd8c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1587148851624,
+          "stop" : 1587148887745,
+          "duration" : 36121
+        },
+        "flaky" : true,
+        "newFailed" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "SignUp Sanity Test",
+        "uid" : "16413d9fddbcfbc8",
+        "parentUid" : "667b7ea696c05204d1e2347d3231dd8c",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1587148805739,
+          "stop" : 1587148805742,
+          "duration" : 3
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Remove a project",
+        "uid" : "95e3526c21a084c8",
+        "parentUid" : "667b7ea696c05204d1e2347d3231dd8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1587148889487,
+          "stop" : 1587148927161,
+          "duration" : 37674
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Login Sanity Test",
+        "uid" : "d300bae8aa9254e6",
+        "parentUid" : "667b7ea696c05204d1e2347d3231dd8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1587148821378,
+          "stop" : 1587148849748,
+          "duration" : 28370
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "667b7ea696c05204d1e2347d3231dd8c"
+    } ],
+    "uid" : "812bf59cb587e31bc4a9dbcf186a2def"
+  } ]
+}

@@ -1,0 +1,387 @@
+{
+  "717a11863eeb1902275f91753b4351ad" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 7,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 7
+    },
+    "items" : [ {
+      "uid" : "84820e284f3f0d76",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/84820e284f3f0d76",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1587112998248,
+        "stop" : 1587112998249,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1f4a67efea42a577",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/32/allure/#testresult/1f4a67efea42a577",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (7d0de622591f6f62c08523ee9a1e2358)] -> xpath: *//a[@href='/4392455/']] (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-L78C875', ip: '192.168.71.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\\Users\\ZIVGAD~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49940}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 7d0de622591f6f62c08523ee9a1e2358",
+      "time" : {
+        "start" : 1587111443860,
+        "stop" : 1587111443860,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "7312ad38f5be4af7",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/31/allure/#testresult/7312ad38f5be4af7",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (7d0de622591f6f62c08523ee9a1e2358)] -> xpath: *//a[@href='/4392455/']] (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-L78C875', ip: '192.168.71.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.163, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\\Users\\ZIVGAD~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:49940}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 7d0de622591f6f62c08523ee9a1e2358",
+      "time" : {
+        "start" : 1587111443860,
+        "stop" : 1587111443860,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "3317c91638f1c4f7",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/30/allure/#testresult/3317c91638f1c4f7",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586944034823,
+        "stop" : 1586944034824,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3593d5274ebc06c9",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/29/allure/#testresult/3593d5274ebc06c9",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586944034823,
+        "stop" : 1586944034824,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "70ec5b339d1184d6",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/28/allure/#testresult/70ec5b339d1184d6",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586944034823,
+        "stop" : 1586944034824,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e57431b12fac2532",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/27/allure/#testresult/e57431b12fac2532",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586944034823,
+        "stop" : 1586944034824,
+        "duration" : 1
+      }
+    } ]
+  },
+  "819da16facef78a450699d8265ecf203" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 7
+    },
+    "items" : [ {
+      "uid" : "264f4d2e316ba8a7",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/264f4d2e316ba8a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587112934085,
+        "stop" : 1587112977893,
+        "duration" : 43808
+      }
+    }, {
+      "uid" : "940acab80194cecc",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/32/allure/#testresult/940acab80194cecc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587111610023,
+        "stop" : 1587111651200,
+        "duration" : 41177
+      }
+    }, {
+      "uid" : "5cd4637446838b4",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/31/allure/#testresult/5cd4637446838b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587111610023,
+        "stop" : 1587111651200,
+        "duration" : 41177
+      }
+    }, {
+      "uid" : "573aafa82311277b",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/30/allure/#testresult/573aafa82311277b",
+      "status" : "failed",
+      "statusDetails" : "expected [4] but found [3]",
+      "time" : {
+        "start" : 1586944359068,
+        "stop" : 1586944396317,
+        "duration" : 37249
+      }
+    }, {
+      "uid" : "e231ffacc03fbc4f",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/29/allure/#testresult/e231ffacc03fbc4f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586943973724,
+        "stop" : 1586944014510,
+        "duration" : 40786
+      }
+    }, {
+      "uid" : "d63e785f8ea3bdf4",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/28/allure/#testresult/d63e785f8ea3bdf4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586943973724,
+        "stop" : 1586944014510,
+        "duration" : 40786
+      }
+    }, {
+      "uid" : "47dc35afc5ae7a59",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/27/allure/#testresult/47dc35afc5ae7a59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586943973724,
+        "stop" : 1586944014510,
+        "duration" : 40786
+      }
+    } ]
+  },
+  "9c84d3c639ff155bf62e8ff3018ad60f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 3,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 4,
+      "total" : 7
+    },
+    "items" : [ {
+      "uid" : "d477a89e84f0c65e",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/d477a89e84f0c65e",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1587112887833,
+        "stop" : 1587112887835,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1c917e8ab9c0b812",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/32/allure/#testresult/1c917e8ab9c0b812",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1587112250492,
+        "stop" : 1587112250495,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "2821d93b59748232",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/31/allure/#testresult/2821d93b59748232",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1587112250492,
+        "stop" : 1587112250495,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3cc58bbc20597dc7",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/30/allure/#testresult/3cc58bbc20597dc7",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1586944311857,
+        "stop" : 1586944311859,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eed979904d173364",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/29/allure/#testresult/eed979904d173364",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: setup_company_name' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586943888200,
+        "stop" : 1586943926935,
+        "duration" : 38735
+      }
+    }, {
+      "uid" : "48080a85dbcd62c7",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/28/allure/#testresult/48080a85dbcd62c7",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: setup_company_name' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586943888200,
+        "stop" : 1586943926935,
+        "duration" : 38735
+      }
+    }, {
+      "uid" : "972566dc1490d5d2",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/27/allure/#testresult/972566dc1490d5d2",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.id: setup_company_name' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586943888200,
+        "stop" : 1586943926935,
+        "duration" : 38735
+      }
+    } ]
+  },
+  "b21d80ae095686be1c7e6b960f6dfa73" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 7,
+      "unknown" : 0,
+      "total" : 7
+    },
+    "items" : [ {
+      "uid" : "d0b149553e8700b",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/d0b149553e8700b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587112903516,
+        "stop" : 1587112932140,
+        "duration" : 28624
+      }
+    }, {
+      "uid" : "93dd518d2c76afd5",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/32/allure/#testresult/93dd518d2c76afd5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587112265913,
+        "stop" : 1587112293729,
+        "duration" : 27816
+      }
+    }, {
+      "uid" : "e1f9f4e2e56c7817",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/31/allure/#testresult/e1f9f4e2e56c7817",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587112265913,
+        "stop" : 1587112293729,
+        "duration" : 27816
+      }
+    }, {
+      "uid" : "a3f3a5f5bc94081a",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/30/allure/#testresult/a3f3a5f5bc94081a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586944327730,
+        "stop" : 1586944355612,
+        "duration" : 27882
+      }
+    }, {
+      "uid" : "acdfd863c763824d",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/29/allure/#testresult/acdfd863c763824d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586943937146,
+        "stop" : 1586943964731,
+        "duration" : 27585
+      }
+    }, {
+      "uid" : "55d655284854076d",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/28/allure/#testresult/55d655284854076d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586943937146,
+        "stop" : 1586943964731,
+        "duration" : 27585
+      }
+    }, {
+      "uid" : "e74712715078927",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/27/allure/#testresult/e74712715078927",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586943937146,
+        "stop" : 1586943964731,
+        "duration" : 27585
+      }
+    } ]
+  },
+  "7cfba33c9b43bb7d449502be062193d0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 4,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 7
+    },
+    "items" : [ {
+      "uid" : "66f75e6693adf3e",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/66f75e6693adf3e",
+      "status" : "skipped",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1587112998254,
+        "stop" : 1587112998254,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "477abaab6895cb26",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/32/allure/#testresult/477abaab6895cb26",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587111653193,
+        "stop" : 1587111690606,
+        "duration" : 37413
+      }
+    }, {
+      "uid" : "766ababb22a9898e",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/31/allure/#testresult/766ababb22a9898e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587111653193,
+        "stop" : 1587111690606,
+        "duration" : 37413
+      }
+    }, {
+      "uid" : "7736c29961bcd45e",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/30/allure/#testresult/7736c29961bcd45e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586944398174,
+        "stop" : 1586944435866,
+        "duration" : 37692
+      }
+    }, {
+      "uid" : "42e9942a717f9139",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/29/allure/#testresult/42e9942a717f9139",
+      "status" : "skipped",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586944034835,
+        "stop" : 1586944034836,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "533138f78bc097f7",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/28/allure/#testresult/533138f78bc097f7",
+      "status" : "skipped",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586944034835,
+        "stop" : 1586944034836,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b52a1806d8326202",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/27/allure/#testresult/b52a1806d8326202",
+      "status" : "skipped",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1586944034835,
+        "stop" : 1586944034836,
+        "duration" : 1
+      }
+    } ]
+  }
+}

@@ -54,6 +54,7 @@ public class Base {
 
     public static int _numberOfProjectsBeforeAddingOrRemoving;
     public static String _projectName;
+    public static String avatarCurrentImageFilePath;
 
     //Data info that is fed to the DB while signing up a new user - Basecamp sanity - signup test
     public static String _userName;
