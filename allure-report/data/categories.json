@@ -7,7 +7,7 @@
       "name" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
       "children" : [ {
         "name" : "afterMethod",
-        "uid" : "fe903dddaaa752b8",
+        "uid" : "b73784449504d9e6",
         "parentUid" : "d5da98b8656a30296507b49660178736",
         "status" : "broken",
         "time" : {
@@ -20,6 +20,23 @@
         "parameters" : [ ]
       } ],
       "uid" : "d5da98b8656a30296507b49660178736"
+    }, {
+      "name" : "\nParameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\git\\Basecamp_Project\\testNgExecuteWeb.xml",
+      "children" : [ {
+        "name" : "startSession",
+        "uid" : "48eafb082a784923",
+        "parentUid" : "6bdf186b5d20d85d8ec9f751eacb00cb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1587497976007,
+          "stop" : 1587497976008,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "Web", "Basecamp" ]
+      } ],
+      "uid" : "6bdf186b5d20d85d8ec9f751eacb00cb"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   }, {
@@ -28,7 +45,7 @@
       "name" : "expected [4] but found [3]",
       "children" : [ {
         "name" : "Add new project",
-        "uid" : "e7f1942251679c43",
+        "uid" : "91b60112989537ee",
         "parentUid" : "66cbb25bc1e21cb849899d896ff9c997",
         "status" : "failed",
         "time" : {
@@ -37,7 +54,7 @@
           "duration" : 36121
         },
         "flaky" : true,
-        "newFailed" : true,
+        "newFailed" : false,
         "parameters" : [ ]
       } ],
       "uid" : "66cbb25bc1e21cb849899d896ff9c997"

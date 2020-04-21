@@ -59,7 +59,7 @@ public class ApiFlows extends CommonOps {
 
     @Step("Get team name from UI")
     public static Team getTeamDetailFromUI(int teamIndex){
-        CommonOps.initBrowser("chrome");
+        CommonOps.initBrowser();
         driver.get("http://localhost:3000/");
         driver.findElement(By.xpath("//input[@type=\"text\"]")).sendKeys("admin");
         driver.findElement(By.xpath("//input[@type=\"password\"]")).sendKeys("admin");

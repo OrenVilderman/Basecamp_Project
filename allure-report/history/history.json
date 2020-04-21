@@ -1,14 +1,54 @@
 {
+  "ddf0b8a0b4e882493e66d0b22d93b502" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 1,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "384759cfdb5449c5",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/384759cfdb5449c5",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1587497975776,
+        "stop" : 1587497975778,
+        "duration" : 2
+      }
+    } ]
+  },
   "717a11863eeb1902275f91753b4351ad" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 8,
+      "broken" : 10,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 8
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "b73784449504d9e6",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/b73784449504d9e6",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1587112998248,
+        "stop" : 1587112998249,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4891bbb783011b3",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/4891bbb783011b3",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1587112998248,
+        "stop" : 1587112998249,
+        "duration" : 1
+      }
+    }, {
       "uid" : "fe903dddaaa752b8",
       "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/fe903dddaaa752b8",
       "status" : "broken",
@@ -90,16 +130,179 @@
       }
     } ]
   },
+  "b21d80ae095686be1c7e6b960f6dfa73" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 10,
+      "unknown" : 0,
+      "total" : 10
+    },
+    "items" : [ {
+      "uid" : "dc8bbbcd2d877508",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/dc8bbbcd2d877508",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148821378,
+        "stop" : 1587148849748,
+        "duration" : 28370
+      }
+    }, {
+      "uid" : "251596e34ba1407a",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/251596e34ba1407a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148821378,
+        "stop" : 1587148849748,
+        "duration" : 28370
+      }
+    }, {
+      "uid" : "d300bae8aa9254e6",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/d300bae8aa9254e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148821378,
+        "stop" : 1587148849748,
+        "duration" : 28370
+      }
+    }, {
+      "uid" : "d0b149553e8700b",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/d0b149553e8700b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587112903516,
+        "stop" : 1587112932140,
+        "duration" : 28624
+      }
+    }, {
+      "uid" : "93dd518d2c76afd5",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/32/allure/#testresult/93dd518d2c76afd5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587112265913,
+        "stop" : 1587112293729,
+        "duration" : 27816
+      }
+    }, {
+      "uid" : "e1f9f4e2e56c7817",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/31/allure/#testresult/e1f9f4e2e56c7817",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587112265913,
+        "stop" : 1587112293729,
+        "duration" : 27816
+      }
+    }, {
+      "uid" : "a3f3a5f5bc94081a",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/30/allure/#testresult/a3f3a5f5bc94081a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586944327730,
+        "stop" : 1586944355612,
+        "duration" : 27882
+      }
+    }, {
+      "uid" : "acdfd863c763824d",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/29/allure/#testresult/acdfd863c763824d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586943937146,
+        "stop" : 1586943964731,
+        "duration" : 27585
+      }
+    }, {
+      "uid" : "55d655284854076d",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/28/allure/#testresult/55d655284854076d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586943937146,
+        "stop" : 1586943964731,
+        "duration" : 27585
+      }
+    }, {
+      "uid" : "e74712715078927",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/27/allure/#testresult/e74712715078927",
+      "status" : "passed",
+      "time" : {
+        "start" : 1586943937146,
+        "stop" : 1586943964731,
+        "duration" : 27585
+      }
+    } ]
+  },
+  "9d69d0d8041e5e4840bca5aff6ef8137" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "48eafb082a784923",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/48eafb082a784923",
+      "status" : "broken",
+      "statusDetails" : "\nParameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\git\\Basecamp_Project\\testNgExecuteWeb.xml",
+      "time" : {
+        "start" : 1587497976007,
+        "stop" : 1587497976008,
+        "duration" : 1
+      }
+    } ]
+  },
+  "27fb40f8acd8064c0629bb2d0083d5b9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "31ff353163b105c6",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/31ff353163b105c6",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\git\\Basecamp_Project\\testNgExecuteWeb.xml",
+      "time" : {
+        "start" : 1587497976067,
+        "stop" : 1587497976068,
+        "duration" : 1
+      }
+    } ]
+  },
   "819da16facef78a450699d8265ecf203" : {
     "statistic" : {
-      "failed" : 2,
+      "failed" : 4,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 6,
       "unknown" : 0,
-      "total" : 8
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "91b60112989537ee",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/91b60112989537ee",
+      "status" : "failed",
+      "statusDetails" : "expected [4] but found [3]",
+      "time" : {
+        "start" : 1587148851624,
+        "stop" : 1587148887745,
+        "duration" : 36121
+      }
+    }, {
+      "uid" : "f8764cad2e55b277",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/f8764cad2e55b277",
+      "status" : "failed",
+      "statusDetails" : "expected [4] but found [3]",
+      "time" : {
+        "start" : 1587148851624,
+        "stop" : 1587148887745,
+        "duration" : 36121
+      }
+    }, {
       "uid" : "e7f1942251679c43",
       "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/e7f1942251679c43",
       "status" : "failed",
@@ -181,10 +384,28 @@
       "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
-      "unknown" : 5,
-      "total" : 8
+      "unknown" : 7,
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "6252138a8bc2c583",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/6252138a8bc2c583",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1587148805739,
+        "stop" : 1587148805742,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "899d0466f55efefc",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/899d0466f55efefc",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1587148805739,
+        "stop" : 1587148805742,
+        "duration" : 3
+      }
+    }, {
       "uid" : "16413d9fddbcfbc8",
       "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/16413d9fddbcfbc8",
       "status" : "unknown",
@@ -261,86 +482,45 @@
       }
     } ]
   },
-  "b21d80ae095686be1c7e6b960f6dfa73" : {
+  "9492001cc7c02cfbbf86cc6c5267d088" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 8,
+      "skipped" : 1,
+      "passed" : 0,
       "unknown" : 0,
-      "total" : 8
+      "total" : 1
     },
     "items" : [ {
-      "uid" : "d300bae8aa9254e6",
-      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/d300bae8aa9254e6",
-      "status" : "passed",
+      "uid" : "c176f4b85514ac72",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/c176f4b85514ac72",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\git\\Basecamp_Project\\testNgExecuteWeb.xml",
       "time" : {
-        "start" : 1587148821378,
-        "stop" : 1587148849748,
-        "duration" : 28370
+        "start" : 1587497976043,
+        "stop" : 1587497976045,
+        "duration" : 2
       }
-    }, {
-      "uid" : "d0b149553e8700b",
-      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/d0b149553e8700b",
-      "status" : "passed",
+    } ]
+  },
+  "be4308430c64e967723965cd7350bce0" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 1,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "567c2992a7d18711",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/567c2992a7d18711",
+      "status" : "skipped",
+      "statusDetails" : "\nParameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined\nin C:\\git\\Basecamp_Project\\testNgExecuteWeb.xml",
       "time" : {
-        "start" : 1587112903516,
-        "stop" : 1587112932140,
-        "duration" : 28624
-      }
-    }, {
-      "uid" : "93dd518d2c76afd5",
-      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/32/allure/#testresult/93dd518d2c76afd5",
-      "status" : "passed",
-      "time" : {
-        "start" : 1587112265913,
-        "stop" : 1587112293729,
-        "duration" : 27816
-      }
-    }, {
-      "uid" : "e1f9f4e2e56c7817",
-      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/31/allure/#testresult/e1f9f4e2e56c7817",
-      "status" : "passed",
-      "time" : {
-        "start" : 1587112265913,
-        "stop" : 1587112293729,
-        "duration" : 27816
-      }
-    }, {
-      "uid" : "a3f3a5f5bc94081a",
-      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/30/allure/#testresult/a3f3a5f5bc94081a",
-      "status" : "passed",
-      "time" : {
-        "start" : 1586944327730,
-        "stop" : 1586944355612,
-        "duration" : 27882
-      }
-    }, {
-      "uid" : "acdfd863c763824d",
-      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/29/allure/#testresult/acdfd863c763824d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1586943937146,
-        "stop" : 1586943964731,
-        "duration" : 27585
-      }
-    }, {
-      "uid" : "55d655284854076d",
-      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/28/allure/#testresult/55d655284854076d",
-      "status" : "passed",
-      "time" : {
-        "start" : 1586943937146,
-        "stop" : 1586943964731,
-        "duration" : 27585
-      }
-    }, {
-      "uid" : "e74712715078927",
-      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/27/allure/#testresult/e74712715078927",
-      "status" : "passed",
-      "time" : {
-        "start" : 1586943937146,
-        "stop" : 1586943964731,
-        "duration" : 27585
+        "start" : 1587497976061,
+        "stop" : 1587497976062,
+        "duration" : 1
       }
     } ]
   },
@@ -349,11 +529,29 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 4,
-      "passed" : 4,
+      "passed" : 6,
       "unknown" : 0,
-      "total" : 8
+      "total" : 10
     },
     "items" : [ {
+      "uid" : "107142c7a2bea570",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure/#testresult/107142c7a2bea570",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148889487,
+        "stop" : 1587148927161,
+        "duration" : 37674
+      }
+    }, {
+      "uid" : "d1f9459304ece709",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/d1f9459304ece709",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148889487,
+        "stop" : 1587148927161,
+        "duration" : 37674
+      }
+    }, {
       "uid" : "95e3526c21a084c8",
       "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/95e3526c21a084c8",
       "status" : "passed",

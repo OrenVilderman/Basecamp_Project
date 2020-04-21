@@ -8,16 +8,30 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">127,421</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">BasecampWeb Tests</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">402</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">BasecampWeb.SanityTests.BaseCampSanity</td><td><a href="#m0">testAddNewProject</a></td><td rowspan="1">1587148851619</td><td rowspan="1">35656</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">BasecampWeb.SanityTests.BaseCampSanity</td><td><a href="#m1">testLogin</a></td><td rowspan="1">1587148821373</td><td rowspan="1">28374</td></tr><tr class="passedeven"><td><a href="#m2">testRemoveAProject</a></td><td rowspan="1">1587148889480</td><td rowspan="1">37680</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BasecampWeb Tests &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">BasecampWeb.SanityTests.BaseCampSanity</td><td><a href="#m0">startSession</a></td><td rowspan="1">1587497975973</td><td rowspan="1">0</td></tr><tr><th colspan="4">BasecampWeb Tests &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="4">BasecampWeb.SanityTests.BaseCampSanity</td><td><a href="#m1">afterMethod</a></td><td rowspan="3">1587497976070</td><td rowspan="3">0</td></tr><tr class="skippedeven"><td><a href="#m2">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m3">afterMethod</a></td></tr><tr class="skippedeven"><td><a href="#m4">closeSession</a></td><td rowspan="1">1587497976071</td><td rowspan="1">0</td></tr><tr><th colspan="4">BasecampWeb Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">BasecampWeb.SanityTests.BaseCampSanity</td><td><a href="#m5">testAddNewProject</a></td><td rowspan="1">1587497976058</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">testLogin</a></td><td rowspan="1">1587497976037</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">testRemoveAProject</a></td><td rowspan="1">1587497976064</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">BasecampWeb.SanityTests.BaseCampSanity#testAddNewProject</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [4] but found [3]
-	at Extensions.Web.Verifications.verifyNumberOfElementsProjectAdd(Verifications.java:36)
-	at BasecampWeb.SanityTests.BaseCampSanity.testAddNewProject(BaseCampSanity.java:34)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">BasecampWeb.SanityTests.BaseCampSanity#testLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">BasecampWeb.SanityTests.BaseCampSanity#testRemoveAProject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>BasecampWeb Tests</h2><h3 id="m0">BasecampWeb.SanityTests.BaseCampSanity#startSession</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">BasecampWeb.SanityTests.BaseCampSanity#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">BasecampWeb.SanityTests.BaseCampSanity#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">BasecampWeb.SanityTests.BaseCampSanity#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">BasecampWeb.SanityTests.BaseCampSanity#closeSession</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">BasecampWeb.SanityTests.BaseCampSanity#testAddNewProject</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">BasecampWeb.SanityTests.BaseCampSanity#testLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">BasecampWeb.SanityTests.BaseCampSanity#testRemoveAProject</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
+Parameter &apos;platformName&apos; is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -1,7 +1,6 @@
 package Utilities;      //A class to provide with all the routine operations and methods being used with every test run, such as browser initializing method,
 // before/after class/method, getData method to extract data from external files and more. Inherits from Base class
 
-import Extensions.Web.UiActions;
 import WorkFlows.WebFlows;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
@@ -23,6 +22,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 import java.io.File;
 import java.io.IOException;
@@ -34,26 +34,26 @@ import static Utilities.HelperMethods.getDataFromXML;
 
 public class CommonOps extends Base {
 
-    public static void initBrowser(String browserType) {
-        if (browserType.equalsIgnoreCase("chrome")) {
+    public static void initBrowser() {
+        if (browser.equalsIgnoreCase("chrome")) {
             driver = initChromeDriver();
-        } else if (browserType.equalsIgnoreCase("ie")) {
+        } else if (browser.equalsIgnoreCase("ie")) {
             driver = initIEDriver();
-        } else if (browserType.equalsIgnoreCase("firefox")) {
+        } else if (browser.equalsIgnoreCase("firefox")) {
             driver = initFirefoxDriver();
-        } else if (browserType.equalsIgnoreCase("edge")) {
+        } else if (browser.equalsIgnoreCase("edge")) {
             driver = initEdgeDriver();
-        } else if (browserType.equalsIgnoreCase("opera")) {
+        } else if (browser.equalsIgnoreCase("opera")) {
             driver = initOperaDriver();
         } else {
             throw new RuntimeException("Invalid Browser Name Selected.");
         }
         driver.manage().window().maximize();
-        if (getDataFromXML("SiteTested").equalsIgnoreCase("grafana")) {
+        if (webSite.equalsIgnoreCase("grafana")) {
             try {
                 awakeGrafanaServer();
                 ManagePages.initGrafanaForDB();
-                driver.get(getDataFromXML("APIurl"));
+                driver.get(getDataFromXML("ApiUrl"));
             } catch (Exception e) {
                 System.out.println("Could not initiate Grafana server");
             }
@@ -108,22 +108,6 @@ public class CommonOps extends Base {
         driverSelector("AndroidDriver");
     }
 
-    public static void driverSelector(String driverType) {
-        if (driverType.equalsIgnoreCase("RemoteWebDriver"))
-            try {
-                remoteWebDriver = new RemoteWebDriver(new URL("http://localhost:4724/wd/hub"), dc);
-            } catch (Exception e) {
-                System.out.println("Can not Connect to Appium Server, See Details: " + e);
-            }
-        else if (driverType.equalsIgnoreCase("AndroidDriver")) {
-            try {
-                androidDriver = new AndroidDriver(new URL("http://localhost:4724/wd/hub"), dc);
-            } catch (Exception e) {
-                System.out.println("Can not Connect to Appium Server, See Details: " + e);
-            }
-        } else System.out.println("Driver type is not recognized.");
-    }   // More work needed on driver selector
-
     public static void awakeGrafanaServer() throws IOException {
         Runtime.getRuntime().exec(getDataFromXML("grafanaServerExe"), null, new File(getDataFromXML("grafanaServerDir")));
         RestAssured.baseURI = getDataFromXML("APIurl");
@@ -157,24 +141,46 @@ public class CommonOps extends Base {
         driver.manage().timeouts().implicitlyWait(Long.parseLong(getDataFromXML("TimeOut")), TimeUnit.SECONDS);
     }
 
+    public static void driverSelector(String driverType) {
+        if (driverType.equalsIgnoreCase("RemoteWebDriver"))
+            try {
+                remoteWebDriver = new RemoteWebDriver(new URL("http://localhost:4724/wd/hub"), dc);
+            } catch (Exception e) {
+                System.out.println("Can not Connect to Appium Server, See Details: " + e);
+            }
+        else if (driverType.equalsIgnoreCase("AndroidDriver")) {
+            try {
+                androidDriver = new AndroidDriver(new URL("http://localhost:4724/wd/hub"), dc);
+            } catch (Exception e) {
+                System.out.println("Can not Connect to Appium Server, See Details: " + e);
+            }
+        } else if ((driverType.equalsIgnoreCase("WebDriver"))) {
+            initBrowser();
+        } else System.out.println("Driver type is not recognized.");
+    }   // More work needed on driver selector
+
     public AndroidDriver getDriver() {  // More work needed on driver selector for android driver
         return androidDriver;
     }
 
     @BeforeClass
-    public void startSession() throws IOException {
-        if (getDataFromXML("PlatformName").equalsIgnoreCase("web")) {
-            initBrowser(getDataFromXML("BrowserName"));
+    @Parameters({"platformName", "siteTested", "browserName"})
+    public void startSession(String platformName, String siteTested, String browserName) throws IOException {
+        platform = platformName;
+        webSite = siteTested;
+        browser = browserName;
+        if (platform.equalsIgnoreCase("web")) {
+            initBrowser();
             ManagePages.initWeb();
-        } else if (getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
+        } else if (platform.equalsIgnoreCase("mobile")) {
             initMobile();
             ManagePages.initMobile();
-        } else if (getDataFromXML("PlatformName").equalsIgnoreCase("api")) {
+        } else if (platform.equalsIgnoreCase("api")) {
             awakeGrafanaServer();
-        } else if (getDataFromXML("PlatformName").equalsIgnoreCase("electron")) {
+        } else if (platform.equalsIgnoreCase("electron")) {
             initElectron();
             ManagePages.initElectron();
-        } else if (getDataFromXML("PlatformName").equalsIgnoreCase("desktop")) {
+        } else if (platform.equalsIgnoreCase("desktop")) {
             initDesktop();
             ManagePages.initDesktop();
         } else
@@ -184,8 +190,8 @@ public class CommonOps extends Base {
 
     @AfterMethod
     public void afterMethod() {
-        if (getDataFromXML("PlatformName").equalsIgnoreCase("web") &&
-                getDataFromXML("SiteTested").equalsIgnoreCase("basecamp")) {
+        if (platform.equalsIgnoreCase("web") &&
+                webSite.equalsIgnoreCase("basecamp")) {
             if (basecampUpperMenu.listOfUpperMenuItems.size() == 6) {
                 WebFlows.signOut();
             }
@@ -193,10 +199,10 @@ public class CommonOps extends Base {
     }
 
     @AfterClass
-    public void closeSession() throws InterruptedException {
+    public void closeSession(String PlatformName, String SiteTested) throws InterruptedException {
         ManageDB.closeConnection();
-        if (getDataFromXML("PlatformName").equalsIgnoreCase("api")) {
-        } else if (!getDataFromXML("PlatformName").equalsIgnoreCase("mobile")) {
+        if (platform.equalsIgnoreCase("api")) {
+        } else if (!platform.equalsIgnoreCase("mobile")) {
             Thread.sleep(2000);
             driver.quit();
         } else {

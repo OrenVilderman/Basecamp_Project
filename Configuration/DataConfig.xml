@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Enviornment>
     <!--GENERAL-->
-    <PlatformName>web</PlatformName>
-    <SiteTested>Basecamp</SiteTested>
     <ImageRepo>./imageRepository/</ImageRepo>
     <UserName>Roni</UserName>
     <UserEmail>ziv.automation@gmail.com</UserEmail>
@@ -10,7 +8,6 @@
     <TimeOut>10</TimeOut>
     <!--WEB-->
     <URL>https://basecamp.com/</URL>
-    <BrowserName>chrome</BrowserName>
     <!--MOBILE-->
     <APP_PACKAGE>com.basecamp.bc3</APP_PACKAGE>             //Tested App
     <UDID>1e9ac294</UDID>                                   //Mobile Identifier
@@ -29,7 +26,7 @@
     <WindowsDriverURL>http://127.0.0.1:4723</WindowsDriverURL>
     <WinAppDriverExe>C:\\Program Files (x86)\\Windows Application Driver\\WinAppDriver.exe</WinAppDriverExe>
     <WinAppServerDir>C:\Program Files (x86)\Windows Application Driver\</WinAppServerDir>
-    <APIurl>http://localhost:3000/</APIurl>
+    <ApiUrl>http://localhost:3000/</ApiUrl>
     <!--Database-->
     <DBURL>jdbc:mysql://remotemysql.com:3306/vBlBbpvG7d</DBURL>
     <DBuser>vBlBbpvG7d</DBuser>

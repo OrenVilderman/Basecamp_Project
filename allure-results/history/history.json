@@ -2,13 +2,33 @@
   "717a11863eeb1902275f91753b4351ad" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 7,
+      "broken" : 9,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 7
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "4891bbb783011b3",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/4891bbb783011b3",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1587112998248,
+        "stop" : 1587112998249,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "fe903dddaaa752b8",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/fe903dddaaa752b8",
+      "status" : "broken",
+      "statusDetails" : "Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //li[3]/a' (tried for 10 second(s) with 500 milliseconds interval)",
+      "time" : {
+        "start" : 1587112998248,
+        "stop" : 1587112998249,
+        "duration" : 1
+      }
+    }, {
       "uid" : "84820e284f3f0d76",
       "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/84820e284f3f0d76",
       "status" : "broken",
@@ -82,14 +102,34 @@
   },
   "819da16facef78a450699d8265ecf203" : {
     "statistic" : {
-      "failed" : 1,
+      "failed" : 3,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 6,
       "unknown" : 0,
-      "total" : 7
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "f8764cad2e55b277",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/f8764cad2e55b277",
+      "status" : "failed",
+      "statusDetails" : "expected [4] but found [3]",
+      "time" : {
+        "start" : 1587148851624,
+        "stop" : 1587148887745,
+        "duration" : 36121
+      }
+    }, {
+      "uid" : "e7f1942251679c43",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/e7f1942251679c43",
+      "status" : "failed",
+      "statusDetails" : "expected [4] but found [3]",
+      "time" : {
+        "start" : 1587148851624,
+        "stop" : 1587148887745,
+        "duration" : 36121
+      }
+    }, {
       "uid" : "264f4d2e316ba8a7",
       "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/264f4d2e316ba8a7",
       "status" : "passed",
@@ -161,10 +201,28 @@
       "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
-      "unknown" : 4,
-      "total" : 7
+      "unknown" : 6,
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "899d0466f55efefc",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/899d0466f55efefc",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1587148805739,
+        "stop" : 1587148805742,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "16413d9fddbcfbc8",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/16413d9fddbcfbc8",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1587148805739,
+        "stop" : 1587148805742,
+        "duration" : 3
+      }
+    }, {
       "uid" : "d477a89e84f0c65e",
       "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/d477a89e84f0c65e",
       "status" : "unknown",
@@ -237,11 +295,29 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 7
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "251596e34ba1407a",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/251596e34ba1407a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148821378,
+        "stop" : 1587148849748,
+        "duration" : 28370
+      }
+    }, {
+      "uid" : "d300bae8aa9254e6",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/d300bae8aa9254e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148821378,
+        "stop" : 1587148849748,
+        "duration" : 28370
+      }
+    }, {
       "uid" : "d0b149553e8700b",
       "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/d0b149553e8700b",
       "status" : "passed",
@@ -311,11 +387,29 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 4,
-      "passed" : 3,
+      "passed" : 5,
       "unknown" : 0,
-      "total" : 7
+      "total" : 9
     },
     "items" : [ {
+      "uid" : "d1f9459304ece709",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/35/allure/#testresult/d1f9459304ece709",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148889487,
+        "stop" : 1587148927161,
+        "duration" : 37674
+      }
+    }, {
+      "uid" : "95e3526c21a084c8",
+      "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure/#testresult/95e3526c21a084c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1587148889487,
+        "stop" : 1587148927161,
+        "duration" : 37674
+      }
+    }, {
       "uid" : "66f75e6693adf3e",
       "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/33/allure/#testresult/66f75e6693adf3e",
       "status" : "skipped",

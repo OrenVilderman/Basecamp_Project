@@ -41,7 +41,7 @@ public class SignUpFlow {
 
     @FindBy(how = How.XPATH, using = "//div[1]/header/h3")
     public WebElement finishAccountCreationWindowTitle_txt;                         //Title assertion for successful account creation
-                                                                                    //"Your account’s ready to go! 👍"
+    //"Your account’s ready to go! 👍"
     @FindBy(how = How.XPATH, using = "//article/div[1]/button")
     public WebElement noThanks_btn;                                                 //In order to close popup window
 

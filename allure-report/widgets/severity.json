@@ -1,15 +1,15 @@
 [ {
-  "uid" : "95e3526c21a084c8",
-  "name" : "Remove a project",
+  "uid" : "384759cfdb5449c5",
+  "name" : "SignUp Sanity Test",
   "time" : {
-    "start" : 1587148889487,
-    "stop" : 1587148927161,
-    "duration" : 37674
+    "start" : 1587497975776,
+    "stop" : 1587497975778,
+    "duration" : 2
   },
-  "status" : "passed",
+  "status" : "unknown",
   "severity" : "normal"
 }, {
-  "uid" : "fe903dddaaa752b8",
+  "uid" : "b73784449504d9e6",
   "name" : "afterMethod",
   "time" : {
     "start" : 1587112998248,
@@ -19,7 +19,47 @@
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "16413d9fddbcfbc8",
+  "uid" : "567c2992a7d18711",
+  "name" : "Add new project",
+  "time" : {
+    "start" : 1587497976061,
+    "stop" : 1587497976062,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "91b60112989537ee",
+  "name" : "Add new project",
+  "time" : {
+    "start" : 1587148851624,
+    "stop" : 1587148887745,
+    "duration" : 36121
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "107142c7a2bea570",
+  "name" : "Remove a project",
+  "time" : {
+    "start" : 1587148889487,
+    "stop" : 1587148927161,
+    "duration" : 37674
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "31ff353163b105c6",
+  "name" : "Remove a project",
+  "time" : {
+    "start" : 1587497976067,
+    "stop" : 1587497976068,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "6252138a8bc2c583",
   "name" : "SignUp Sanity Test",
   "time" : {
     "start" : 1587148805739,
@@ -29,7 +69,27 @@
   "status" : "unknown",
   "severity" : "normal"
 }, {
-  "uid" : "d300bae8aa9254e6",
+  "uid" : "c176f4b85514ac72",
+  "name" : "Login Sanity Test",
+  "time" : {
+    "start" : 1587497976043,
+    "stop" : 1587497976045,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "48eafb082a784923",
+  "name" : "startSession",
+  "time" : {
+    "start" : 1587497976007,
+    "stop" : 1587497976008,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dc8bbbcd2d877508",
   "name" : "Login Sanity Test",
   "time" : {
     "start" : 1587148821378,
@@ -37,15 +97,5 @@
     "duration" : 28370
   },
   "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e7f1942251679c43",
-  "name" : "Add new project",
-  "time" : {
-    "start" : 1587148851624,
-    "stop" : 1587148887745,
-    "duration" : 36121
-  },
-  "status" : "failed",
   "severity" : "normal"
 } ]

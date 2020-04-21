@@ -1,11 +1,11 @@
 package Utilities;      //A class that will define an object for each page/section class of the app and initialize the
-                        // objects we define in each and every one. Inherits from Base class
+// objects we define in each and every one. Inherits from Base class
 
 import org.openqa.selenium.support.PageFactory;
 
-public class ManagePages extends Base{
+public class ManagePages extends Base {
 
-    public static void initWeb(){
+    public static void initWeb() {
         basecampIntroPage = PageFactory.initElements(driver, PageObjects.BasecampWeb.IntroPage.class);
         basecampMainPage = PageFactory.initElements(driver, PageObjects.BasecampWeb.MainPage.class);
         basecampSignInPage = PageFactory.initElements(driver, PageObjects.BasecampWeb.SignInPage.class);
@@ -21,21 +21,21 @@ public class ManagePages extends Base{
         basecampEditProfilePage = PageFactory.initElements(driver, PageObjects.BasecampWeb.EditProfilePage.class);
     }
 
-    public static void initMobile(){
+    public static void initMobile() {
         mobileBasecampLoginPage = PageFactory.initElements(driver, PageObjects.BasecampMobile.LoginPage.class);
         mobileBottomMenu = PageFactory.initElements(driver, PageObjects.BasecampMobile.BottomMenu.class);
         mobileMyStuffPage = PageFactory.initElements(driver, PageObjects.BasecampMobile.MyStuffPage.class);
     }
 
-    public static void initElectron(){
+    public static void initElectron() {
         electronMainPage = PageFactory.initElements(driver, PageObjects.ElectronAPIDemos.MainPage.class);
     }
 
-    public static void initDesktop(){
+    public static void initDesktop() {
         calculatorMainPage = PageFactory.initElements(driver, PageObjects.Calculator.MainPage.class);
     }
 
-    public static void initGrafanaForDB(){
+    public static void initGrafanaForDB() {
         grafanaForDbLoginPage = PageFactory.initElements(driver, PageObjects.GrafanaForDB.LoginFlow.class);
         grafanaForDbMainPage = PageFactory.initElements(driver, PageObjects.GrafanaForDB.MainPage.class);
     }

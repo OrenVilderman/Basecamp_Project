@@ -1,0 +1,157 @@
+{
+  "uid" : "f173646a425eb293",
+  "name" : "Login Sanity Test",
+  "fullName" : "BasecampWeb.SanityTests.BaseCampSanity.testLogin",
+  "historyId" : "b21d80ae095686be1c7e6b960f6dfa73",
+  "time" : {
+    "start" : 1586944327730,
+    "stop" : 1586944355612,
+    "duration" : 27882
+  },
+  "description" : "Test description: Logging in with a user",
+  "descriptionHtml" : "<p>Test description: Logging in with a user</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "startSession",
+    "time" : {
+      "start" : 1586944312098,
+      "stop" : 1586944327712,
+      "duration" : 15614
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "Test description: Logging in with a user",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Sign in to Basecamp",
+      "time" : {
+        "start" : 1586944327785,
+        "stop" : 1586944355520,
+        "duration" : 27735
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "userEmail",
+        "value" : "ziv.automation@gmail.com"
+      }, {
+        "name" : "userPassword",
+        "value" : "zivg1234"
+      } ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "closeSession",
+    "time" : {
+      "start" : 1586944439122,
+      "stop" : 1586944441847,
+      "duration" : 2725
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "afterMethod",
+    "time" : {
+      "start" : 1586944355619,
+      "stop" : 1586944359051,
+      "duration" : 3432
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Sign out from Basecamp",
+      "time" : {
+        "start" : 1586944355665,
+        "stop" : 1586944359051,
+        "duration" : 3386
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "BasecampWeb.SanityTests.BaseCampSanity"
+  }, {
+    "name" : "testClass",
+    "value" : "BasecampWeb.SanityTests.BaseCampSanity"
+  }, {
+    "name" : "testMethod",
+    "value" : "testLogin"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Surefire suite"
+  }, {
+    "name" : "suite",
+    "value" : "Surefire test"
+  }, {
+    "name" : "subSuite",
+    "value" : "BasecampWeb.SanityTests.BaseCampSanity"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-L78C875"
+  }, {
+    "name" : "thread",
+    "value" : "28668@DESKTOP-L78C875.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f173646a425eb293.json",
+  "parameterValues" : [ ]
+}

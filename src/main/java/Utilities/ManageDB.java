@@ -15,11 +15,11 @@ public class ManageDB extends CommonOps {
             System.out.println("Could not initiate database connection");
         }
     }
-    public static void closeConnection(){
-        try{
+
+    public static void closeConnection() {
+        try {
             connection.close();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.out.println("Could not close database connection");
         }
     }

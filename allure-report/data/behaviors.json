@@ -3,7 +3,7 @@
   "name" : "behaviors",
   "children" : [ {
     "name" : "afterMethod",
-    "uid" : "fe903dddaaa752b8",
+    "uid" : "b73784449504d9e6",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "broken",
     "time" : {
@@ -16,7 +16,7 @@
     "parameters" : [ ]
   }, {
     "name" : "SignUp Sanity Test",
-    "uid" : "16413d9fddbcfbc8",
+    "uid" : "6252138a8bc2c583",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "unknown",
     "time" : {
@@ -29,7 +29,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Login Sanity Test",
-    "uid" : "d300bae8aa9254e6",
+    "uid" : "dc8bbbcd2d877508",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -42,7 +42,7 @@
     "parameters" : [ ]
   }, {
     "name" : "Add new project",
-    "uid" : "e7f1942251679c43",
+    "uid" : "91b60112989537ee",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "failed",
     "time" : {
@@ -51,11 +51,11 @@
       "duration" : 36121
     },
     "flaky" : true,
-    "newFailed" : true,
+    "newFailed" : false,
     "parameters" : [ ]
   }, {
     "name" : "Remove a project",
-    "uid" : "95e3526c21a084c8",
+    "uid" : "107142c7a2bea570",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
@@ -66,5 +66,70 @@
     "flaky" : false,
     "newFailed" : false,
     "parameters" : [ ]
+  }, {
+    "name" : "SignUp Sanity Test",
+    "uid" : "384759cfdb5449c5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "unknown",
+    "time" : {
+      "start" : 1587497975776,
+      "stop" : 1587497975778,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome", "Web", "Basecamp" ]
+  }, {
+    "name" : "startSession",
+    "uid" : "48eafb082a784923",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1587497976007,
+      "stop" : 1587497976008,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome", "Web", "Basecamp" ]
+  }, {
+    "name" : "Login Sanity Test",
+    "uid" : "c176f4b85514ac72",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1587497976043,
+      "stop" : 1587497976045,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome", "Web", "Basecamp" ]
+  }, {
+    "name" : "Add new project",
+    "uid" : "567c2992a7d18711",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1587497976061,
+      "stop" : 1587497976062,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome", "Web", "Basecamp" ]
+  }, {
+    "name" : "Remove a project",
+    "uid" : "31ff353163b105c6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "skipped",
+    "time" : {
+      "start" : 1587497976067,
+      "stop" : 1587497976068,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome", "Web", "Basecamp" ]
   } ]
 }

@@ -1,5 +1,5 @@
 package Utilities;      //A class meant for declaring objects being used commonly across the project, such as WebDriver, WebDriverWait, Actions, Screenshot,
-                        // PageObjects, primitives and more
+// PageObjects, primitives and more
 
 import io.appium.java_client.android.AndroidDriver;
 import io.restassured.path.json.JsonPath;
@@ -36,6 +36,11 @@ public class Base {
     public static Screenshot imageScreenshot;
     public static ImageDiffer imgDiff;
     public static ImageDiff diff;
+
+    //Parameters Variables
+    public static String platform;
+    public static String webSite;
+    public static String browser;
 
     //Web
     public static PageObjects.BasecampWeb.IntroPage basecampIntroPage;

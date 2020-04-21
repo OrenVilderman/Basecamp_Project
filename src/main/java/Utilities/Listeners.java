@@ -11,48 +11,39 @@ import org.testng.ITestResult;
 import static Utilities.HelperMethods.getDataFromXML;
 
 
-public class Listeners extends CommonOps implements ITestListener
-{
-    public void onStart(ITestContext execution)
-    {
+public class Listeners extends CommonOps implements ITestListener {
+    public void onStart(ITestContext execution) {
         System.out.println("---------------------------Starting Execution---------------------------");
     }
 
-    public void onFinish(ITestContext execution)
-    {
+    public void onFinish(ITestContext execution) {
         System.out.println("----------------------------Ending Execution----------------------------");
     }
 
-    public void onTestFailedButWithinSuccessPercentage(ITestResult arg0)
-    {
+    public void onTestFailedButWithinSuccessPercentage(ITestResult arg0) {
         // TODO Auto-generated method stub
     }
 
-    public void onTestFailure(ITestResult test)
-    {
-        System.out.println("-------------------Test " + test.getName() +" Failed!-------------------");
-        if ((!getDataFromXML("PlatformName").equalsIgnoreCase("api")))
-        saveScreenshot();
+    public void onTestFailure(ITestResult test) {
+        System.out.println("-------------------Test " + test.getName() + " Failed!-------------------");
+        if ((!platform.equalsIgnoreCase("api")))
+            saveScreenshot();
     }
 
-    public void onTestSkipped(ITestResult test)
-    {
-        System.out.println("------------------Skipping Test: " + test.getName() +"------------------");
+    public void onTestSkipped(ITestResult test) {
+        System.out.println("------------------Skipping Test: " + test.getName() + "------------------");
     }
 
-    public void onTestStart(ITestResult test)
-    {
-        System.out.println("------------------Starting Test: " + test.getName() +"------------------");
+    public void onTestStart(ITestResult test) {
+        System.out.println("------------------Starting Test: " + test.getName() + "------------------");
     }
 
-    public void onTestSuccess(ITestResult test)
-    {
-        System.out.println("-------------Test " + test.getName() +" Successfully Passed-------------");
+    public void onTestSuccess(ITestResult test) {
+        System.out.println("-------------Test " + test.getName() + " Successfully Passed-------------");
     }
 
     @Attachment(value = "Page screenshot", type = "image/png")
-    public byte[] saveScreenshot()
-    {
-        return((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
+    public byte[] saveScreenshot() {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }

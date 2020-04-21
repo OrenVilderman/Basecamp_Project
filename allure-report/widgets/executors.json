@@ -2,9 +2,9 @@
   "name" : "Jenkins",
   "type" : "jenkins",
   "url" : "http://localhost:9090/",
-  "buildOrder" : 34,
-  "buildName" : "Full Stack Final Project Web #34",
-  "buildUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/",
+  "buildOrder" : 36,
+  "buildName" : "Full Stack Final Project Web #36",
+  "buildUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/",
   "reportName" : "AllureReport",
-  "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/34/allure"
+  "reportUrl" : "http://localhost:9090/job/Full%20Stack%20Final%20Project%20Web/36/allure"
 } ]

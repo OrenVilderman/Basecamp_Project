@@ -30,5 +30,5 @@ public class DbActions extends CommonOps {
         } catch (Exception e) {
             System.out.println("Error while posting data");
         }
-            }
+    }
 }

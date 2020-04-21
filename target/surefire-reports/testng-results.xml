@@ -1,49 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="1" total="4" passed="2">
+<testng-results skipped="3" failed="0" ignored="1" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="127421" started-at="2020-04-17T18:40:05Z" finished-at="2020-04-17T18:42:13Z">
+  <suite name="Suite" duration-ms="402" started-at="2020-04-21T19:39:35Z" finished-at="2020-04-21T19:39:36Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="127421" started-at="2020-04-17T18:40:05Z" finished-at="2020-04-17T18:42:13Z">
+    <test name="BasecampWeb Tests" duration-ms="402" started-at="2020-04-21T19:39:35Z" finished-at="2020-04-21T19:39:36Z">
       <class name="BasecampWeb.SanityTests.BaseCampSanity">
-        <test-method status="PASS" signature="startSession()[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@5ebd56e9]" name="startSession" is-config="true" duration-ms="15434" started-at="2020-04-17T18:40:05Z" finished-at="2020-04-17T18:40:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startSession -->
-        <test-method status="PASS" signature="testLogin()[pri:2, instance:BasecampWeb.SanityTests.BaseCampSanity@5ebd56e9]" name="testLogin" duration-ms="28374" started-at="2020-04-17T18:40:21Z" description="Login Sanity Test" finished-at="2020-04-17T18:40:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@5ebd56e9]" name="afterMethod" is-config="true" duration-ms="1850" started-at="2020-04-17T18:40:49Z" finished-at="2020-04-17T18:40:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="FAIL" signature="testAddNewProject()[pri:3, instance:BasecampWeb.SanityTests.BaseCampSanity@5ebd56e9]" name="testAddNewProject" duration-ms="35656" started-at="2020-04-17T18:40:51Z" description="Add new project" finished-at="2020-04-17T18:41:27Z">
-          <exception class="java.lang.AssertionError">
+        <test-method status="FAIL" signature="startSession(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@512d92b]" name="startSession" is-config="true" duration-ms="0" started-at="2020-04-21T19:39:35Z" finished-at="2020-04-21T19:39:35Z">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[expected [4] but found [3]]]>
+              <![CDATA[
+Parameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [4] but found [3]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at Extensions.Web.Verifications.verifyNumberOfElementsProjectAdd(Verifications.java:36)
-at BasecampWeb.SanityTests.BaseCampSanity.testAddNewProject(BaseCampSanity.java:34)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
@@ -56,37 +38,168 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
 at org.testng.TestNG.runSuites(TestNG.java:1049)
 at org.testng.TestNG.run(TestNG.java:1017)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
 at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startSession -->
+        <test-method status="SKIP" signature="testLogin()[pri:2, instance:BasecampWeb.SanityTests.BaseCampSanity@512d92b]" name="testLogin" duration-ms="0" started-at="2020-04-21T19:39:36Z" description="Login Sanity Test" finished-at="2020-04-21T19:39:36Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="SKIP" signature="afterMethod(java.lang.String, java.lang.String)[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@512d92b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-04-21T19:39:36Z" finished-at="2020-04-21T19:39:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="testAddNewProject()[pri:3, instance:BasecampWeb.SanityTests.BaseCampSanity@512d92b]" name="testAddNewProject" duration-ms="0" started-at="2020-04-21T19:39:36Z" description="Add new project" finished-at="2020-04-21T19:39:36Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewProject -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@5ebd56e9]" name="afterMethod" is-config="true" duration-ms="1728" started-at="2020-04-17T18:41:27Z" finished-at="2020-04-17T18:41:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="testRemoveAProject()[pri:4, instance:BasecampWeb.SanityTests.BaseCampSanity@5ebd56e9]" name="testRemoveAProject" duration-ms="37680" started-at="2020-04-17T18:41:29Z" description="Remove a project" finished-at="2020-04-17T18:42:07Z">
+        <test-method status="SKIP" signature="testRemoveAProject()[pri:4, instance:BasecampWeb.SanityTests.BaseCampSanity@512d92b]" name="testRemoveAProject" duration-ms="0" started-at="2020-04-21T19:39:36Z" description="Remove a project" finished-at="2020-04-21T19:39:36Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'platformName' is required by BeforeClass on method startSession but has not been marked @Optional or defined
+in C:\git\Basecamp_Project\testNgExecuteWeb.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:168)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:105)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRemoveAProject -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@5ebd56e9]" name="afterMethod" is-config="true" duration-ms="3174" started-at="2020-04-17T18:42:07Z" finished-at="2020-04-17T18:42:10Z">
+        <test-method status="SKIP" signature="afterMethod(java.lang.String, java.lang.String)[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@512d92b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-04-21T19:39:36Z" finished-at="2020-04-21T19:39:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="closeSession()[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@5ebd56e9]" name="closeSession" is-config="true" duration-ms="2711" started-at="2020-04-17T18:42:10Z" finished-at="2020-04-17T18:42:13Z">
+        <test-method status="SKIP" signature="afterMethod(java.lang.String, java.lang.String)[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@512d92b]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-04-21T19:39:36Z" finished-at="2020-04-21T19:39:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="closeSession(java.lang.String, java.lang.String)[pri:0, instance:BasecampWeb.SanityTests.BaseCampSanity@512d92b]" name="closeSession" is-config="true" duration-ms="0" started-at="2020-04-21T19:39:36Z" finished-at="2020-04-21T19:39:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeSession -->
       </class> <!-- BasecampWeb.SanityTests.BaseCampSanity -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- BasecampWeb Tests -->
+  </suite> <!-- Suite -->
 </testng-results>
